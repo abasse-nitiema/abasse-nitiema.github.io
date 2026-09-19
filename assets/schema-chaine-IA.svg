@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="ch-titre ch-desc" class="chaine">
 <title id="ch-titre">Chaîne veille, qualification, offre, suivi, pilotée par un agent IA</title>
-<desc id="ch-desc">Quatre étapes reliées. Veille : tâche planifiée chaque vendredi à 16 h, 9 pays et 6 bailleurs suivis, chaque avis noté sur 100. Qualification : pièces lues même scannées, analyse en 11 sections, note technique simulée. Offre : plan calqué sur la grille de notation, Word et PDF à la charte, 115 pages en 13 versions, chaque page contrôlée. Suivi : 12 questions d'éclaircissement, 16 points de dépôt classés par gravité dont 7 bloquants. Une boucle d'apprentissage transforme chaque retour de la direction en règle. La direction lit le rapport, décide go ou no-go, valide le prix, signe et dépose.</desc>
+<desc id="ch-desc">Quatre étapes reliées. Veille : tâche planifiée chaque vendredi à 16 h, 9 pays et 6 bailleurs suivis, chaque avis noté sur 100. Qualification : pièces lues même scannées, analyse en 11 sections, note technique simulée. Offre : plan calqué sur la grille de notation, Word et PDF à la charte, 115 pages en 13 versions, chaque page contrôlée. Suivi : 12 questions d'éclaircissement, 16 points de dépôt classés par gravité dont 7 bloquants. Une boucle d'apprentissage transforme chacune de mes corrections en règle. Je lis le rapport, je décide go ou no-go, je valide le prix et je finalise le dépôt.</desc>
 <style>
 .chaine{--_fond:#152541;--_carte:#1B2E4E;--_encre:#F2EFE9;--_doux:#AEB9C7;--_trait:#3A4D6E;--_accent:#E3A857;--_accent-doux:#3A3520;--_humain:#5FB8A0;font-family:var(--ch-police,"Inter","Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif)}
 .fond{fill:var(--ch-fond,var(--_fond))}
@@ -55,7 +55,7 @@
 <rect class="preuve" x="56" y="282" width="218" height="32" rx="8"/><text class="preuve-t" x="68" y="303">Go à partir de 70 sur 100</text>
 <line class="filet-h" x1="58" y1="328" x2="272" y2="328"/>
 <circle class="humain" cx="66" cy="342" r="4"/><path class="humain" d="M59 356 Q59 348 66 348 Q73 348 73 356 Z"/>
-<text class="humain-t" x="80" y="353">La direction lit le rapport</text>
+<text class="humain-t" x="80" y="353">Je lis le rapport</text>
 </g>
 
 <line class="fleche" x1="294" y1="232" x2="320" y2="232"/><polygon class="pointe" points="320,227 328,232 320,237"/>
@@ -74,7 +74,7 @@
 <rect class="preuve" x="346" y="282" width="218" height="32" rx="8"/><text class="preuve-t" x="358" y="303">Cas réel&#160;: 53 à 83 sur 100</text>
 <line class="filet-h" x1="348" y1="328" x2="562" y2="328"/>
 <circle class="humain" cx="356" cy="342" r="4"/><path class="humain" d="M349 356 Q349 348 356 348 Q363 348 363 356 Z"/>
-<text class="humain-t" x="370" y="353">Le DG décide go ou no-go</text>
+<text class="humain-t" x="370" y="353">Je décide go ou no-go</text>
 </g>
 
 <line class="fleche" x1="584" y1="232" x2="610" y2="232"/><polygon class="pointe" points="610,227 618,232 610,237"/>
@@ -93,7 +93,7 @@
 <rect class="preuve" x="636" y="282" width="218" height="32" rx="8"/><text class="preuve-t" x="648" y="303">115 pages en 13 versions</text>
 <line class="filet-h" x1="638" y1="328" x2="852" y2="328"/>
 <circle class="humain" cx="646" cy="342" r="4"/><path class="humain" d="M639 356 Q639 348 646 348 Q653 348 653 356 Z"/>
-<text class="humain-t" x="660" y="353">Le DG valide le prix</text>
+<text class="humain-t" x="660" y="353">Je valide le prix</text>
 </g>
 
 <line class="fleche" x1="874" y1="232" x2="900" y2="232"/><polygon class="pointe" points="900,227 908,232 900,237"/>
@@ -112,12 +112,12 @@
 <rect class="preuve" x="926" y="282" width="218" height="32" rx="8"/><text class="preuve-t" x="938" y="303">7 points bloquants repérés</text>
 <line class="filet-h" x1="928" y1="328" x2="1142" y2="328"/>
 <circle class="humain" cx="936" cy="342" r="4"/><path class="humain" d="M929 356 Q929 348 936 348 Q943 348 943 356 Z"/>
-<text class="humain-t" x="950" y="353">Le DG signe et dépose</text>
+<text class="humain-t" x="950" y="353">Je finalise le dépôt</text>
 </g>
 
 <path class="boucle" d="M1035 372 V404 Q1035 420 1019 420 H181 Q165 420 165 404 V382"/>
 <polygon class="boucle-pointe" points="159,386 165,374 171,386"/>
 <rect class="etiquette" x="285" y="406" width="630" height="28" rx="14"/>
-<text class="etiquette-t" x="600" y="425">Boucle d'apprentissage&#160;: chaque retour de la direction devient une règle (25 à ce jour)</text>
+<text class="etiquette-t" x="600" y="425">Boucle d'apprentissage&#160;: chacune de mes corrections devient une règle (25 à ce jour)</text>
 <text class="outils" x="600" y="472">Sous le capot&#160;: Claude Code · 7 scripts Python · 10 fichiers de connaissances · 15 cas de test · aucun envoi sans accord</text>
 </svg>
