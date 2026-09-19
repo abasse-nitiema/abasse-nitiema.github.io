@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Démo : qualifier un appel d'offres comme l'agent — Abasse Nitiema</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --fond:#0E1B2E;--surface:#152541;--surface-2:#1B2E4E;--encre:#F2EFE9;--doux:#AEB9C7;--trait:#2E4166;
+  --accent:#E3A857;--accent-doux:#33301F;--accent-encre:#0E1B2E;
+  --ok:#5FB8A0;--ok-doux:#17342E;--attention:#E3A857;--attention-doux:#332A18;--critique:#E27A6A;--critique-doux:#3A211E;
+  --console:#0A1526;--console-texte:#e2e8ee;--console-ok:#5FB8A0;--console-info:#8FB6E8;--console-cmd:#E3A857;
+  --police:"Inter","Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"Cascadia Mono",Consolas,"SF Mono",Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--fond);color:var(--encre);font:15px/1.55 var(--police)}
+.demo{max-width:1060px;margin:0 auto;padding-inline:16px;padding-block:28px 40px;display:grid;grid-template-columns:minmax(0,1fr);gap:28px}
+.demo>*,.bloc,.simulateur>*{min-width:0}
+.surtitre{margin:0;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{margin:6px 0 8px;font-size:clamp(22px,3.2vw,30px);line-height:1.2;text-wrap:balance}
+h2{margin:0 0 12px;font-size:20px;line-height:1.25;text-wrap:balance}
+h3{margin:0 0 10px;font-size:17px;line-height:1.3;text-wrap:balance}
+p{margin:0}
+.chapo{max-width:68ch;color:var(--doux)}
+.bloc{background:var(--surface);border:1px solid var(--trait);border-radius:14px;padding:20px}
+.exemples{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:18px}
+.exemples-titre{font-size:13px;color:var(--doux);margin-right:4px}
+.exemple{font:inherit;font-size:13.5px;padding:7px 12px;border-radius:999px;border:1px solid var(--trait);background:var(--surface-2);color:var(--encre);cursor:pointer}
+.exemple[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-encre)}
+.exemple:focus-visible,.option input:focus-visible+span,.onglet:focus-visible,input[type=range]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.simulateur{display:grid;gap:20px;grid-template-columns:minmax(0,1fr)}
+@media (min-width:860px){.simulateur{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:start}}
+form{display:grid;gap:16px}
+fieldset{margin:0;padding:0;border:0;min-width:0}
+legend,.libelle{display:flex;justify-content:space-between;gap:12px;width:100%;font-size:14px;font-weight:600;margin-bottom:8px}
+.pts{font-weight:500;color:var(--doux);font-variant-numeric:tabular-nums;white-space:nowrap}
+.options{display:flex;flex-wrap:wrap;gap:6px}
+.option{position:relative}
+.option input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.option span{display:block;font-size:13.5px;padding:7px 11px;border:1px solid var(--trait);border-radius:8px;background:var(--surface);cursor:pointer}
+.option input:checked+span{border-color:var(--accent);background:var(--accent-doux);color:var(--encre);box-shadow:inset 0 0 0 1px var(--accent)}
+.curseur{display:grid;gap:4px}
+input[type=range]{width:100%;accent-color:var(--accent)}
+.aide{font-size:12.5px;color:var(--doux)}
+.resultat{display:grid;gap:14px}
+.score{display:flex;align-items:baseline;gap:6px;font-variant-numeric:tabular-nums}
+.score b{font-size:44px;line-height:1}
+.score span{color:var(--doux)}
+.jauge{position:relative;height:12px;border-radius:6px;overflow:hidden;display:grid;grid-template-columns:50fr 20fr 30fr}
+.jauge i:nth-child(1){background:var(--critique-doux)}
+.jauge i:nth-child(2){background:var(--attention-doux)}
+.jauge i:nth-child(3){background:var(--ok-doux)}
+.repere{position:absolute;top:-3px;bottom:-3px;width:3px;margin-left:-1.5px;background:var(--encre);border-radius:2px;transition:left .35s ease}
+.graduations{position:relative;height:16px;font-size:11.5px;color:var(--doux);font-variant-numeric:tabular-nums}
+.graduations span{position:absolute;transform:translateX(-50%)}
+.graduations span:first-child{transform:none}
+.graduations span:last-child{transform:translateX(-100%)}
+.decision{display:inline-flex;align-items:center;gap:8px;justify-self:start;font-weight:700;font-size:15px;padding:6px 12px;border-radius:999px}
+.decision::before{content:"";width:8px;height:8px;border-radius:50%;background:currentColor}
+.ok{background:var(--ok-doux);color:var(--ok)}
+.attention{background:var(--attention-doux);color:var(--attention)}
+.critique{background:var(--critique-doux);color:var(--critique)}
+.alerte{font-size:13.5px;padding:8px 10px;border-radius:8px;background:var(--attention-doux);color:var(--encre);border-left:3px solid var(--attention)}
+.detail{margin:0;padding:0;list-style:none;display:grid;gap:4px;font-size:13.5px}
+.detail li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed var(--trait);padding-bottom:3px}
+.detail li span:last-child{font-variant-numeric:tabular-nums;color:var(--doux)}
+.action{font-size:14px}
+.action strong{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--doux);margin-bottom:2px}
+.defile{overflow-x:auto;border:1px solid var(--trait);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+th,td{padding:7px 10px;text-align:left;border-bottom:1px solid var(--trait);vertical-align:top}
+th{background:var(--surface-2);font-weight:600;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.ligne-veille td{white-space:nowrap}
+.legende{font-size:12.5px;color:var(--doux);margin-top:6px}
+.onglets{display:flex;flex-wrap:wrap;gap:6px;border-bottom:1px solid var(--trait);margin-bottom:18px}
+.onglet{font:inherit;font-size:14px;font-weight:600;padding:9px 14px;border:0;border-bottom:3px solid transparent;background:none;color:var(--doux);cursor:pointer;margin-bottom:-1px}
+.onglet[aria-selected="true"]{color:var(--encre);border-bottom-color:var(--accent)}
+.panneau{display:grid;gap:14px;max-width:80ch}
+.fiche{display:grid;grid-template-columns:max-content 1fr;gap:6px 16px;margin:0;font-size:14px}
+.fiche dt{font-weight:600}
+.fiche dd{margin:0;color:var(--encre)}
+code{font-family:var(--mono);font-size:.9em;background:var(--surface-2);padding:1px 5px;border-radius:4px}
+.sections{margin:0;padding-left:22px;columns:2 240px;column-gap:28px;font-size:14px}
+.sections li{break-inside:avoid;margin-bottom:3px}
+.cas{font-size:14px;padding:12px 14px;border-radius:10px;background:var(--accent-doux)}
+.outils{display:flex;flex-wrap:wrap;align-items:center;gap:8px 6px;margin:0;padding:0;list-style:none}
+.outils li{display:flex;align-items:center;gap:6px}
+.outils code{font-size:12.5px;padding:5px 9px;border-radius:6px;border:1px solid var(--trait)}
+.outils li+li::before{content:"→";color:var(--doux)}
+.console{margin:0;padding:16px 18px;border-radius:10px;background:var(--console);color:var(--console-texte);font:13px/1.65 var(--mono);overflow-x:auto;white-space:pre}
+.console .c{color:var(--console-cmd)}
+.console .v{color:var(--console-ok)}
+.console .i{color:var(--console-info)}
+.note{font-size:12.5px;color:var(--doux)}
+.gravites{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.gravite{padding:10px 12px;border-radius:10px;border-left:4px solid;background:var(--surface-2)}
+.gravite b{display:block;font-size:24px;line-height:1.1;font-variant-numeric:tabular-nums}
+.gravite.b{border-color:var(--critique)}.gravite.m{border-color:var(--attention)}.gravite.n{border-color:var(--doux)}
+.points{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:14px}
+.points li{display:grid;grid-template-columns:78px 1fr;gap:10px;align-items:start}
+.etiquette{font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:2px 6px;border-radius:4px;text-align:center}
+.boucle{display:grid;gap:8px;padding:14px;border:1px dashed var(--accent);border-radius:10px;font-size:14px}
+.citation{font-style:italic}
+footer{font-size:12.5px;color:var(--doux);max-width:80ch}
+@media (max-width:520px){.gravites{grid-template-columns:1fr}.points li{grid-template-columns:1fr}.etiquette{justify-self:start}}
+@media (prefers-reduced-motion:reduce){.repere{transition:none}}
+</style>
+</head>
+<body>
+<main class="demo">
+  <header>
+    <p class="surtitre">Démo interactive · agent de montage d'offres</p>
+    <h1>Qualifier un appel d'offres comme le fait l'agent</h1>
+    <p class="chapo">Chaque vendredi, l'agent note sur 100 chaque avis repéré avec la grille ci-dessous. Choisissez un exemple ou réglez les critères&nbsp;: la note, la décision et la ligne du rapport de veille se recalculent.</p>
+  </header>
+
+  <section class="bloc" aria-labelledby="titre-simulateur">
+    <h2 id="titre-simulateur">I. Veille et qualification rapide</h2>
+    <div class="exemples" role="group" aria-label="Exemples fictifs">
+      <span class="exemples-titre">Exemples fictifs&nbsp;:</span>
+      <button type="button" class="exemple" data-exemple="formation" aria-pressed="true">Formation de cadres</button>
+      <button type="button" class="exemple" data-exemple="audit" aria-pressed="false">Audit organisationnel</button>
+      <button type="button" class="exemple" data-exemple="groupement" aria-pressed="false">Étude multi-pays</button>
+      <button type="button" class="exemple" data-exemple="fournitures" aria-pressed="false">Fourniture de matériel</button>
+    </div>
+    <div class="simulateur">
+      <form id="grille" aria-label="Grille de pertinence sur 100">
+        <fieldset>
+          <legend><span>Domaine de l'avis</span><span class="pts" id="pts-tier"></span></legend>
+          <div class="options">
+            <label class="option"><input type="radio" name="tier" id="tier-1" value="1"><span>Formation (tier 1)</span></label>
+            <label class="option"><input type="radio" name="tier" id="tier-2" value="2"><span>Études et conseil (tier 2)</span></label>
+            <label class="option"><input type="radio" name="tier" id="tier-3" value="3"><span>Hors cœur de métier (tier 3)</span></label>
+            <label class="option"><input type="radio" name="tier" id="tier-x" value="exclu"><span>Travaux ou fournitures</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><span>Références similaires prouvées</span><span class="pts" id="pts-refs"></span></legend>
+          <div class="options">
+            <label class="option"><input type="radio" name="refs" id="refs-2" value="2"><span>2 attestations ou plus</span></label>
+            <label class="option"><input type="radio" name="refs" id="refs-1" value="1"><span>1 attestation</span></label>
+            <label class="option"><input type="radio" name="refs" id="refs-0" value="0"><span>Aucune</span></label>
+          </div>
+        </fieldset>
+        <div class="curseur">
+          <label class="libelle" for="experts"><span>Experts disponibles dans la base</span><span class="pts" id="pts-experts"></span></label>
+          <input type="range" id="experts" name="experts" min="0" max="15" step="1">
+        </div>
+        <div class="curseur">
+          <label class="libelle" for="faisabilite"><span>Pays prioritaire et faisabilité</span><span class="pts" id="pts-faisabilite"></span></label>
+          <input type="range" id="faisabilite" name="faisabilite" min="0" max="10" step="1">
+          <span class="aide">Sécurité, langue de travail, présence locale.</span>
+        </div>
+        <div class="curseur">
+          <label class="libelle" for="jours"><span>Jours avant la date limite</span><span class="pts" id="pts-jours"></span></label>
+          <input type="range" id="jours" name="jours" min="1" max="45" step="1">
+          <span class="aide">15 jours ou plus&nbsp;: 10 points&nbsp;; de 8 à 14&nbsp;: 5&nbsp;; moins de 8&nbsp;: 0.</span>
+        </div>
+        <div class="curseur">
+          <label class="libelle" for="bailleur"><span>Bailleur solvable, procédure transparente</span><span class="pts" id="pts-bailleur"></span></label>
+          <input type="range" id="bailleur" name="bailleur" min="0" max="10" step="1">
+        </div>
+      </form>
+
+      <div class="resultat" aria-live="polite">
+        <div class="score"><b id="score">0</b><span>sur 100</span></div>
+        <div>
+          <div class="jauge" aria-hidden="true"><i></i><i></i><i></i><span class="repere" id="repere"></span></div>
+          <div class="graduations" aria-hidden="true"><span style="left:0">0</span><span style="left:50%">50</span><span style="left:70%">70</span><span style="left:100%">100</span></div>
+        </div>
+        <span class="decision" id="decision">Go</span>
+        <p id="motif"></p>
+        <p class="alerte" id="alerte" hidden></p>
+        <ul class="detail" id="detail"></ul>
+        <p class="action"><strong>Prochaine action</strong><span id="action"></span></p>
+      </div>
+    </div>
+
+    <div style="margin-top:22px">
+      <h3>Ligne produite dans le rapport de veille</h3>
+      <div class="defile">
+        <table>
+          <thead><tr><th>#</th><th>Score</th><th>Décision</th><th>Pays</th><th>Autorité / bailleur</th><th>Objet</th><th>Type</th><th>Date limite</th><th>Tier</th><th>Groupement&nbsp;?</th><th>Lien</th></tr></thead>
+          <tbody><tr class="ligne-veille" id="ligne-veille"></tr></tbody>
+        </table>
+      </div>
+      <p class="legende">Colonnes réelles du fichier <code>veille_AAAA-MM-JJ.md</code>&nbsp;; contenu fictif pour la démonstration.</p>
+    </div>
+  </section>
+
+  <section class="bloc" aria-labelledby="titre-etapes">
+    <h2 id="titre-etapes">II. Ce que l'agent produit ensuite</h2>
+    <div class="onglets" role="tablist" aria-label="Étapes de la chaîne">
+      <button class="onglet" role="tab" id="onglet-veille" aria-controls="panneau-veille" aria-selected="true">Veille</button>
+      <button class="onglet" role="tab" id="onglet-qualif" aria-controls="panneau-qualif" aria-selected="false" tabindex="-1">Qualification</button>
+      <button class="onglet" role="tab" id="onglet-offre" aria-controls="panneau-offre" aria-selected="false" tabindex="-1">Offre</button>
+      <button class="onglet" role="tab" id="onglet-suivi" aria-controls="panneau-suivi" aria-selected="false" tabindex="-1">Suivi</button>
+    </div>
+
+    <div class="panneau" role="tabpanel" id="panneau-veille" aria-labelledby="onglet-veille">
+      <h3>Chaque vendredi à 16 h, sans intervention</h3>
+      <p>Une tâche planifiée relance l'agent chaque semaine. Il interroge les portails officiels des 9 pays prioritaires (par exemple la DGCMEF au Burkina Faso, l'ARMP en Guinée, COLEPS au Cameroun), les sites des bailleurs (Banque mondiale, BAD, Enabel, Union européenne, Nations unies), puis des agrégateurs en complément, en remontant toujours à l'avis officiel.</p>
+      <dl class="fiche">
+        <dt>Sorties</dt><dd><code>veille_AAAA-MM-JJ.md</code>, tableau trié par score, et <code>registre_opportunites.csv</code></dd>
+        <dt>Suivi</dt><dd>Chaque opportunité garde un statut&nbsp;: détectée, en montage, déposée, gagnée, perdue ou abandonnée. Aucune ligne n'est supprimée.</dd>
+        <dt>Garde-fous</dt><dd>Pages publiques uniquement, aucun compte créé&nbsp;; une donnée absente est notée «&nbsp;non publié&nbsp;», jamais devinée.</dd>
+      </dl>
+    </div>
+
+    <div class="panneau" role="tabpanel" id="panneau-qualif" aria-labelledby="onglet-qualif" hidden>
+      <h3>Un rapport d'analyse en 11 sections, puis la décision</h3>
+      <ol class="sections">
+        <li>Fiche d'identification et spécificités du dossier</li>
+        <li>La mission en bref</li>
+        <li>Critères d'évaluation</li>
+        <li>Exigences de qualification face aux preuves</li>
+        <li>Personnel clé exigé et vivier d'experts</li>
+        <li>Composition de l'offre&nbsp;: liste de contrôle</li>
+        <li>Conditions financières et fiscales</li>
+        <li>Risques et questions d'éclaircissement</li>
+        <li>Opportunité de groupement</li>
+        <li>Simulation de note</li>
+        <li>Recommandation et rétroplanning</li>
+      </ol>
+      <div class="defile">
+        <table>
+          <thead><tr><th>Situation simulée</th><th>Décision</th></tr></thead>
+          <tbody>
+            <tr><td>Critère éliminatoire non satisfait et non corrigible</td><td>No-go</td></tr>
+            <tr><td>Note technique simulée sous le minimum du dossier</td><td>No-go, ou groupement si l'écart vient d'un seul critère</td></tr>
+            <tr><td>Du minimum au minimum plus 8 points</td><td>À étudier&nbsp;: actions pour gagner des points</td></tr>
+            <tr><td>Minimum plus 8 points ou davantage, références prouvées</td><td>Go</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="cas"><strong>Cas réel, anonymisé.</strong> Note technique simulée entre 53 (hypothèse basse) et 83 (hypothèse haute) pour un minimum de 75&nbsp;: GO conditionnel, avec quatre conditions à remplir en quatre jours et des leviers chiffrés (chef de projet éligible +7, méthodologie à 90&nbsp;% +7, experts nationaux +6, références prouvées +4).</p>
+    </div>
+
+    <div class="panneau" role="tabpanel" id="panneau-offre" aria-labelledby="onglet-offre" hidden>
+      <h3>Générée depuis la source, puis contrôlée page par page</h3>
+      <ol class="outils" aria-label="Chaîne de production">
+        <li><code>source Markdown</code></li><li><code>generer_word.py</code></li><li><code>exporter_pdf.py</code></li><li><code>controle_mise_en_page.py</code></li><li><code>version_impression.py</code></li>
+      </ol>
+      <p>Le générateur applique seul la charte&nbsp;: papeterie sur la page de garde, grands titres sur pages intercalaires, chronogrammes en Gantt colorés par phase, fiches de référence suivies de leurs preuves, montants en chiffres et en lettres concordants. Aucune version n'est retouchée à la main&nbsp;: chaque correction passe par la source et tout est régénéré.</p>
+<pre class="console" aria-label="Sortie du contrôle automatique"><span class="c">&gt; uv run --with pymupdf python controle_mise_en_page.py proposition-technique_premium.pdf</span>
+
+115 pages
+<span class="v">OK</span> papeterie (attendue en page 1 seulement) : [1]
+<span class="v">OK</span> pages sans numéro : aucune
+<span class="v">OK</span> pages blanches : aucune
+<span class="v">OK</span> éléments hors des marges : aucune
+<span class="v">OK</span> tirets longs ou moyens (interdits) : aucune
+<span class="v">OK</span> table des matières : [2] (une page)
+<span class="i">i </span> pages intercalaires (grand titre seul) : [3, 5, 42, 46, 67, 69, 100, 102, 104, 106, 108, 110]
+<span class="i">i </span> pages peu remplies (à regarder) : aucune
+<span class="i">i </span> pages en paysage : [60, 101, 103]</pre>
+      <p class="note">Sortie réelle du script sur la version d'impression finale (19 septembre 2026), nom de fichier anonymisé.</p>
+    </div>
+
+    <div class="panneau" role="tabpanel" id="panneau-suivi" aria-labelledby="onglet-suivi" hidden>
+      <h3>Sécuriser le dépôt, puis apprendre</h3>
+      <div class="gravites">
+        <div class="gravite b"><b>7</b>points bloquants</div>
+        <div class="gravite m"><b>6</b>points majeurs</div>
+        <div class="gravite n"><b>3</b>points mineurs</div>
+      </div>
+      <ul class="points">
+        <li><span class="etiquette critique">Bloquant</span><span>Pièce administrative manquante&nbsp;: à demander au greffe, emplacement exact indiqué dans l'offre.</span></li>
+        <li><span class="etiquette attention">Majeur</span><span>Partie de 32 pages pour 20 autorisées par le formulaire&nbsp;: arbitrage de la direction.</span></li>
+        <li><span class="etiquette" style="background:var(--surface-2);color:var(--doux)">Mineur</span><span>Taux de change à vérifier auprès de la banque centrale avant l'impression.</span></li>
+      </ul>
+      <p>La demande d'éclaircissements compte 12 questions, chacune suivie de «&nbsp;l'hypothèse retenue à défaut de réponse&nbsp;», avec un tableau Word neutre que l'autorité contractante peut remplir et diffuser tel quel.</p>
+      <div class="boucle">
+        <p class="citation">La direction&nbsp;: «&nbsp;Le gros tiret IA ne doit jamais apparaître dans nos travaux.&nbsp;»</p>
+        <p>→ règle 18 de l'agent → le générateur refuse une source qui en contient et le contrôle du PDF les cherche&nbsp;:</p>
+        <p><code>OK tirets longs ou moyens (interdits) : aucune</code></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>Exemples du simulateur fictifs. La grille, les seuils, la structure des rapports et la sortie du contrôle sont ceux de l'agent réel (Claude Code, septembre 2026).</footer>
+</main>
+
+<script>
+(function () {
+  var NBSP = " ";
+  var EXEMPLES = {
+    formation: { objet: "Formation de cadres de l'administration", type: "AMI", pays: "Burkina Faso", autorite: "Ministère (fictif) / Banque mondiale", tier: "1", refs: "2", experts: 12, faisabilite: 8, jours: 21, bailleur: 8 },
+    audit: { objet: "Audit organisationnel d'une autorité de régulation", type: "DP", pays: "Niger", autorite: "Autorité de régulation (fictif) / budget national", tier: "2", refs: "1", experts: 10, faisabilite: 6, jours: 12, bailleur: 7 },
+    groupement: { objet: "Étude multi-pays sur la finance numérique", type: "AMI", pays: "Mauritanie", autorite: "Programme régional (fictif) / BAD", tier: "3", refs: "1", experts: 8, faisabilite: 7, jours: 18, bailleur: 10 },
+    fournitures: { objet: "Fourniture de matériel informatique", type: "DAO", pays: "Cameroun", autorite: "Société publique (fictif) / budget national", tier: "exclu", refs: "0", experts: 0, faisabilite: 6, jours: 25, bailleur: 7 }
+  };
+  var POINTS_TIER = { "1": 30, "2": 20, "3": 10, "exclu": 0 };
+  var POINTS_REFS = { "2": 25, "1": 15, "0": 0 };
+  var form = document.getElementById("grille");
+  var courant = "formation";
+
+  function pointsDelai(j) { return j >= 15 ? 10 : (j >= 8 ? 5 : 0); }
+  function el(id) { return document.getElementById(id); }
+  function dateLimite(jours) {
+    var d = new Date();
+    d.setDate(d.getDate() + jours);
+    return d.toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
+  }
+  function cellule(texte) { var td = document.createElement("td"); td.textContent = texte; return td; }
+
+  function charger(nom) {
+    var e = EXEMPLES[nom];
+    courant = nom;
+    form.querySelector('input[name="tier"][value="' + e.tier + '"]').checked = true;
+    form.querySelector('input[name="refs"][value="' + e.refs + '"]').checked = true;
+    el("experts").value = e.experts;
+    el("faisabilite").value = e.faisabilite;
+    el("jours").value = e.jours;
+    el("bailleur").value = e.bailleur;
+    document.querySelectorAll(".exemple").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.dataset.exemple === nom));
+    });
+    calculer();
+  }
+
+  function calculer() {
+    var tier = form.querySelector('input[name="tier"]:checked').value;
+    var refs = form.querySelector('input[name="refs"]:checked').value;
+    var experts = Number(el("experts").value);
+    var faisabilite = Number(el("faisabilite").value);
+    var jours = Number(el("jours").value);
+    var bailleur = Number(el("bailleur").value);
+    var pDelai = pointsDelai(jours);
+    var score = POINTS_TIER[tier] + POINTS_REFS[refs] + experts + faisabilite + pDelai + bailleur;
+
+    el("pts-tier").textContent = POINTS_TIER[tier] + " / 30";
+    el("pts-refs").textContent = POINTS_REFS[refs] + " / 25";
+    el("pts-experts").textContent = experts + " / 15";
+    el("pts-faisabilite").textContent = faisabilite + " / 10";
+    el("pts-jours").textContent = jours + " j" + NBSP + ": " + pDelai + " / 10";
+    el("pts-bailleur").textContent = bailleur + " / 10";
+
+    var decision, classe, motif, action;
+    if (tier === "exclu") {
+      decision = "No-go"; classe = "critique";
+      motif = "Hors métier" + NBSP + ": travaux, fournitures et équipements sont exclus d'office, quelle que soit la note.";
+      action = "Classer l'avis dans le registre avec le motif «" + NBSP + "hors métier" + NBSP + "».";
+    } else if (score >= 70) {
+      decision = "Go"; classe = "ok";
+      motif = score + " sur 100" + NBSP + ": au-dessus du seuil de 70.";
+      action = "Télécharger le dossier complet et lancer l'analyse" + NBSP + ": rapport en 11 sections et simulation de note.";
+    } else if (score >= 50) {
+      decision = tier === "3" ? "À étudier en groupement" : "À étudier"; classe = "attention";
+      motif = score + " sur 100" + NBSP + ": entre 50 et 69.";
+      action = tier === "3"
+        ? "Définir le profil de partenaire recherché, le faire valider par la direction, puis analyser le dossier."
+        : "Vérifier les références et les experts spécifiques exigés avant d'engager le montage.";
+    } else {
+      decision = "No-go"; classe = "critique";
+      motif = score + " sur 100" + NBSP + ": sous le seuil de 50.";
+      action = "Classer l'avis dans le registre avec son motif, sans montage.";
+    }
+
+    el("score").textContent = score;
+    el("repere").style.left = Math.min(100, Math.max(0, score)) + "%";
+    var badge = el("decision");
+    badge.textContent = decision;
+    badge.className = "decision " + classe;
+    el("motif").textContent = motif;
+    el("action").textContent = action;
+
+    var alerte = el("alerte");
+    if (jours < 5 && tier !== "exclu") {
+      alerte.textContent = "Date limite dans moins de 5 jours" + NBSP + ": l'agent le signale d'emblée et propose un no-go ou un format minimal.";
+      alerte.hidden = false;
+    } else if (jours <= 14 && tier !== "exclu") {
+      alerte.textContent = "Urgent" + NBSP + ": date limite dans les 14 prochains jours, l'avis remonte en tête du rapport.";
+      alerte.hidden = false;
+    } else {
+      alerte.hidden = true;
+    }
+
+    var detail = el("detail");
+    detail.innerHTML = "";
+    [["Domaine", POINTS_TIER[tier], 30], ["Références prouvées", POINTS_REFS[refs], 25], ["Experts disponibles", experts, 15],
+     ["Pays et faisabilité", faisabilite, 10], ["Délai de préparation", pDelai, 10], ["Bailleur et procédure", bailleur, 10]]
+      .forEach(function (c) {
+        var li = document.createElement("li");
+        var a = document.createElement("span"); a.textContent = c[0];
+        var b = document.createElement("span"); b.textContent = c[1] + " / " + c[2];
+        li.appendChild(a); li.appendChild(b); detail.appendChild(li);
+      });
+
+    var e = EXEMPLES[courant];
+    var groupement = tier === "3" ? "Oui, partenaire à qualifier" : (refs === "0" && tier !== "exclu" ? "À envisager" : "Non");
+    var ligne = el("ligne-veille");
+    ligne.innerHTML = "";
+    [String(1), String(score), decision, e.pays, e.autorite, e.objet, e.type, dateLimite(jours),
+     tier === "exclu" ? "exclu" : tier, groupement, "exemple fictif"].forEach(function (t) { ligne.appendChild(cellule(t)); });
+  }
+
+  document.querySelectorAll(".exemple").forEach(function (b) {
+    b.addEventListener("click", function () { charger(b.dataset.exemple); });
+  });
+  form.addEventListener("input", calculer);
+  form.addEventListener("change", calculer);
+
+  var onglets = Array.prototype.slice.call(document.querySelectorAll('[role="tab"]'));
+  function activer(onglet, focus) {
+    onglets.forEach(function (o) {
+      var actif = o === onglet;
+      o.setAttribute("aria-selected", String(actif));
+      o.tabIndex = actif ? 0 : -1;
+      el(o.getAttribute("aria-controls")).hidden = !actif;
+    });
+    if (focus) onglet.focus();
+  }
+  onglets.forEach(function (o, i) {
+    o.addEventListener("click", function () { activer(o, false); });
+    o.addEventListener("keydown", function (ev) {
+      var cible = null;
+      if (ev.key === "ArrowRight") cible = onglets[(i + 1) % onglets.length];
+      if (ev.key === "ArrowLeft") cible = onglets[(i - 1 + onglets.length) % onglets.length];
+      if (ev.key === "Home") cible = onglets[0];
+      if (ev.key === "End") cible = onglets[onglets.length - 1];
+      if (cible) { ev.preventDefault(); activer(cible, true); }
+    });
+  });
+
+  charger("formation");
+})();
+</script>
+</body>
+</html>

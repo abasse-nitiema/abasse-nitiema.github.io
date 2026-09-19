@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 1470" role="img" aria-labelledby="chm-titre chm-desc" class="chaine">
+<title id="chm-titre">Chaîne veille, qualification, offre, suivi, pilotée par un agent IA</title>
+<desc id="chm-desc">Quatre étapes reliées. Veille : tâche planifiée chaque vendredi à 16 h, 9 pays et 6 bailleurs suivis, chaque avis noté sur 100. Qualification : pièces lues même scannées, analyse en 11 sections, note technique simulée. Offre : plan calqué sur la grille de notation, Word et PDF à la charte, 115 pages en 13 versions, chaque page contrôlée. Suivi : 12 questions d'éclaircissement, 16 points de dépôt classés par gravité dont 7 bloquants. Une boucle d'apprentissage transforme chaque retour de la direction en règle. La direction lit le rapport, décide go ou no-go, valide le prix, signe et dépose.</desc>
+<style>
+.chaine{--_fond:#152541;--_carte:#1B2E4E;--_encre:#F2EFE9;--_doux:#AEB9C7;--_trait:#3A4D6E;--_accent:#E3A857;--_accent-doux:#3A3520;--_humain:#5FB8A0;font-family:var(--ch-police,"Inter","Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif)}
+.fond{fill:var(--ch-fond,var(--_fond))}
+.carte{fill:var(--ch-carte,var(--_carte));stroke:var(--ch-trait,var(--_trait));stroke-width:1.5}
+.titre{font-size:19px;font-weight:700;fill:var(--ch-encre,var(--_encre))}
+.sous-titre{font-size:12.5px;fill:var(--ch-doux,var(--_doux))}
+.num{fill:var(--ch-accent-doux,var(--_accent-doux))}
+.num-t{font-size:13px;font-weight:700;fill:var(--ch-accent,var(--_accent));text-anchor:middle}
+.nom{font-size:19px;font-weight:700;fill:var(--ch-encre,var(--_encre))}
+.verbe{font-size:12.5px;fill:var(--ch-doux,var(--_doux))}
+.filet{stroke:var(--ch-trait,var(--_trait));stroke-width:1}
+.filet-h{stroke:var(--ch-trait,var(--_trait));stroke-width:1;stroke-dasharray:3 4}
+.puce{fill:var(--ch-accent,var(--_accent))}
+.ligne{font-size:13.5px;fill:var(--ch-encre,var(--_encre))}
+.preuve{fill:var(--ch-accent-doux,var(--_accent-doux))}
+.preuve-t{font-size:13px;font-weight:600;fill:var(--ch-accent,var(--_accent))}
+.humain{fill:var(--ch-humain,var(--_humain))}
+.humain-t{font-size:13px;font-weight:600;fill:var(--ch-humain,var(--_humain))}
+.fleche{stroke:var(--ch-doux,var(--_doux));stroke-width:1.5;fill:none}
+.pointe{fill:var(--ch-doux,var(--_doux))}
+.flux{fill:var(--ch-accent,var(--_accent));opacity:0}
+.boucle{stroke:var(--ch-accent,var(--_accent));stroke-width:1.5;fill:none;stroke-dasharray:6 6}
+.boucle-pointe{fill:var(--ch-accent,var(--_accent))}
+.etiquette{fill:var(--ch-fond,var(--_fond));stroke:var(--ch-trait,var(--_trait))}
+.etiquette-t{font-size:12.5px;fill:var(--ch-encre,var(--_encre));text-anchor:middle}
+.outils{font-size:12px;fill:var(--ch-doux,var(--_doux));text-anchor:middle}
+@media (prefers-reduced-motion:no-preference){
+.e1 .carte,.e2 .carte,.e3 .carte,.e4 .carte{animation:actif 8s infinite}
+.e2 .carte{animation-delay:2s}.e3 .carte{animation-delay:4s}.e4 .carte{animation-delay:6s}
+.flux{animation:glisse 8s infinite}
+.f1{animation-delay:1.5s}.f2{animation-delay:3.5s}.f3{animation-delay:5.5s}
+.boucle{animation:defile 1.6s linear infinite}
+}
+@keyframes actif{0%,20%{stroke:var(--ch-accent,var(--_accent));stroke-width:2.5}27%,100%{stroke:var(--ch-trait,var(--_trait));stroke-width:1.5}}
+@keyframes glisse{0%{opacity:0;transform:translateY(0)}4%{opacity:1}12%{opacity:1;transform:translateY(22px)}15%,100%{opacity:0;transform:translateY(22px)}}
+@keyframes defile{to{stroke-dashoffset:-24}}
+</style>
+<rect class="fond" x="0" y="0" width="420" height="1470" rx="18"/>
+<text class="titre" x="20" y="42">De l'avis d'appel d'offres au dépôt&#160;:</text>
+<text class="titre" x="20" y="66">une chaîne pilotée par un agent IA</text>
+<text class="sous-titre" x="20" y="92">Cas réel, septembre 2026&#160;: de la création de l'agent</text>
+<text class="sous-titre" x="20" y="110">à l'offre imprimable en 4 jours</text>
+
+<g class="e1">
+<rect class="carte" x="20" y="132" width="350" height="272" rx="12"/>
+<circle class="num" cx="54" cy="166" r="16"/><text class="num-t" x="54" y="170.5">I</text>
+<text class="nom" x="80" y="163">Veille</text>
+<text class="verbe" x="80" y="182">Repérer les avis</text>
+<line class="filet" x1="38" y1="200" x2="352" y2="200"/>
+<circle class="puce" cx="44" cy="221.5" r="2.5"/><text class="ligne" x="56" y="226">Tâche planifiée, vendredi 16 h</text>
+<circle class="puce" cx="44" cy="246.5" r="2.5"/><text class="ligne" x="56" y="251">9 pays et 6 bailleurs suivis</text>
+<circle class="puce" cx="44" cy="271.5" r="2.5"/><text class="ligne" x="56" y="276">Chaque avis noté sur 100</text>
+<circle class="puce" cx="44" cy="296.5" r="2.5"/><text class="ligne" x="56" y="301">Rapport et registre à jour</text>
+<rect class="preuve" x="36" y="318" width="318" height="32" rx="8"/><text class="preuve-t" x="48" y="339">Go à partir de 70 sur 100</text>
+<line class="filet-h" x1="38" y1="364" x2="352" y2="364"/>
+<circle class="humain" cx="46" cy="378" r="4"/><path class="humain" d="M39 392 Q39 384 46 384 Q53 384 53 392 Z"/>
+<text class="humain-t" x="60" y="389">La direction lit le rapport</text>
+</g>
+
+<line class="fleche" x1="195" y1="408" x2="195" y2="430"/><polygon class="pointe" points="190,430 195,438 200,430"/>
+<circle class="flux f1" cx="195" cy="410" r="4"/>
+
+<g class="e2">
+<rect class="carte" x="20" y="440" width="350" height="272" rx="12"/>
+<circle class="num" cx="54" cy="474" r="16"/><text class="num-t" x="54" y="478.5">II</text>
+<text class="nom" x="80" y="471">Qualification</text>
+<text class="verbe" x="80" y="490">Décider go ou no-go</text>
+<line class="filet" x1="38" y1="508" x2="352" y2="508"/>
+<circle class="puce" cx="44" cy="529.5" r="2.5"/><text class="ligne" x="56" y="534">Pièces lues, même scannées</text>
+<circle class="puce" cx="44" cy="554.5" r="2.5"/><text class="ligne" x="56" y="559">Analyse en 11 sections</text>
+<circle class="puce" cx="44" cy="579.5" r="2.5"/><text class="ligne" x="56" y="584">Exigences face aux preuves</text>
+<circle class="puce" cx="44" cy="604.5" r="2.5"/><text class="ligne" x="56" y="609">Note technique simulée</text>
+<rect class="preuve" x="36" y="626" width="318" height="32" rx="8"/><text class="preuve-t" x="48" y="647">Cas réel&#160;: 53 à 83 sur 100</text>
+<line class="filet-h" x1="38" y1="672" x2="352" y2="672"/>
+<circle class="humain" cx="46" cy="686" r="4"/><path class="humain" d="M39 700 Q39 692 46 692 Q53 692 53 700 Z"/>
+<text class="humain-t" x="60" y="697">Le DG décide go ou no-go</text>
+</g>
+
+<line class="fleche" x1="195" y1="716" x2="195" y2="738"/><polygon class="pointe" points="190,738 195,746 200,738"/>
+<circle class="flux f2" cx="195" cy="718" r="4"/>
+
+<g class="e3">
+<rect class="carte" x="20" y="748" width="350" height="272" rx="12"/>
+<circle class="num" cx="54" cy="782" r="16"/><text class="num-t" x="54" y="786.5">III</text>
+<text class="nom" x="80" y="779">Offre</text>
+<text class="verbe" x="80" y="798">Rédiger et produire</text>
+<line class="filet" x1="38" y1="816" x2="352" y2="816"/>
+<circle class="puce" cx="44" cy="837.5" r="2.5"/><text class="ligne" x="56" y="842">Plan calqué sur la grille</text>
+<circle class="puce" cx="44" cy="862.5" r="2.5"/><text class="ligne" x="56" y="867">Technique et financier liés</text>
+<circle class="puce" cx="44" cy="887.5" r="2.5"/><text class="ligne" x="56" y="892">Word et PDF à la charte, Gantt</text>
+<circle class="puce" cx="44" cy="912.5" r="2.5"/><text class="ligne" x="56" y="917">Chaque page contrôlée</text>
+<rect class="preuve" x="36" y="934" width="318" height="32" rx="8"/><text class="preuve-t" x="48" y="955">115 pages en 13 versions</text>
+<line class="filet-h" x1="38" y1="980" x2="352" y2="980"/>
+<circle class="humain" cx="46" cy="994" r="4"/><path class="humain" d="M39 1008 Q39 1000 46 1000 Q53 1000 53 1008 Z"/>
+<text class="humain-t" x="60" y="1005">Le DG valide le prix</text>
+</g>
+
+<line class="fleche" x1="195" y1="1024" x2="195" y2="1046"/><polygon class="pointe" points="190,1046 195,1054 200,1046"/>
+<circle class="flux f3" cx="195" cy="1026" r="4"/>
+
+<g class="e4">
+<rect class="carte" x="20" y="1056" width="350" height="272" rx="12"/>
+<circle class="num" cx="54" cy="1090" r="16"/><text class="num-t" x="54" y="1094.5">IV</text>
+<text class="nom" x="80" y="1087">Suivi</text>
+<text class="verbe" x="80" y="1106">Sécuriser le dépôt</text>
+<line class="filet" x1="38" y1="1124" x2="352" y2="1124"/>
+<circle class="puce" cx="44" cy="1145.5" r="2.5"/><text class="ligne" x="56" y="1150">12 questions d'éclaircissement</text>
+<circle class="puce" cx="44" cy="1170.5" r="2.5"/><text class="ligne" x="56" y="1175">Dépôt&#160;: 16 points par gravité</text>
+<circle class="puce" cx="44" cy="1195.5" r="2.5"/><text class="ligne" x="56" y="1200">Étiquettes, calendrier, pièces</text>
+<circle class="puce" cx="44" cy="1220.5" r="2.5"/><text class="ligne" x="56" y="1225">Registre&#160;: déposée, gagnée…</text>
+<rect class="preuve" x="36" y="1242" width="318" height="32" rx="8"/><text class="preuve-t" x="48" y="1263">7 points bloquants repérés</text>
+<line class="filet-h" x1="38" y1="1288" x2="352" y2="1288"/>
+<circle class="humain" cx="46" cy="1302" r="4"/><path class="humain" d="M39 1316 Q39 1308 46 1308 Q53 1308 53 1316 Z"/>
+<text class="humain-t" x="60" y="1313">Le DG signe et dépose</text>
+</g>
+
+<path class="boucle" d="M372 1192 H386 Q394 1192 394 1184 V276 Q394 268 386 268 H384"/>
+<polygon class="boucle-pointe" points="384,262 374,268 384,274"/>
+<rect class="etiquette" x="20" y="1350" width="380" height="52" rx="12"/>
+<text class="etiquette-t" x="210" y="1371">Boucle d'apprentissage&#160;: chaque retour de la</text>
+<text class="etiquette-t" x="210" y="1390">direction devient une règle (25 à ce jour)</text>
+<text class="outils" x="210" y="1430">Claude Code · 7 scripts Python · 10 fichiers de connaissances</text>
+<text class="outils" x="210" y="1449">15 cas de test · aucun envoi sans accord</text>
+</svg>
