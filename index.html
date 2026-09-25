@@ -3,22 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Abasse Nitiema — Développement international, Innovation IA & Communication</title>
-<meta name="description" content="Portfolio d'Abasse Nitiema, Responsable de la Prospection Internationale et de l'Innovation chez Building Business. 16 marchés remportés, un agent IA qui monte les offres d'appels d'offres. Burkina Faso, Niger, Guinée.">
+<title>Abasse Nitiema · Développement international, marketing digital et IA appliquée</title>
+<meta name="description" content="Portfolio d'Abasse Nitiema, Responsable de la Prospection Internationale et de l'Innovation chez Building Business. Prospection, appels d'offres (16 marchés remportés), communication et marketing digital, et deux systèmes IA en production.">
 <link rel="canonical" href="https://abasse-nitiema.github.io/">
 <meta name="theme-color" content="#0E1B2E">
 
 <meta property="og:type" content="profile">
-<meta property="og:title" content="Abasse Nitiema — Développement international, Innovation IA & Communication">
-<meta property="og:description" content="Responsable de la Prospection Internationale et de l'Innovation chez Building Business (ISO 9001 / ISO 21001). 16 marchés remportés, un agent IA qui monte les offres, communication digitale. Ouagadougou, Burkina Faso.">
+<meta property="og:title" content="Abasse Nitiema · Développement international, marketing digital et IA appliquée">
+<meta property="og:description" content="16 marchés remportés au Burkina Faso, au Niger et en Guinée. Deux systèmes IA en production : un agent qui monte les offres d'appels d'offres, une chaîne éditoriale du site aux réseaux sociaux.">
 <meta property="og:url" content="https://abasse-nitiema.github.io/">
-<meta property="og:image" content="https://abasse-nitiema.github.io/assets/captures/schema-processus-kit-DG.jpg">
+<meta property="og:image" content="https://abasse-nitiema.github.io/assets/og-abasse-nitiema.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:locale" content="fr_FR">
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Abasse Nitiema — Développement international, Innovation IA & Communication">
-<meta name="twitter:description" content="Responsable de la Prospection Internationale et de l'Innovation chez Building Business. 16 marchés remportés. Burkina Faso, Niger, Guinée.">
-<meta name="twitter:image" content="https://abasse-nitiema.github.io/assets/captures/schema-processus-kit-DG.jpg">
+<meta name="twitter:title" content="Abasse Nitiema · Développement international, marketing digital et IA appliquée">
+<meta name="twitter:description" content="16 marchés remportés. Deux systèmes IA en production : montage des offres et chaîne éditoriale.">
+<meta name="twitter:image" content="https://abasse-nitiema.github.io/assets/og-abasse-nitiema.png">
 
 <script type="application/ld+json">
 {
@@ -34,16 +36,16 @@
     "@type": "Organization",
     "name": "Building Business",
     "url": "https://building-business.net/index.php/fr/",
-    "description": "Cabinet de conseil, formation et études certifié ISO 9001 et ISO 21001, présent au Burkina Faso, au Maroc et en Côte d'Ivoire."
+    "description": "Cabinet de conseil, de formation et d'études certifié ISO 9001 et ISO 21001, présent au Burkina Faso, au Maroc et en Côte d'Ivoire."
   },
   "alumniOf": [
-    { "@type": "EducationalOrganization", "name": "Building Capacity Institute (BCI)", "description": "Master II, Management des entreprises et des organisations" },
-    { "@type": "EducationalOrganization", "name": "Université de l'Unité Africaine (IAM Ouaga)", "description": "Licence professionnelle, Communication d'entreprises" }
+    { "@type": "EducationalOrganization", "name": "Building Capacity Institute", "description": "Master II, Management des entreprises et des organisations" },
+    { "@type": "EducationalOrganization", "name": "Institut Africain de Management (Université de l'Unité Africaine)", "description": "Licence professionnelle, Communication d'entreprises" }
   ],
   "knowsAbout": [
     "Développement commercial international", "Appels d'offres et marchés publics", "Communication institutionnelle",
-    "Marketing digital", "Automatisation par l'IA", "Agents IA (Claude Code)", "Ingénierie de la formation",
-    "ISO 9001", "ISO 21001", "Make.com et n8n"
+    "Marketing digital", "Rédaction web et SEO", "Agents IA (Claude Code)", "Automatisation (Make.com, n8n, API)",
+    "Joomla et WordPress", "Ingénierie de la formation", "ISO 9001", "ISO 21001"
   ],
   "knowsLanguage": ["fr", "en"],
   "sameAs": ["https://linkedin.com/in/abasse-nitiema"]
@@ -65,7 +67,7 @@
   --signal-soft: rgba(95,184,160,0.14);
   --paper:#F2EFE9;
   --paper-dim:#AEB9C7;
-  --paper-faint:#7C889A;
+  --paper-faint:#8A95A6;
   --radius: 2px;
   --maxw: 1120px;
   --gutter: clamp(16px, 4vw, 32px);
@@ -83,288 +85,233 @@ body{
 }
 ::selection{ background:var(--sand); color:var(--ink); }
 a{ color:inherit; }
-img, svg, video, iframe{ max-width:100%; }
-img{ height:auto; display:block; }
+img, svg{ max-width:100%; }
 .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 var(--gutter); }
 h1,h2,h3{ font-family:var(--serif); font-weight:600; margin:0; color:var(--paper); overflow-wrap:anywhere; }
 p{ overflow-wrap:anywhere; }
 :focus-visible{ outline:2px solid var(--sand); outline-offset:3px; }
-.skip{
-  position:absolute; left:-999px; top:8px; z-index:100; background:var(--sand); color:var(--ink);
-  padding:10px 14px; font-family:var(--mono); font-size:12px; text-decoration:none;
-}
+.skip{ position:absolute; left:-999px; top:8px; z-index:100; background:var(--sand); color:var(--ink); padding:10px 14px; font-family:var(--mono); font-size:12px; text-decoration:none; }
 .skip:focus{ left:8px; }
 
-.eyebrow{
-  font-family:var(--mono); font-size:12px; letter-spacing:0.14em; text-transform:uppercase;
-  color:var(--sand); display:flex; align-items:center; gap:10px;
-}
+.eyebrow{ font-family:var(--mono); font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:var(--sand); display:flex; align-items:center; gap:10px; }
 .eyebrow::before{ content:""; width:22px; height:1px; background:var(--sand); display:inline-block; flex-shrink:0; }
 
 /* ---------- NAV ---------- */
-header.nav{
-  position:sticky; top:0; z-index:50;
-  background:rgba(14,27,46,0.86); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-  border-bottom:1px solid var(--line);
-}
-.nav-inner{
-  max-width:var(--maxw); margin:0 auto; padding:14px var(--gutter);
-  display:flex; align-items:center; justify-content:space-between; gap:16px;
-}
+header.nav{ position:sticky; top:0; z-index:50; background:rgba(14,27,46,0.88); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+.nav-inner{ max-width:var(--maxw); margin:0 auto; padding:14px var(--gutter); display:flex; align-items:center; justify-content:space-between; gap:16px; }
 .brand{ font-family:var(--serif); font-weight:600; font-size:18px; letter-spacing:0.01em; white-space:nowrap; text-decoration:none; }
 .brand span{ color:var(--sand); }
-.brand .tag{ color:var(--paper-dim); font-family:var(--mono); font-size:11.5px; font-weight:400; letter-spacing:0.04em; margin-left:6px; }
-nav.links{ display:flex; gap:clamp(12px, 1.6vw, 22px); }
-nav.links a{
-  text-decoration:none; color:var(--paper-dim); transition:color .2s ease;
-  font-family:var(--mono); font-size:12.5px; letter-spacing:0.03em; white-space:nowrap;
-  padding:4px 0; border-bottom:1px solid transparent;
-}
+nav.links{ display:flex; gap:clamp(14px, 1.8vw, 24px); }
+nav.links a{ text-decoration:none; color:var(--paper-dim); transition:color .2s ease; font-family:var(--mono); font-size:12.5px; letter-spacing:0.03em; white-space:nowrap; padding:4px 0; border-bottom:1px solid transparent; }
 nav.links a:hover, nav.links a.active{ color:var(--sand); }
 nav.links a.active{ border-bottom-color:var(--sand); }
 .nav-right{ display:flex; align-items:center; gap:12px; }
-.nav-cta{
-  border:1px solid var(--sand); color:var(--sand); padding:8px 16px; text-decoration:none;
-  font-family:var(--mono); font-size:12px; letter-spacing:0.05em; transition: all .2s ease; white-space:nowrap;
-}
+.nav-cta{ border:1px solid var(--sand); color:var(--sand); padding:8px 16px; text-decoration:none; font-family:var(--mono); font-size:12px; letter-spacing:0.05em; transition:all .2s ease; white-space:nowrap; }
 .nav-cta:hover{ background:var(--sand); color:var(--ink); }
-.lang-switch{
-  display:flex; border:1px solid var(--line); font-family:var(--mono);
-  font-size:11.5px; letter-spacing:0.04em; overflow:hidden; flex-shrink:0;
-}
-.lang-switch button{
-  background:transparent; border:none; color:var(--paper-faint); padding:7px 11px; cursor:pointer;
-  font-family:inherit; font-size:inherit; letter-spacing:inherit; transition: all .2s ease; min-height:34px;
-}
+.lang-switch{ display:flex; border:1px solid var(--line); font-family:var(--mono); font-size:11.5px; letter-spacing:0.04em; overflow:hidden; flex-shrink:0; }
+.lang-switch button{ background:transparent; border:none; color:var(--paper-faint); padding:7px 11px; cursor:pointer; font-family:inherit; font-size:inherit; letter-spacing:inherit; transition:all .2s ease; min-height:34px; }
 .lang-switch button.active{ background:var(--sand); color:var(--ink); font-weight:600; }
 .lang-switch button:not(.active):hover{ color:var(--paper); }
-.burger{
-  display:none; background:transparent; border:1px solid var(--line); color:var(--paper);
-  width:42px; height:38px; cursor:pointer; padding:0; align-items:center; justify-content:center; flex-direction:column; gap:5px;
-}
-.burger span{ display:block; width:18px; height:1.5px; background:currentColor; transition: transform .25s ease, opacity .2s ease; }
+.burger{ display:none; background:transparent; border:1px solid var(--line); color:var(--paper); width:42px; height:38px; cursor:pointer; padding:0; align-items:center; justify-content:center; flex-direction:column; gap:5px; }
+.burger span{ display:block; width:18px; height:1.5px; background:currentColor; transition:transform .25s ease, opacity .2s ease; }
 .burger[aria-expanded="true"] span:nth-child(1){ transform:translateY(6.5px) rotate(45deg); }
 .burger[aria-expanded="true"] span:nth-child(2){ opacity:0; }
 .burger[aria-expanded="true"] span:nth-child(3){ transform:translateY(-6.5px) rotate(-45deg); }
-.mobile-menu{
-  display:none; border-top:1px solid var(--line); background:rgba(14,27,46,0.98);
-}
+.mobile-menu{ display:none; border-top:1px solid var(--line); background:rgba(14,27,46,0.98); }
 .mobile-menu.open{ display:block; }
 .mobile-menu ul{ list-style:none; margin:0; padding:8px var(--gutter) 16px; }
-.mobile-menu a{
-  display:block; padding:13px 0; text-decoration:none; color:var(--paper);
-  font-family:var(--mono); font-size:14px; letter-spacing:0.03em; border-bottom:1px solid var(--line);
-}
+.mobile-menu a{ display:block; padding:13px 0; text-decoration:none; color:var(--paper); font-family:var(--mono); font-size:14px; letter-spacing:0.03em; border-bottom:1px solid var(--line); }
 .mobile-menu li:last-child a{ border-bottom:none; }
 .mobile-menu a.cta{ color:var(--sand); }
-@media (max-width:1280px){ .brand .tag{ display:none; } }
-@media (max-width:1100px){
-  nav.links{ display:none; }
-  .burger{ display:flex; }
-  .nav-cta{ display:none; }
-}
-@media (max-width:420px){
-  .nav-inner{ padding-top:12px; padding-bottom:12px; }
-  .brand{ font-size:16px; }
-}
+@media (max-width:1000px){ nav.links{ display:none; } .burger{ display:flex; } .nav-cta{ display:none; } }
+@media (max-width:420px){ .brand{ font-size:16px; } }
 
 /* ---------- BUTTONS ---------- */
-.btn-primary, .btn-ghost{
-  font-family:var(--mono); font-size:13px; letter-spacing:0.03em;
-  padding:13px 22px; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:8px;
-  transition: all .2s ease; border-radius:var(--radius); cursor:pointer; min-height:44px; text-align:center;
-}
+.btn-primary, .btn-ghost{ font-family:var(--mono); font-size:13px; letter-spacing:0.03em; padding:13px 22px; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; gap:8px; transition:all .2s ease; border-radius:var(--radius); cursor:pointer; min-height:44px; text-align:center; }
 .btn-primary{ background:var(--sand); color:var(--ink); font-weight:600; border:1px solid var(--sand); }
 .btn-primary:hover{ background:#f0bb75; transform:translateY(-1px); }
 .btn-ghost{ border:1px solid var(--line); color:var(--paper); background:transparent; }
 .btn-ghost:hover{ border-color:var(--paper-dim); }
-@media (max-width:480px){
-  .hero-ctas .btn-primary, .hero-ctas .btn-ghost, .contact-links .btn-primary, .contact-links .btn-ghost{ width:100%; }
-}
+@media (max-width:480px){ .hero-ctas a, .contact-links a{ width:100%; } }
 
 /* ---------- HERO ---------- */
-.hero{ padding:clamp(56px, 9vw, 96px) 0 clamp(40px, 6vw, 64px); position:relative; overflow:hidden; }
-.hero::before{
-  content:""; position:absolute; inset:0; pointer-events:none;
-  background:
-    radial-gradient(680px 420px at 82% -10%, rgba(227,168,87,0.10), transparent 60%),
-    radial-gradient(520px 360px at -10% 30%, rgba(95,184,160,0.08), transparent 60%);
-}
-.hero-grid{ display:grid; grid-template-columns: 1.15fr 0.85fr; gap:clamp(28px, 5vw, 56px); align-items:center; position:relative; }
-@media (max-width:900px){ .hero-grid{ grid-template-columns:1fr; } }
-.hero h1{ font-size:clamp(30px, 5.2vw, 54px); line-height:1.09; letter-spacing:-0.01em; margin:18px 0 22px; }
+.hero{ padding:clamp(52px, 8vw, 92px) 0 clamp(44px, 6vw, 64px); position:relative; overflow:hidden; }
+.hero::before{ content:""; position:absolute; inset:0; pointer-events:none;
+  background: radial-gradient(680px 420px at 82% -10%, rgba(227,168,87,0.10), transparent 60%), radial-gradient(520px 360px at -10% 30%, rgba(95,184,160,0.08), transparent 60%); }
+.hero-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:clamp(28px, 5vw, 56px); align-items:center; position:relative; }
+@media (max-width:920px){ .hero-grid{ grid-template-columns:1fr; } }
+.hero h1{ font-size:clamp(30px, 5vw, 52px); line-height:1.1; letter-spacing:-0.01em; margin:18px 0 22px; }
 .hero h1 em{ font-style:italic; color:var(--sand); font-weight:500; }
-.hero p.lead{ font-size:clamp(15.5px, 1.8vw, 17px); color:var(--paper-dim); max-width:52ch; margin:0 0 30px; }
+.hero p.lead{ font-size:clamp(15.5px, 1.8vw, 17px); color:var(--paper-dim); max-width:54ch; margin:0 0 30px; }
+.hero p.lead strong{ color:var(--paper); font-weight:600; }
 .hero-ctas{ display:flex; gap:12px; flex-wrap:wrap; }
-.hero-proof{
-  margin:26px 0 0; font-family:var(--mono); font-size:12px; color:var(--paper-faint); letter-spacing:0.02em; line-height:1.7; max-width:60ch;
-}
-.hero-proof a{ color:var(--signal); text-decoration:none; border-bottom:1px solid rgba(95,184,160,0.4); }
-.hero-proof a:hover{ border-bottom-color:var(--signal); }
-.hero-proof .dot{ display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--signal); box-shadow:0 0 0 4px var(--signal-soft); margin-right:12px; vertical-align:middle; }
 
-.chain-card{ background:var(--panel); border:1px solid var(--line); padding:22px 18px 18px; position:relative; }
-@media (min-width:600px){ .chain-card{ padding:26px 22px 22px; } }
-.chain-card .cap{ font-family:var(--mono); font-size:11px; color:var(--paper-faint); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:18px; }
+/* map card: one method, two systems */
+.map{ background:var(--panel); border:1px solid var(--line); padding:clamp(18px, 3vw, 24px); position:relative; }
+.map .cap{ font-family:var(--mono); font-size:11px; color:var(--paper-faint); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:18px; }
+.map-grid{ display:grid; grid-template-columns:1fr 1fr; gap:22px; position:relative; }
+@media (max-width:520px){ .map-grid{ grid-template-columns:1fr; } .flow{ display:none; } }
+.method{ list-style:none; margin:0; padding:0; display:grid; gap:8px; counter-reset:m; }
+.method li{ border:1px solid var(--line); background:rgba(14,27,46,0.55); padding:10px 12px 10px 40px; position:relative; font-size:13.5px; color:var(--paper); font-weight:600; line-height:1.3; }
+.method li::before{ counter-increment:m; content:counter(m, decimal-leading-zero); position:absolute; left:12px; top:11px; font-family:var(--mono); font-size:11px; color:var(--sand); font-weight:500; }
+.method li span{ display:block; font-family:var(--mono); font-size:10.5px; color:var(--paper-faint); font-weight:400; margin-top:3px; letter-spacing:0.02em; }
+.outputs{ display:grid; gap:10px; align-content:center; }
+.out{ background:var(--panel-2); border:1px solid var(--line); padding:14px 14px 13px; }
+.out.a{ border-left:2px solid var(--sand); }
+.out.b{ border-left:2px solid var(--signal); }
+.out .k{ font-family:var(--mono); font-size:10.5px; letter-spacing:0.08em; text-transform:uppercase; color:var(--sand); }
+.out.b .k{ color:var(--signal); }
+.out .t{ font-size:14px; font-weight:600; margin:5px 0 9px; color:var(--paper); }
+.out .n{ font-family:var(--serif); font-size:26px; line-height:1; color:var(--sand); font-weight:600; }
+.out.b .n{ color:var(--signal); }
+.out .s{ font-family:var(--mono); font-size:10.5px; color:var(--paper-faint); margin-top:6px; line-height:1.45; }
+.flow{ position:absolute; top:6px; bottom:6px; left:calc(50% - 1px); width:2px; background:repeating-linear-gradient(to bottom, rgba(242,239,233,0.20) 0 4px, transparent 4px 9px); pointer-events:none; }
+.flow i{ position:absolute; left:-2px; width:6px; height:6px; border-radius:50%; background:var(--sand); box-shadow:0 0 0 4px var(--sand-soft); animation:flow 3.6s linear infinite; }
+.flow i + i{ background:var(--signal); box-shadow:0 0 0 4px var(--signal-soft); animation-delay:1.8s; }
+@keyframes flow{ 0%{ top:0; opacity:0; } 8%{ opacity:1; } 92%{ opacity:1; } 100%{ top:calc(100% - 6px); opacity:0; } }
+@media (prefers-reduced-motion: reduce){ .flow i{ animation:none; top:50%; } }
+.loop{ margin-top:18px; border-top:1px dashed var(--line); padding-top:13px; font-family:var(--mono); font-size:11.5px; color:var(--paper-dim); line-height:1.55; }
+.loop b{ color:var(--signal); font-weight:600; margin-right:6px; }
+
+/* profile card */
+.brief{ background:var(--panel); border:1px solid var(--line); border-top:2px solid var(--sand); padding:clamp(20px, 3vw, 28px); }
+.brief .cap{ font-family:var(--mono); font-size:11px; color:var(--paper-faint); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:16px; }
+.brief dl{ margin:0; }
+.brief .row{ display:grid; grid-template-columns:96px 1fr; gap:14px; padding:12px 0; border-top:1px solid var(--line); }
+.brief .row:first-child{ border-top:none; padding-top:0; }
+.brief dt{ font-family:var(--mono); font-size:11px; color:var(--sand); text-transform:uppercase; letter-spacing:0.08em; padding-top:3px; }
+.brief dd{ margin:0; font-size:14.5px; color:var(--paper); line-height:1.5; }
+.brief dd span{ display:block; color:var(--paper-dim); font-size:13.5px; }
+.brief .status{ margin-top:16px; padding-top:14px; border-top:1px dashed var(--line); font-family:var(--mono); font-size:11.5px; color:var(--paper-dim); display:flex; align-items:center; gap:12px; line-height:1.5; }
+.brief .status i{ width:7px; height:7px; border-radius:50%; background:var(--signal); box-shadow:0 0 0 4px var(--signal-soft); flex-shrink:0; }
+@media (max-width:420px){ .brief .row{ grid-template-columns:1fr; gap:4px; } }
+
+/* systems intro: method + transposable */
+.sys-top{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(24px, 4vw, 48px); align-items:center; margin-bottom:clamp(26px, 3.4vw, 36px); }
+@media (max-width:920px){ .sys-top{ grid-template-columns:1fr; } }
+.sys-top .lead-p{ font-family:var(--serif); font-size:clamp(17px, 2vw, 20px); line-height:1.5; color:var(--paper); margin:0 0 22px; font-weight:400; }
+.sys-top .lead-p strong{ color:var(--sand); font-weight:600; }
+.trans .k{ font-family:var(--mono); font-size:11px; color:var(--paper-faint); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:10px; }
+.trans .pill-row{ display:flex; flex-wrap:wrap; gap:8px; }
+
+/* key figures */
+.band{ display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line); margin-top:clamp(40px, 6vw, 60px); position:relative; }
+@media (max-width:760px){ .band{ grid-template-columns:repeat(2,1fr); } }
+.band .kpi{ background:var(--panel); padding:20px 18px; }
+.kpi .n{ font-family:var(--serif); font-size:clamp(28px, 3.4vw, 36px); color:var(--sand); font-weight:600; line-height:1; }
+.kpi .n small{ font-size:0.5em; color:var(--paper-dim); font-weight:500; margin-left:4px; }
+.kpi .n small:first-child{ margin-left:0; margin-right:6px; }
+.kpi .l{ font-family:var(--mono); font-size:11px; color:var(--paper-faint); margin-top:9px; letter-spacing:0.02em; line-height:1.45; }
+
+/* ---------- SECTIONS ---------- */
+section{ padding:clamp(56px, 7vw, 84px) 0; border-top:1px solid var(--line); }
+section.first{ border-top:none; }
+.section-head{ margin-bottom:clamp(26px, 4vw, 40px); }
+.section-head h2{ font-size:clamp(24px, 3.2vw, 34px); margin-top:10px; line-height:1.15; }
+.section-head p.intro{ color:var(--paper-dim); max-width:64ch; margin:14px 0 0; font-size:15.5px; }
+
+/* ---------- SYSTEMS ---------- */
+#systemes{ position:relative; }
+#systemes::before{ content:""; position:absolute; inset:0; pointer-events:none; background:radial-gradient(900px 500px at 50% 0%, rgba(95,184,160,0.06), transparent 65%); }
+#systemes .wrap{ position:relative; }
+.sys-grid{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(18px, 2.4vw, 26px); }
+@media (max-width:920px){ .sys-grid{ grid-template-columns:1fr; } }
+.sys-card{ background:var(--panel); border:1px solid var(--line); border-top:2px solid var(--sand); padding:clamp(22px, 3vw, 32px); display:flex; flex-direction:column; }
+.sys-card.b{ border-top-color:var(--signal); }
+.sys-card .tag{ font-family:var(--mono); font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--sand); }
+.sys-card.b .tag{ color:var(--signal); }
+.sys-card h3{ font-size:clamp(20px, 2.3vw, 23px); line-height:1.22; margin:10px 0 18px; }
+.sys-card h4{ font-family:var(--mono); font-size:11px; color:var(--paper-faint); text-transform:uppercase; letter-spacing:0.08em; margin:0 0 8px; font-weight:500; }
+.sys-card p{ color:var(--paper-dim); font-size:14.5px; margin:0 0 20px; }
+.built{ list-style:none; margin:0 0 22px; padding:0; }
+.built li{ font-size:14.5px; color:var(--paper-dim); padding:8px 0 8px 20px; position:relative; border-top:1px solid var(--line); }
+.built li:first-child{ border-top:none; padding-top:2px; }
+.built li::before{ content:"→"; position:absolute; left:0; color:var(--sand); font-size:13px; }
+.sys-card.b .built li::before{ color:var(--signal); }
+.built li:first-child::before{ top:2px; }
+.mini{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); margin:0 0 20px; }
+.mini div{ background:var(--panel-2); padding:14px 12px; }
+.mini .n{ font-family:var(--serif); font-size:clamp(22px, 2.6vw, 26px); color:var(--sand); font-weight:600; line-height:1; white-space:nowrap; }
+.sys-card.b .mini .n{ color:var(--signal); }
+.mini .n small{ font-size:0.55em; color:var(--paper-dim); font-weight:500; margin-left:3px; }
+.mini .l{ font-family:var(--mono); font-size:10.5px; color:var(--paper-faint); margin-top:7px; line-height:1.4; }
+@media (max-width:400px){ .mini{ grid-template-columns:1fr; } }
+.keep{ border-left:2px solid var(--signal); padding:2px 0 2px 14px; font-size:14px; color:var(--paper-dim); margin:0 0 22px; }
+.keep strong{ color:var(--paper); font-weight:600; }
+.stack{ margin-top:auto; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+.pill{ font-family:var(--mono); font-size:11px; color:var(--paper-dim); border:1px solid var(--line); padding:5px 10px; letter-spacing:0.02em; }
+.more{ color:var(--signal); font-family:var(--mono); font-size:12px; text-decoration:none; border-bottom:1px solid rgba(95,184,160,0.4); margin-left:auto; white-space:nowrap; }
+.more:hover{ border-bottom-color:var(--signal); }
+
+.also{ margin-top:clamp(22px, 3vw, 30px); display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line); border:1px solid var(--line); }
+@media (max-width:820px){ .also{ grid-template-columns:1fr; } }
+.also .cell{ background:var(--panel); padding:clamp(18px, 2.6vw, 24px); }
+.also .cell .k{ font-family:var(--mono); font-size:11px; color:var(--paper-faint); letter-spacing:0.08em; text-transform:uppercase; }
+.also .cell h3{ font-size:17px; margin:8px 0 8px; }
+.also .cell p{ font-size:14px; color:var(--paper-dim); margin:0; }
+.after{ margin-top:16px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap; font-family:var(--mono); font-size:11.5px; color:var(--paper-faint); line-height:1.55; }
+.after a{ color:var(--sand); text-decoration:none; border-bottom:1px solid rgba(227,168,87,0.4); }
+.after a:hover{ border-bottom-color:var(--sand); }
+.after .conf{ max-width:64ch; }
+
+/* ---------- ABOUT / TIMELINE ---------- */
+.about-grid{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(28px, 5vw, 60px); }
+@media (max-width:860px){ .about-grid{ grid-template-columns:1fr; } }
+.about-grid h2{ margin:14px 0 20px; font-size:clamp(22px, 3vw, 29px); line-height:1.2; }
+.about-grid p{ color:var(--paper-dim); margin:0 0 16px; }
+.about-grid p strong{ color:var(--paper); font-weight:600; }
+.timeline{ list-style:none; margin:0; padding:0; border-left:1px solid var(--line); }
+.timeline li{ position:relative; padding:0 0 26px 26px; }
+.timeline li:last-child{ padding-bottom:0; }
+.timeline li::before{ content:""; position:absolute; left:-5px; top:6px; width:9px; height:9px; border-radius:50%; background:var(--ink); border:2px solid var(--sand); }
+.timeline li.edu::before{ border-color:var(--signal); }
+.timeline .d{ font-family:var(--mono); font-size:11.5px; color:var(--sand); letter-spacing:0.04em; }
+.timeline li.edu .d{ color:var(--signal); }
+.timeline .t{ font-family:var(--serif); font-size:17px; color:var(--paper); font-weight:600; margin:4px 0 4px; line-height:1.3; }
+.timeline .x{ font-size:14px; color:var(--paper-dim); }
+
+/* ---------- HOW I WORK (chain) ---------- */
+.comp-top{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(24px, 4vw, 48px); align-items:center; margin-bottom:clamp(26px, 4vw, 40px); }
+@media (max-width:900px){ .comp-top{ grid-template-columns:1fr; } }
+.comp-top h2{ font-size:clamp(24px, 3.2vw, 34px); margin-top:10px; line-height:1.15; }
+.comp-top p.intro{ color:var(--paper-dim); max-width:56ch; margin:14px 0 0; font-size:15.5px; }
+.chain-card{ background:var(--panel); border:1px solid var(--line); padding:22px 18px 16px; }
+@media (min-width:600px){ .chain-card{ padding:24px 22px 18px; } }
+.chain-card .cap{ font-family:var(--mono); font-size:11px; color:var(--paper-faint); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:14px; }
 svg.chain{ width:100%; height:auto; display:block; }
 .chain-label{ font-family:var(--mono); font-size:10.5px; fill:var(--paper-dim); letter-spacing:0.02em; }
 .chain-node-label{ font-family:var(--sans); font-size:12.5px; fill:var(--paper); font-weight:600; }
-.pulse{ animation: pulse 3.4s linear infinite; }
+.pulse{ animation:pulse 3.4s linear infinite; }
 @keyframes pulse{ 0%{ offset-distance:0%; opacity:0; } 6%{ opacity:1; } 94%{ opacity:1; } 100%{ offset-distance:100%; opacity:0; } }
 @media (prefers-reduced-motion: reduce){ .pulse{ animation:none; opacity:0.9; } }
 
-/* ---------- SECTIONS ---------- */
-section{ padding:clamp(52px, 7vw, 78px) 0; border-top:1px solid var(--line); }
-section.first{ border-top:none; }
-.section-head{ display:flex; align-items:flex-end; justify-content:space-between; gap:24px; margin-bottom:clamp(26px, 4vw, 40px); flex-wrap:wrap; }
-.section-head h2{ font-size:clamp(24px, 3.2vw, 34px); margin-top:10px; line-height:1.15; }
-.section-head p.intro{ color:var(--paper-dim); max-width:60ch; margin:12px 0 0; font-size:15.5px; }
-
-/* ---------- ABOUT ---------- */
-.about-grid{ display:grid; grid-template-columns: 1fr 1fr; gap:clamp(28px, 5vw, 56px); }
-@media (max-width:820px){ .about-grid{ grid-template-columns:1fr; } }
-.about-grid h2{ margin:14px 0 20px; font-size:clamp(22px, 3vw, 28px); }
-.about-grid p{ color:var(--paper-dim); margin:0 0 16px; }
-.about-grid p strong{ color:var(--paper); font-weight:600; }
-.stat-list{ display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line); border:1px solid var(--line); align-self:start; }
-@media (max-width:400px){ .stat-list{ grid-template-columns:1fr; } }
-.stat{ background:var(--panel); padding:22px 20px; }
-.stat .n{ font-family:var(--serif); font-size:32px; color:var(--sand); font-weight:600; line-height:1; }
-.stat .l{ font-family:var(--mono); font-size:11px; color:var(--paper-faint); margin-top:8px; letter-spacing:0.02em; }
-
 /* ---------- PILLARS ---------- */
 .pillars{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); }
-@media (max-width:820px){ .pillars{ grid-template-columns:1fr; } }
+@media (max-width:860px){ .pillars{ grid-template-columns:1fr; } }
 .pillar{ background:var(--panel); padding:clamp(22px, 3vw, 30px) clamp(18px, 3vw, 26px); }
 .pillar .tag{ font-family:var(--mono); font-size:11px; color:var(--signal); letter-spacing:0.08em; text-transform:uppercase; margin-bottom:14px; display:block; }
-.pillar h3{ font-size:20px; margin-bottom:12px; }
-.pillar p{ font-size:14.5px; color:var(--paper-dim); margin:0 0 16px; }
+.pillar h3{ font-size:20px; margin-bottom:12px; line-height:1.25; }
 .pillar ul{ margin:0; padding:0; list-style:none; }
 .pillar li{ font-size:14.5px; color:var(--paper-dim); padding:8px 0 8px 18px; position:relative; border-top:1px solid var(--line); }
 .pillar li:first-child{ border-top:none; }
 .pillar li::before{ content:"→"; position:absolute; left:0; color:var(--sand); font-size:13px; }
 
-/* ---------- AI SYSTEMS (proof) ---------- */
-#systemes{ position:relative; }
-#systemes::before{
-  content:""; position:absolute; inset:0; pointer-events:none;
-  background: radial-gradient(900px 500px at 50% 0%, rgba(95,184,160,0.07), transparent 65%);
-}
-#systemes .wrap{ position:relative; }
-.proof-lead{ font-size:clamp(16px, 2vw, 19px); color:var(--paper); max-width:66ch; line-height:1.55; margin:0 0 34px; font-family:var(--serif); font-weight:400; }
-.proof-lead strong{ color:var(--sand); font-weight:600; }
-.kpis{ display:grid; grid-template-columns:repeat(5,1fr); gap:1px; background:var(--line); border:1px solid var(--line); margin-bottom:clamp(28px, 4vw, 44px); }
-@media (max-width:900px){ .kpis{ grid-template-columns:repeat(3,1fr); } }
-@media (max-width:560px){ .kpis{ grid-template-columns:repeat(2,1fr); } .kpis .kpi:last-child{ grid-column:1 / -1; } }
-.kpi{ background:var(--panel); padding:20px 18px; }
-.kpi .n{ font-family:var(--serif); font-size:clamp(26px, 3vw, 34px); color:var(--sand); font-weight:600; line-height:1; }
-.kpi .n small{ font-size:0.55em; color:var(--paper-dim); font-weight:500; margin-left:4px; }
-.kpi .l{ font-family:var(--mono); font-size:11px; color:var(--paper-faint); margin-top:8px; letter-spacing:0.02em; line-height:1.45; }
-
-.figure{ background:var(--panel); border:1px solid var(--line); padding:14px; margin:0; }
-.figure img{ width:100%; height:auto; display:block; border-radius:var(--radius); }
-.figure figcaption{ font-family:var(--mono); font-size:11.5px; color:var(--paper-faint); margin-top:12px; letter-spacing:0.02em; line-height:1.5; }
-.figure.schema{ padding:0; overflow:hidden; }
-.figure.schema picture, .figure.schema img{ width:100%; display:block; }
-.figure.schema figcaption{ padding:12px 16px 14px; border-top:1px solid var(--line); margin:0; }
-
-.proof-grid{ display:grid; grid-template-columns: 1.1fr 0.9fr; gap:clamp(24px, 4vw, 44px); margin-top:clamp(28px, 4vw, 44px); align-items:start; }
-@media (max-width:900px){ .proof-grid{ grid-template-columns:1fr; } }
-.case-study h3{ font-size:clamp(20px, 2.4vw, 24px); margin:0 0 18px; line-height:1.2; }
-.case-study h4{ font-family:var(--mono); font-size:11.5px; color:var(--signal); text-transform:uppercase; letter-spacing:0.08em; margin:26px 0 10px; font-weight:600; }
-.case-study h4:first-of-type{ margin-top:0; }
-.case-study p{ color:var(--paper-dim); font-size:15px; margin:0 0 12px; max-width:66ch; }
-.case-study p strong{ color:var(--paper); font-weight:600; }
-.steps{ list-style:none; margin:0; padding:0; counter-reset: step; display:grid; gap:1px; background:var(--line); border:1px solid var(--line); }
-.steps li{ background:var(--panel); padding:16px 18px 16px 58px; position:relative; font-size:14.5px; color:var(--paper-dim); }
-.steps li::before{
-  counter-increment: step; content: counter(step, upper-roman);
-  position:absolute; left:18px; top:16px; font-family:var(--serif); font-size:20px; color:var(--sand); font-weight:600; line-height:1;
-}
-.steps li strong{ color:var(--paper); display:block; margin-bottom:3px; font-weight:600; }
-.results{ list-style:none; margin:0; padding:0; }
-.results li{ font-size:14.5px; color:var(--paper-dim); padding:10px 0 10px 22px; position:relative; border-top:1px solid var(--line); }
-.results li:first-child{ border-top:none; }
-.results li::before{ content:"✓"; position:absolute; left:0; color:var(--signal); font-family:var(--mono); font-size:13px; top:11px; }
-.human{ border-left:2px solid var(--signal); padding:4px 0 4px 18px; margin:22px 0; }
-.human p{ margin:0; }
-
-.gallery{ display:grid; gap:18px; }
-.gallery .figure{ cursor:zoom-in; transition: border-color .2s ease, transform .2s ease; }
-.gallery .figure:hover{ border-color:var(--paper-dim); transform:translateY(-2px); }
-.gallery .figure:focus-within{ border-color:var(--sand); }
-.gallery button.zoom{ all:unset; display:block; width:100%; cursor:zoom-in; }
-.gallery button.zoom:focus-visible{ outline:2px solid var(--sand); outline-offset:3px; }
-.gallery .fig-head{ display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:10px; }
-.gallery .fig-head .k{ font-family:var(--mono); font-size:11px; color:var(--signal); text-transform:uppercase; letter-spacing:0.08em; }
-.gallery .fig-head .z{ font-family:var(--mono); font-size:11px; color:var(--paper-faint); }
-.note{ font-family:var(--mono); font-size:11.5px; color:var(--paper-faint); border:1px dashed var(--line); padding:12px 14px; line-height:1.55; }
-.note b{ color:var(--sand); font-weight:600; }
-
-.demo-box{ margin-top:clamp(28px, 4vw, 44px); background:linear-gradient(160deg, var(--panel-2), var(--panel)); border:1px solid var(--line); padding:clamp(20px, 3vw, 32px); }
-.demo-box .row{ display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap; }
-.demo-box h3{ font-size:clamp(19px, 2.3vw, 24px); margin:8px 0 8px; }
-.demo-box p{ color:var(--paper-dim); font-size:15px; margin:0; max-width:60ch; }
-.demo-box .actions{ display:flex; gap:12px; flex-wrap:wrap; }
-.demo-frame{ margin-top:24px; border:1px solid var(--line); background:var(--ink); display:none; }
-.demo-frame.open{ display:block; }
-.demo-frame iframe{ width:100%; height:min(1500px, 85vh); border:0; display:block; }
-@media (max-width:640px){ .demo-box .actions .btn-primary, .demo-box .actions .btn-ghost{ width:100%; } }
-
-.secondary{ margin-top:clamp(28px, 4vw, 44px); display:grid; grid-template-columns:1fr 1fr; gap:1px; background:var(--line); border:1px solid var(--line); }
-@media (max-width:820px){ .secondary{ grid-template-columns:1fr; } }
-.secondary .cell{ background:var(--panel); padding:clamp(20px, 3vw, 28px); }
-.secondary .cell h3{ font-size:18px; margin:10px 0 10px; }
-.secondary .cell p{ font-size:14.5px; color:var(--paper-dim); margin:0 0 10px; }
-.secondary .cell ul{ margin:0; padding:0; list-style:none; }
-.secondary .cell li{ font-size:14px; color:var(--paper-dim); padding:6px 0 6px 18px; position:relative; }
-.secondary .cell li::before{ content:"→"; position:absolute; left:0; color:var(--sand); font-size:13px; }
-
-/* ---------- LIGHTBOX ---------- */
-.lightbox{ border:none; padding:0; background:transparent; max-width:min(96vw, 1400px); width:auto; }
-.lightbox::backdrop{ background:rgba(6,12,22,0.92); backdrop-filter:blur(4px); }
-.lightbox .inner{ background:var(--panel); border:1px solid var(--line); padding:12px; }
-.lightbox img{ max-width:min(94vw, 1376px); max-height:80vh; width:auto; height:auto; object-fit:contain; display:block; margin:0 auto; }
-.lightbox .bar{ display:flex; justify-content:space-between; align-items:center; gap:14px; margin-top:10px; font-family:var(--mono); font-size:11.5px; color:var(--paper-dim); }
-.lightbox .close{ background:transparent; border:1px solid var(--line); color:var(--paper); font-family:var(--mono); font-size:12px; padding:8px 12px; cursor:pointer; min-height:36px; }
-.lightbox .close:hover{ border-color:var(--sand); color:var(--sand); }
-
-/* ---------- WORK CASES ---------- */
-.cases{ display:flex; flex-direction:column; gap:1px; background:var(--line); border:1px solid var(--line); }
-.case{ background:var(--panel); padding:clamp(22px, 3vw, 32px) clamp(18px, 3vw, 30px); display:grid; grid-template-columns: 200px 1fr; gap:30px; }
-@media (max-width:780px){ .case{ grid-template-columns:1fr; gap:14px; } }
-.case .meta{ font-family:var(--mono); font-size:11.5px; color:var(--paper-faint); }
-.case .meta .org{ color:var(--sand); display:block; margin-top:6px; font-size:12.5px; }
-@media (max-width:780px){ .case .meta{ display:flex; gap:10px; flex-wrap:wrap; align-items:baseline; } .case .meta .org{ margin-top:0; } }
-.case h3{ font-size:19px; margin-bottom:10px; }
-.case p{ color:var(--paper-dim); margin:0 0 14px; font-size:14.5px; max-width:62ch; }
-.case a.more{ color:var(--signal); font-family:var(--mono); font-size:12px; text-decoration:none; border-bottom:1px solid rgba(95,184,160,0.4); }
-.case a.more:hover{ border-bottom-color:var(--signal); }
-.pill-row{ display:flex; flex-wrap:wrap; gap:8px; }
-.pill{ font-family:var(--mono); font-size:11px; color:var(--paper-dim); border:1px solid var(--line); padding:5px 10px; letter-spacing:0.02em; }
-
-/* ---------- MANDATES TABLE ---------- */
+/* ---------- MANDATES ---------- */
 .table-wrap{ border:1px solid var(--line); background:var(--panel); }
 .mandates{ width:100%; border-collapse:collapse; font-size:14px; }
-.mandates th{
-  text-align:left; font-family:var(--mono); font-size:11px; color:var(--paper-faint);
-  text-transform:uppercase; letter-spacing:0.06em; padding:16px 18px; border-bottom:1px solid var(--line); font-weight:500;
-}
+.mandates th{ text-align:left; font-family:var(--mono); font-size:11px; color:var(--paper-faint); text-transform:uppercase; letter-spacing:0.06em; padding:16px 18px; border-bottom:1px solid var(--line); font-weight:500; }
 .mandates td{ padding:16px 18px; border-bottom:1px solid var(--line); color:var(--paper-dim); vertical-align:top; }
 .mandates tr:last-child td{ border-bottom:none; }
-.mandates td.org{ color:var(--paper); font-weight:600; }
+.mandates td.org{ color:var(--paper); font-weight:600; white-space:nowrap; }
 .mandates td.year{ font-family:var(--mono); font-size:12.5px; color:var(--sand); white-space:nowrap; }
+.table-note{ font-family:var(--mono); font-size:11.5px; color:var(--paper-faint); margin-top:14px; line-height:1.55; }
 @media (max-width:700px){
   .mandates thead{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
   .mandates, .mandates tbody, .mandates tr, .mandates td{ display:block; width:100%; }
-  .mandates tr{ border-bottom:1px solid var(--line); padding:14px 16px 16px; }
+  .mandates tr{ border-bottom:1px solid var(--line); padding:14px 16px 16px; display:flex; flex-direction:column; }
   .mandates tr:last-child{ border-bottom:none; }
-  .mandates td{ border:none; padding:4px 0; }
-  .mandates td::before{ content:attr(data-label); display:block; font-family:var(--mono); font-size:10.5px; color:var(--paper-faint); text-transform:uppercase; letter-spacing:0.06em; margin-bottom:2px; }
-  .mandates td.year{ order:-1; }
-  .mandates tr{ display:flex; flex-direction:column; }
-  .mandates td.year::before{ display:none; }
-  .mandates td.year{ padding-bottom:6px; }
+  .mandates td{ border:none; padding:3px 0; white-space:normal !important; }
+  .mandates td.year{ order:-1; padding-bottom:6px; }
 }
 
 /* ---------- TOOLS ---------- */
@@ -378,41 +325,31 @@ section.first{ border-top:none; }
 /* ---------- FAQ ---------- */
 .faq-list{ display:flex; flex-direction:column; gap:1px; background:var(--line); border:1px solid var(--line); }
 .faq-item{ background:var(--panel); }
-.faq-item summary{
-  padding:20px clamp(16px, 3vw, 26px); cursor:pointer; list-style:none;
-  display:flex; align-items:center; justify-content:space-between; gap:20px;
-  font-family:var(--serif); font-size:clamp(15.5px, 2vw, 17px); color:var(--paper);
-}
+.faq-item summary{ padding:20px clamp(16px, 3vw, 26px); cursor:pointer; list-style:none; display:flex; align-items:center; justify-content:space-between; gap:20px; font-family:var(--serif); font-size:clamp(15.5px, 2vw, 17px); color:var(--paper); }
 .faq-item summary::-webkit-details-marker{ display:none; }
-.faq-item summary::after{ content:"+"; font-family:var(--mono); color:var(--sand); font-size:20px; flex-shrink:0; transition: transform .2s ease; }
+.faq-item summary::after{ content:"+"; font-family:var(--mono); color:var(--sand); font-size:20px; flex-shrink:0; transition:transform .2s ease; }
 .faq-item[open] summary::after{ transform:rotate(45deg); }
-.faq-item .faq-a{ padding:0 clamp(16px, 3vw, 26px) 24px; color:var(--paper-dim); font-size:14.5px; max-width:70ch; }
+.faq-item .faq-a{ padding:0 clamp(16px, 3vw, 26px) 24px; color:var(--paper-dim); font-size:14.5px; max-width:72ch; }
 
-/* ---------- CONTACT / FOOTER ---------- */
-footer{ padding:clamp(52px, 7vw, 80px) 0 40px; border-top:1px solid var(--line); }
-.contact-box{ background: linear-gradient(160deg, var(--panel-2), var(--panel)); border:1px solid var(--line); padding:clamp(34px, 5vw, 56px) clamp(18px, 4vw, 48px); text-align:center; }
-.contact-box h2{ font-size:clamp(24px, 4vw, 38px); margin-bottom:16px; }
-.contact-box p{ color:var(--paper-dim); max-width:46ch; margin:0 auto 30px; }
+/* ---------- CONTACT ---------- */
+footer{ padding:clamp(56px, 7vw, 84px) 0 40px; border-top:1px solid var(--line); }
+.contact-box{ background:linear-gradient(160deg, var(--panel-2), var(--panel)); border:1px solid var(--line); padding:clamp(34px, 5vw, 56px) clamp(18px, 4vw, 48px); text-align:center; }
+.contact-box h2{ font-size:clamp(24px, 4vw, 38px); margin-bottom:16px; line-height:1.2; }
+.contact-box p{ color:var(--paper-dim); max-width:52ch; margin:0 auto 30px; }
 .contact-links{ display:flex; justify-content:center; gap:12px; flex-wrap:wrap; }
 .contact-links a{ overflow-wrap:anywhere; }
 .foot-meta{ display:flex; justify-content:space-between; margin-top:40px; flex-wrap:wrap; gap:12px; font-family:var(--mono); font-size:11.5px; color:var(--paper-faint); }
 
-/* ---------- REVEAL ---------- */
-.reveal{ opacity:0; transform:translateY(14px); transition: opacity .6s ease, transform .6s ease; }
+/* ---------- REVEAL / TOP ---------- */
+.reveal{ opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease; }
 .reveal.in{ opacity:1; transform:none; }
 @media (prefers-reduced-motion: reduce){ .reveal{ opacity:1; transform:none; transition:none; } }
-
-.to-top{
-  position:fixed; right:18px; bottom:18px; z-index:40; width:42px; height:42px;
-  border:1px solid var(--line); background:rgba(21,37,65,0.9); color:var(--paper); cursor:pointer;
-  font-family:var(--mono); font-size:14px; opacity:0; pointer-events:none; transition: opacity .25s ease;
-  display:flex; align-items:center; justify-content:center; backdrop-filter:blur(6px);
-}
+.to-top{ position:fixed; right:18px; bottom:18px; z-index:40; width:42px; height:42px; border:1px solid var(--line); background:rgba(21,37,65,0.9); color:var(--paper); cursor:pointer; font-family:var(--mono); font-size:14px; opacity:0; pointer-events:none; transition:opacity .25s ease; display:flex; align-items:center; justify-content:center; backdrop-filter:blur(6px); }
 .to-top.show{ opacity:1; pointer-events:auto; }
 .to-top:hover{ border-color:var(--sand); color:var(--sand); }
 
 @media print{
-  header.nav, .to-top, .burger, .lang-switch, .demo-box, .hero-proof{ display:none !important; }
+  header.nav, .to-top, .burger, .lang-switch, .flow{ display:none !important; }
   body{ background:#fff; color:#000; }
   .reveal{ opacity:1; transform:none; }
 }
@@ -423,12 +360,11 @@ footer{ padding:clamp(52px, 7vw, 80px) 0 40px; border-top:1px solid var(--line);
 
 <header class="nav">
   <div class="nav-inner">
-    <a class="brand" href="#top">NITIEMA <span>·</span> <span class="tag" data-i18n="nav-tagline">prospection · innovation · communication</span></a>
+    <a class="brand" href="#top">NITIEMA <span>·</span></a>
     <nav class="links" aria-label="Navigation principale">
-      <a href="#apropos" data-i18n="nav-apropos">À propos</a>
+      <a href="#parcours" data-i18n="nav-parcours">Parcours</a>
       <a href="#competences" data-i18n="nav-competences">Compétences</a>
-      <a href="#systemes" data-i18n="nav-systemes">Preuves IA</a>
-      <a href="#realisations" data-i18n="nav-realisations">Réalisations</a>
+      <a href="#systemes" data-i18n="nav-systemes">IA appliquée</a>
       <a href="#missions" data-i18n="nav-missions">Missions</a>
       <a href="#outils" data-i18n="nav-outils">Outils</a>
       <a href="#faq" data-i18n="nav-faq">FAQ</a>
@@ -439,20 +375,16 @@ footer{ padding:clamp(52px, 7vw, 80px) 0 40px; border-top:1px solid var(--line);
         <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
       </div>
       <a class="nav-cta" href="#contact" data-i18n="nav-contact">Me contacter</a>
-      <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
     </div>
   </div>
   <div class="mobile-menu" id="mobile-menu">
     <ul>
-      <li><a href="#apropos" data-i18n="nav-apropos">À propos</a></li>
+      <li><a href="#parcours" data-i18n="nav-parcours">Parcours</a></li>
       <li><a href="#competences" data-i18n="nav-competences">Compétences</a></li>
-      <li><a href="#systemes" data-i18n="nav-systemes">Preuves IA</a></li>
-      <li><a href="#realisations" data-i18n="nav-realisations">Réalisations</a></li>
+      <li><a href="#systemes" data-i18n="nav-systemes">IA appliquée</a></li>
       <li><a href="#missions" data-i18n="nav-missions">Missions</a></li>
       <li><a href="#outils" data-i18n="nav-outils">Outils</a></li>
-      <li><a href="#presence" data-i18n="nav-presence">Présence</a></li>
       <li><a href="#faq" data-i18n="nav-faq">FAQ</a></li>
       <li><a href="#contact" class="cta" data-i18n="nav-contact">Me contacter</a></li>
     </ul>
@@ -463,323 +395,277 @@ footer{ padding:clamp(52px, 7vw, 80px) 0 40px; border-top:1px solid var(--line);
 
 <!-- ================= HERO ================= -->
 <section class="hero first" id="top">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="eyebrow">Abasse Nitiema, Ouagadougou, Burkina Faso</div>
-      <h1 data-i18n="hero-h1">Je pilote la prospection internationale <em>et je construis les systèmes IA</em> qui font gagner les marchés.</h1>
-      <p class="lead" data-i18n="hero-lead">Sept ans en cabinet certifié ISO, au croisement de trois métiers : développement commercial par appels d'offres (16 marchés remportés), communication et marketing digital, et application de l'IA aux enjeux métier. Ma conviction : la valeur de l'IA tient à l'orchestration, pas à l'outil.</p>
-      <div class="hero-ctas">
-        <a class="btn-primary" href="#systemes" data-i18n="hero-cta-primary">Voir l'agent IA au travail</a>
-        <a class="btn-ghost" href="#contact" data-i18n="hero-cta-contact">Discuter d'une collaboration</a>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Abasse Nitiema · Ouagadougou, Burkina Faso</div>
+        <h1 data-i18n="hero-h1">Je fais gagner des marchés <em>et j'outille le travail par l'IA</em>, de la prospection au marketing digital.</h1>
+        <p class="lead" data-i18n="hero-lead">Responsable de la Prospection Internationale et de l'Innovation chez <strong>Building Business</strong>, cabinet certifié ISO&nbsp;9001 et ISO&nbsp;21001. Depuis 2019, je travaille au croisement de trois métiers&nbsp;: la prospection et les appels d'offres, la communication et le marketing digital, et l'IA appliquée aux processus des organisations.</p>
+        <div class="hero-ctas">
+          <a class="btn-primary" href="assets/CV_Abasse_NITIEMA.pdf" target="_blank" rel="noopener" data-i18n="hero-cta1">Télécharger le CV (PDF)</a>
+          <a class="btn-ghost" href="#parcours" data-i18n="hero-cta2">Voir mon parcours</a>
+        </div>
       </div>
-      <p class="hero-proof"><span class="dot" aria-hidden="true"></span><span data-i18n="hero-proof">Cas réel, septembre 2026 : une offre de 115 pages montée par un agent IA en 4 jours — </span><a href="#systemes" data-i18n="hero-proof-link">preuves ci-dessous</a></p>
+
+      <aside class="brief" aria-labelledby="brief-cap">
+        <div class="cap" id="brief-cap" data-i18n="br-cap">En bref</div>
+        <dl>
+          <div class="row"><dt data-i18n="br-l1">Poste</dt><dd data-i18n="br-v1">Responsable de la Prospection Internationale et de l'Innovation<span>Building Business, depuis septembre 2026</span></dd></div>
+          <div class="row"><dt data-i18n="br-l2">Métiers</dt><dd data-i18n="br-v2">Prospection et appels d'offres<span>Communication et marketing digital · IA appliquée</span></dd></div>
+          <div class="row"><dt data-i18n="br-l3">Terrain</dt><dd data-i18n="br-v3">Burkina Faso, Niger, Guinée<span>institutions publiques, entreprises, bailleurs internationaux</span></dd></div>
+          <div class="row"><dt data-i18n="br-l4">Formation</dt><dd data-i18n="br-v4">Master II, Management des organisations<span>PECB ISO&nbsp;9001 Provisional Auditor</span></dd></div>
+          <div class="row"><dt data-i18n="br-l5">Langues</dt><dd data-i18n="br-v5">Français · anglais professionnel · mooré</dd></div>
+        </dl>
+        <div class="status"><i aria-hidden="true"></i><span data-i18n="br-status">Ouvert aux opportunités, au Burkina Faso et à l'international</span></div>
+      </aside>
     </div>
 
-    <div class="chain-card">
-      <div class="cap" data-i18n="chain-cap">Comment je travaille : une chaîne, pas des tâches isolées</div>
-      <svg class="chain" viewBox="0 0 460 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chaîne veille, offre, automatisation, suivi">
-        <path id="chainpath" d="M40,40 C120,40 90,120 170,120 S220,200 300,200 S380,120 420,120" fill="none" stroke="rgba(242,239,233,0.18)" stroke-width="1.5" stroke-dasharray="3 5"/>
-        <circle r="3.2" fill="#E3A857" class="pulse" style="offset-path:path('M40,40 C120,40 90,120 170,120 S220,200 300,200 S380,120 420,120'); offset-rotate:0deg;"/>
-        <circle r="3.2" fill="#5FB8A0" class="pulse" style="offset-path:path('M40,40 C120,40 90,120 170,120 S220,200 300,200 S380,120 420,120'); offset-rotate:0deg; animation-delay:1.7s;"/>
-        <g>
-          <circle cx="40" cy="40" r="7" fill="#0E1B2E" stroke="#E3A857" stroke-width="2"/>
-          <text x="40" y="20" text-anchor="middle" class="chain-node-label" data-i18n="chain-strategie">Veille</text>
-          <text x="40" y="65" text-anchor="middle" class="chain-label" data-i18n="chain-strategie-sub">marchés · AO</text>
-        </g>
-        <g>
-          <circle cx="170" cy="120" r="7" fill="#0E1B2E" stroke="#E3A857" stroke-width="2"/>
-          <text x="170" y="100" text-anchor="middle" class="chain-node-label" data-i18n="chain-contenu">Offre</text>
-          <text x="170" y="145" text-anchor="middle" class="chain-label" data-i18n="chain-contenu-sub">technique · financière</text>
-        </g>
-        <g>
-          <circle cx="300" cy="200" r="7" fill="#0E1B2E" stroke="#5FB8A0" stroke-width="2"/>
-          <text x="300" y="225" text-anchor="middle" class="chain-node-label" data-i18n="chain-automatisation">Automatisation</text>
-          <text x="300" y="245" text-anchor="middle" class="chain-label">Agents IA · API</text>
-        </g>
-        <g>
-          <circle cx="420" cy="120" r="7" fill="#0E1B2E" stroke="#5FB8A0" stroke-width="2"/>
-          <text x="420" y="100" text-anchor="middle" class="chain-node-label" data-i18n="chain-mesure">Suivi</text>
-          <text x="420" y="145" text-anchor="middle" class="chain-label" data-i18n="chain-mesure-sub">mise en œuvre · KPI</text>
-        </g>
-      </svg>
+    <div class="band" role="list">
+      <div class="kpi" role="listitem"><div class="n">16</div><div class="l" data-i18n="k1">marchés remportés au Burkina Faso, au Niger et en Guinée</div></div>
+      <div class="kpi" role="listitem"><div class="n"><small data-i18n="k2u">depuis</small> 2019</div><div class="l" data-i18n="k2">en cabinet de conseil et de formation certifié ISO</div></div>
+      <div class="kpi" role="listitem"><div class="n">100+</div><div class="l" data-i18n="k3">sessions de formation supervisées en qualité</div></div>
+      <div class="kpi" role="listitem"><div class="n">11</div><div class="l" data-i18n="k4">formations animées en digital, marketing et IA</div></div>
     </div>
   </div>
 </section>
 
-<!-- ================= ABOUT ================= -->
-<section id="apropos">
+<!-- ================= BACKGROUND ================= -->
+<section id="parcours">
   <div class="wrap about-grid">
     <div class="reveal">
-      <div class="eyebrow" data-i18n="about-eyebrow">À propos</div>
-      <h2 data-i18n="about-h2">Un pied dans la rigueur institutionnelle, un pied dans l'outillage moderne.</h2>
-      <p data-i18n="about-p1">Depuis septembre 2026, je pilote le <strong>Service de Prospection Internationale et d'Innovation (SPII)</strong> de <strong>Building Business</strong>, cabinet de conseil, formation et études certifié <strong>ISO 9001</strong> et <strong>ISO 21001</strong>, présent au Burkina Faso, au Maroc et en Côte d'Ivoire. Ce service, rattaché à la Direction Générale, est en charge du développement commercial international, des appels d'offres et des solutions d'automatisation IA.</p>
-      <p data-i18n="about-p2">Depuis 2019, j'ai construit une double compétence : écrire pour des partenaires exigeants (agences de développement, ministères, bailleurs internationaux) et structurer des dossiers d'appels d'offres qui tiennent la route — <strong>16 marchés remportés</strong> en autonomie au Burkina Faso, au Niger et en Guinée. En parallèle, j'ai développé ma propre pratique de l'automatisation : agents IA, Make.com, API Brevo et Mailchimp, pour que la partie répétitive du métier libère du temps pour la stratégie.</p>
-      <p data-i18n="about-p3">Titulaire d'un <strong>Master II en management des entreprises et des organisations</strong> (Building Capacity Institute, 2022 — mémoire soutenu en 2025 sur l'adaptation stratégique de la communication digitale aux technologies modernes), je continue à documenter cette approche comme fil conducteur de mon travail.</p>
+      <div class="eyebrow" data-i18n="par-eyebrow">Parcours</div>
+      <h2 data-i18n="par-h2">Un pied dans la rigueur institutionnelle, un pied dans l'outillage moderne.</h2>
+      <p data-i18n="par-p1">Depuis septembre 2026, je pilote le <strong>Service de Prospection Internationale et d'Innovation</strong> de Building Business, rattaché à la Direction Générale&nbsp;: développement commercial hors Burkina, appels d'offres internationaux et adoption de l'IA dans les pratiques du cabinet.</p>
+      <p data-i18n="par-p2">De 2019 à 2026, Responsable Communication, en charge aussi du marketing digital&nbsp;: <strong>16 marchés remportés</strong> en autonomie auprès d'institutions publiques, d'entreprises et de bailleurs internationaux, pilotage du site, des réseaux sociaux, des campagnes publicitaires et de l'emailing, et plus de 100 sessions de formation suivies en qualité.</p>
+      <p data-i18n="par-p3">Ma conviction&nbsp;: la valeur de l'IA ne tient pas à l'outil, mais à la capacité d'orchestrer des agents autour d'un problème métier réel et de transformer le savoir-faire d'une organisation en règles réutilisables.</p>
     </div>
-    <div class="stat-list reveal">
-      <div class="stat"><div class="n">16</div><div class="l" data-i18n="stat1-l">MARCHÉS REMPORTÉS — PUBLIC, PRIVÉ, BAILLEURS (2021–2026)</div></div>
-      <div class="stat"><div class="n">100+</div><div class="l" data-i18n="stat2-l">SESSIONS DE FORMATION SUPERVISÉES, SUIVI QUALITÉ (2019–2026)</div></div>
-      <div class="stat"><div class="n">11</div><div class="l" data-i18n="stat3-l">FORMATIONS ANIMÉES EN DIGITAL, MARKETING ET IA</div></div>
-      <div class="stat"><div class="n">3</div><div class="l" data-i18n="stat4-l">PAYS D'INTERVENTION : BURKINA FASO, NIGER, GUINÉE</div></div>
-    </div>
+    <ol class="timeline reveal">
+      <li>
+        <div class="d" data-i18n="t1-d">Depuis sept. 2026</div>
+        <div class="t" data-i18n="t1-t">Responsable de la Prospection Internationale et de l'Innovation</div>
+        <div class="x" data-i18n="t1-x">Building Business · service créé en 2026, rattaché à la Direction Générale</div>
+      </li>
+      <li>
+        <div class="d" data-i18n="t2-d">2019 à 2026</div>
+        <div class="t" data-i18n="t2-t">Responsable Communication</div>
+        <div class="x" data-i18n="t2-x">Building Business · 16 marchés remportés, 11 formations animées, pilote du processus Communication digitale du SMI ISO&nbsp;9001 et ISO&nbsp;21001</div>
+      </li>
+      <li class="edu">
+        <div class="d">2022</div>
+        <div class="t" data-i18n="t3-t">Master II, Management des entreprises et des organisations</div>
+        <div class="x" data-i18n="t3-x">Building Capacity Institute · mémoire soutenu en 2025 sur l'adaptation de la communication digitale aux technologies modernes</div>
+      </li>
+      <li class="edu">
+        <div class="d">2017</div>
+        <div class="t" data-i18n="t4-t">Licence professionnelle, Communication d'entreprises</div>
+        <div class="x" data-i18n="t4-x">Institut Africain de Management, Ouagadougou</div>
+      </li>
+      <li class="edu">
+        <div class="d">Certifications</div>
+        <div class="t" data-i18n="t5-t">PECB ISO 9001 Provisional Auditor (2019)</div>
+        <div class="x" data-i18n="t5-x">TeamBuilder Pro, architecte de dynamiques collectives (en cours, 2026)</div>
+      </li>
+    </ol>
   </div>
 </section>
 
 <!-- ================= SKILLS ================= -->
 <section id="competences">
   <div class="wrap">
-    <div class="section-head reveal">
-      <div>
+    <div class="comp-top">
+      <div class="reveal">
         <div class="eyebrow" data-i18n="comp-eyebrow">Ce que je fais</div>
         <h2 data-i18n="comp-h2">Trois compétences qui se renforcent l'une l'autre</h2>
+        <p class="intro" data-i18n="comp-intro">Je ne traite pas la prospection, le marketing et l'automatisation comme des tâches séparées&nbsp;: chaque étape alimente la suivante, du repérage d'une opportunité jusqu'à la mesure des résultats.</p>
+      </div>
+      <div class="chain-card reveal">
+        <div class="cap" data-i18n="chain-cap">Comment je travaille&nbsp;: une chaîne, pas des tâches isolées</div>
+        <svg class="chain" viewBox="0 0 470 262" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chaîne de travail : veille, offre, automatisation, suivi">
+          <path d="M40,40 C120,40 90,120 170,120 S220,200 290,200 S370,120 400,120" fill="none" stroke="rgba(242,239,233,0.18)" stroke-width="1.5" stroke-dasharray="3 5"/>
+          <circle r="3.2" fill="#E3A857" class="pulse" style="offset-path:path('M40,40 C120,40 90,120 170,120 S220,200 290,200 S370,120 400,120'); offset-rotate:0deg;"/>
+          <circle r="3.2" fill="#5FB8A0" class="pulse" style="offset-path:path('M40,40 C120,40 90,120 170,120 S220,200 290,200 S370,120 400,120'); offset-rotate:0deg; animation-delay:1.7s;"/>
+          <g>
+            <circle cx="40" cy="40" r="7" fill="#0E1B2E" stroke="#E3A857" stroke-width="2"/>
+            <text x="40" y="20" text-anchor="middle" class="chain-node-label" data-i18n="ch1">Veille</text>
+            <text x="6" y="65" text-anchor="start" class="chain-label" data-i18n="ch1s">marchés · tendances</text>
+          </g>
+          <g>
+            <circle cx="170" cy="120" r="7" fill="#0E1B2E" stroke="#E3A857" stroke-width="2"/>
+            <text x="170" y="100" text-anchor="middle" class="chain-node-label" data-i18n="ch2">Offre</text>
+            <text x="170" y="145" text-anchor="middle" class="chain-label" data-i18n="ch2s">appels d'offres · campagnes</text>
+          </g>
+          <g>
+            <circle cx="290" cy="200" r="7" fill="#0E1B2E" stroke="#5FB8A0" stroke-width="2"/>
+            <text x="290" y="228" text-anchor="middle" class="chain-node-label" data-i18n="ch3">Automatisation</text>
+            <text x="290" y="248" text-anchor="middle" class="chain-label" data-i18n="ch3s">agents IA · API</text>
+          </g>
+          <g>
+            <circle cx="400" cy="120" r="7" fill="#0E1B2E" stroke="#5FB8A0" stroke-width="2"/>
+            <text x="400" y="100" text-anchor="middle" class="chain-node-label" data-i18n="ch4">Suivi</text>
+            <text x="400" y="145" text-anchor="middle" class="chain-label" data-i18n="ch4s">mise en œuvre · KPI</text>
+          </g>
+        </svg>
       </div>
     </div>
     <div class="pillars reveal">
       <div class="pillar">
-        <span class="tag" data-i18n="pillar1-tag">01 · Développement</span>
-        <h3 data-i18n="pillar1-h3">Développement commercial & appels d'offres</h3>
+        <span class="tag" data-i18n="p1-tag">01 · Développement</span>
+        <h3 data-i18n="p1-h3">Développement commercial et appels d'offres</h3>
         <ul>
-          <li data-i18n="p1-li1">Veille sur les marchés publics, privés et bailleurs</li>
-          <li data-i18n="p1-li2">Qualification des opportunités et ciblage</li>
-          <li data-i18n="p1-li3">Montage complet des offres techniques et financières</li>
-          <li data-i18n="p1-li4">Coordination des missions du lancement au rapport final</li>
-          <li data-i18n="p1-li5">Prospection outillée par des agents IA</li>
+          <li data-i18n="p1-1">Veille sur les marchés publics, privés et bailleurs</li>
+          <li data-i18n="p1-2">Qualification des opportunités et simulation de note</li>
+          <li data-i18n="p1-3">Montage complet des offres techniques et financières</li>
+          <li data-i18n="p1-4">Coordination des missions, du lancement au rapport final</li>
         </ul>
       </div>
       <div class="pillar">
-        <span class="tag" data-i18n="pillar2-tag">02 · Communication</span>
-        <h3 data-i18n="pillar2-h3">Communication & marketing digital</h3>
+        <span class="tag" data-i18n="p2-tag">02 · Communication</span>
+        <h3 data-i18n="p2-h3">Communication et marketing digital</h3>
         <ul>
-          <li data-i18n="p2-li1">Stratégie de communication digitale</li>
-          <li data-i18n="p2-li2">Sites web WordPress et Joomla</li>
-          <li data-i18n="p2-li3">Publicité Meta, LinkedIn Ads, TikTok Ads</li>
-          <li data-i18n="p2-li4">LinkedIn Sales Navigator — prospection et formation équipe</li>
-          <li data-i18n="p2-li5">SEO, SEA et exploration du GEO (visibilité IA)</li>
-          <li data-i18n="p2-li6">Tableaux de bord, reporting et analytics</li>
+          <li data-i18n="p2-1">Stratégie de communication digitale</li>
+          <li data-i18n="p2-2">Rédaction web, SEO et déclinaison multicanale par pays</li>
+          <li data-i18n="p2-3">Vérification des faits aux sources primaires</li>
+          <li data-i18n="p2-4">Sites Joomla et WordPress, visuels conformes à la charte</li>
+          <li data-i18n="p2-5">Publicité Meta, LinkedIn et TikTok, Sales Navigator</li>
         </ul>
       </div>
       <div class="pillar">
-        <span class="tag" data-i18n="pillar3-tag">03 · Systèmes</span>
-        <h3 data-i18n="pillar3-h3">Automatisation & IA appliquée</h3>
+        <span class="tag" data-i18n="p3-tag">03 · Systèmes</span>
+        <h3 data-i18n="p3-h3">Automatisation et IA appliquée</h3>
         <ul>
-          <li data-i18n="p3-li1">Agents IA de bout en bout avec Claude Code (veille, qualification, offre, suivi)</li>
-          <li data-i18n="p3-li2">Chaînes de travail automatisées (Make.com, n8n, API)</li>
-          <li data-i18n="p3-li3">Campagnes email pilotées par l'API Brevo et Mailchimp</li>
-          <li data-i18n="p3-li4">Scripts de contrôle qualité des livrables (Python)</li>
-          <li data-i18n="p3-li5">Conception et animation de formations continues</li>
-          <li data-i18n="p3-li6">Pilotage de processus dans un SMI ISO 9001 / ISO 21001</li>
+          <li data-i18n="p3-1">Agents IA métier sur mesure avec Claude Code</li>
+          <li data-i18n="p3-2">Chaînes automatisées Make.com, n8n et API</li>
+          <li data-i18n="p3-3">Scripts de contrôle qualité en Python et PowerShell</li>
+          <li data-i18n="p3-4">Agents de navigation web, du site aux réseaux sociaux</li>
+          <li data-i18n="p3-5">Adoption par les équipes et formation continue</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= AI SYSTEMS — PROOF ================= -->
+<!-- ================= SYSTEMS ================= -->
 <section id="systemes">
   <div class="wrap">
     <div class="section-head reveal">
-      <div>
-        <div class="eyebrow" data-i18n="sys-eyebrow">Preuves à l'appui</div>
-        <h2 data-i18n="sys-h2">Des agents IA qui travaillent, pas des promesses</h2>
-        <p class="intro" data-i18n="sys-intro">Un cas réel, documenté et vérifiable : l'agent que j'ai conçu pour monter les offres d'appels d'offres, de la veille au dépôt.</p>
+      <div class="eyebrow" data-i18n="sys-eyebrow">IA appliquée</div>
+      <h2 data-i18n="sys-h2">Deux systèmes d'automatisation majeurs, une méthode transposable</h2>
+    </div>
+
+    <div class="sys-top">
+      <div class="reveal">
+        <p class="lead-p" data-i18n="sys-lead">La méthode ne dépend pas du métier&nbsp;: un processus décrit, des données de référence, des contrôles par script et une décision qui reste humaine. Je l'ai appliquée à deux processus lourds du cabinet, <strong>elle se transpose à tout processus métier ou de gouvernance</strong>.</p>
+        <div class="trans">
+          <div class="k" data-i18n="tr-k">Transposable, par exemple, à</div>
+          <div class="pill-row">
+            <span class="pill" data-i18n="tr1">Suivi-évaluation et reporting</span>
+            <span class="pill" data-i18n="tr2">Veille réglementaire</span>
+            <span class="pill" data-i18n="tr3">Documentation qualité ISO</span>
+            <span class="pill" data-i18n="tr4">Gestion des experts et des CV</span>
+            <span class="pill" data-i18n="tr5">Tableaux de bord de direction</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="map reveal" role="figure" aria-labelledby="map-cap">
+        <div class="cap" id="map-cap" data-i18n="map-cap">Une méthode, deux systèmes en production</div>
+        <div class="map-grid">
+          <ol class="method">
+            <li data-i18n="m1">Processus décrit<span>étapes, règles, livrables</span></li>
+            <li data-i18n="m2">Données de référence<span>références, charte, catalogue</span></li>
+            <li data-i18n="m3">Contrôle par script<span>chaque page, chaque visuel</span></li>
+            <li data-i18n="m4">Décision humaine<span>je valide, rien ne part seul</span></li>
+          </ol>
+          <span class="flow" aria-hidden="true"><i></i><i></i></span>
+          <div class="outputs">
+            <div class="out a">
+              <div class="k" data-i18n="o1-k">Système 01</div>
+              <div class="t" data-i18n="o1-t">Appels d'offres</div>
+              <div class="n">115 + 12 p.</div>
+              <div class="s" data-i18n="o1-s">offres technique et financière en 4 jours</div>
+            </div>
+            <div class="out b">
+              <div class="k" data-i18n="o2-k">Système 02</div>
+              <div class="t" data-i18n="o2-t">Marketing digital</div>
+              <div class="n" data-i18n="o2-n">3 canaux</div>
+              <div class="s" data-i18n="o2-s">site, LinkedIn, Facebook, 2 pays</div>
+            </div>
+          </div>
+        </div>
+        <div class="loop" data-i18n="loop"><b>↻</b>Chaque correction validée devient une règle que le système applique seul.</div>
       </div>
     </div>
 
-    <p class="proof-lead reveal" data-i18n="sys-lead">En quatre jours, j'ai conçu avec Claude Code un agent qui monte les offres d'un cabinet de conseil de Ouagadougou, du repérage de l'appel d'offres au dossier de dépôt. Sur son premier dossier réel, il a produit une <strong>proposition technique de 115 pages</strong>, contrôlée page par page, et chacune de mes corrections est devenue une règle qu'il applique seul.</p>
-
-    <div class="kpis reveal" role="list">
-      <div class="kpi" role="listitem"><div class="n">4 <small data-i18n="kpi1-u">jours</small></div><div class="l" data-i18n="kpi1-l">de la création de l'agent à l'offre prête à imprimer</div></div>
-      <div class="kpi" role="listitem"><div class="n">115 <small>pages</small></div><div class="l" data-i18n="kpi2-l">générées puis contrôlées automatiquement</div></div>
-      <div class="kpi" role="listitem"><div class="n">13 <small>versions</small></div><div class="l" data-i18n="kpi3-l">toutes régénérées depuis la source, sans retouche manuelle</div></div>
-      <div class="kpi" role="listitem"><div class="n">6<small>/ 8</small></div><div class="l" data-i18n="kpi4-l">références dont les pièces se contredisaient, signalées avant le dépôt</div></div>
-      <div class="kpi" role="listitem"><div class="n">25 <small data-i18n="kpi5-u">règles</small></div><div class="l" data-i18n="kpi5-l">issues de mes validations, intégrées à l'agent</div></div>
-    </div>
-
-    <figure class="figure schema reveal">
-      <picture>
-        <source media="(max-width: 760px)" srcset="assets/schema-chaine-IA-mobile.svg">
-        <img src="assets/schema-chaine-IA.svg" width="1200" height="500" loading="lazy" alt="Chaîne en quatre étapes pilotée par un agent IA : veille, qualification, offre, suivi, avec une boucle d'apprentissage et les décisions qui me restent réservées.">
-      </picture>
-      <figcaption data-i18n="schema-cap">Schéma — Chaîne en quatre étapes pilotée par l'agent : veille, qualification, offre, suivi. Boucle d'apprentissage et décisions humaines conservées. Chiffres réels du premier dossier (septembre 2026).</figcaption>
-    </figure>
-
-    <div class="proof-grid">
-      <article class="case-study reveal">
-        <h3 data-i18n="cs-h3">Un agent IA pour répondre aux appels d'offres, de la veille au dépôt</h3>
-
-        <h4 data-i18n="cs-h4-ctx">Contexte</h4>
-        <p data-i18n="cs-ctx">Un cabinet de formation, d'études et de conseil de Ouagadougou répond à des appels d'offres dans neuf pays d'Afrique de l'Ouest et du Centre, financés par les États ou par des bailleurs (Banque mondiale, AFD, Enabel, BAD, Union européenne, Nations unies). Une offre, c'est plus de cent pages montées en quelques jours : formulaires imposés, références à prouver pièce par pièce, CV, chronogrammes, prix cohérents avec la partie technique, et des dizaines de règles de présentation. Une seule incohérence entre deux pièces peut faire rejeter le dossier.</p>
-
-        <h4 data-i18n="cs-h4-build">Ce que j'ai construit</h4>
-        <p data-i18n="cs-build">Un agent Claude Code (le skill <strong>montage-offres-bb</strong>) qui couvre toute la chaîne :</p>
-        <ol class="steps">
-          <li data-i18n="cs-s1"><strong>Veille</strong>Une tâche planifiée lance chaque vendredi à 16 h la recherche sur les portails officiels de neuf pays et les sites des bailleurs ; chaque avis est noté sur 100 et consigné dans un registre des opportunités.</li>
-          <li data-i18n="cs-s2"><strong>Qualification</strong>L'agent lit le dossier, même scanné, rédige un rapport d'analyse en onze sections, confronte chaque exigence aux références réellement prouvées et au vivier d'experts, simule la note technique et recommande go ou no-go.</li>
-          <li data-i18n="cs-s3"><strong>Offre</strong>Il rédige les propositions technique et financière en suivant la grille d'évaluation, les génère en Word et en PDF à la charte du cabinet (Gantt, fiches de référence suivies de leurs preuves, certificats), contrôle chaque page par script et produit une version prête à imprimer.</li>
-          <li data-i18n="cs-s4"><strong>Suivi</strong>Demande d'éclaircissements, dossier de dépôt classé par gravité, étiquettes d'enveloppes, calendrier jusqu'au dépôt, et un journal des retours qui transforme chaque correction en règle.</li>
-        </ol>
-        <p style="margin-top:14px;" data-i18n="cs-under">Sous le capot : <strong>7 scripts Python</strong> (2 234 lignes), une base de connaissances de <strong>10 fichiers</strong> (réglementation des marchés, profil et références du cabinet, grilles de notation, modèles de documents) et <strong>15 cas de test</strong>.</p>
-
-        <h4 data-i18n="cs-h4-res">Résultats sur le premier dossier réel (septembre 2026)</h4>
-        <ul class="results">
-          <li data-i18n="cs-r1">Proposition technique de 115 pages et proposition financière de 12 pages, en 13 versions et 4 jours.</li>
-          <li data-i18n="cs-r2">Contrôle automatique sans défaut sur la version finale : papeterie sur la page de garde seulement, aucune page blanche, aucun élément hors des marges, table des matières sur une page.</li>
-          <li data-i18n="cs-r3">Incohérences relevées dans les pièces de 6 références sur 8 (numéros de marché, objets, dates, signatures), signalées avant le dépôt au lieu d'être découvertes par la commission.</li>
-          <li data-i18n="cs-r4">Deux pièges du dossier détectés : une date limite contradictoire (un « mardi 12 octobre » qui tombe un lundi) et une « nouvelle version » des termes de référence qui était en réalité un modèle vierge plus ancien.</li>
-          <li data-i18n="cs-r5">25 règles de présentation issues de mes validations, intégrées à l'agent, dont plusieurs vérifiées automatiquement.</li>
-          <li data-i18n="cs-r6">L'ensemble empaqueté en kit d'installation (environ 30 minutes), déployable sur n'importe quel poste du cabinet.</li>
+    <div class="sys-grid">
+      <article class="sys-card reveal">
+        <span class="tag" data-i18n="a-tag">Système 01 · Appels d'offres</span>
+        <h3 data-i18n="a-h3">Un agent qui monte les offres, de la veille au dépôt</h3>
+        <h4 data-i18n="h-pb">Le problème</h4>
+        <p data-i18n="a-pb">Une offre, c'est plus de cent pages montées en quelques jours&nbsp;: formulaires imposés, références à prouver pièce par pièce, prix cohérents avec la partie technique. Une seule incohérence peut faire rejeter le dossier.</p>
+        <h4 data-i18n="h-built">Ce que j'ai construit</h4>
+        <ul class="built">
+          <li data-i18n="a-b1">Veille planifiée chaque semaine sur neuf pays et six bailleurs, avis notés sur 100.</li>
+          <li data-i18n="a-b2">Analyse du dossier, simulation de la note et recommandation go ou no-go.</li>
+          <li data-i18n="a-b3">Offres technique et financière générées en Word et PDF, à la charte du cabinet.</li>
+          <li data-i18n="a-b4">Contrôle automatique de chaque page et des pièces&nbsp;: 6 références incohérentes sur 8 repérées avant le dépôt.</li>
         </ul>
-
-        <div class="human">
-          <h4 data-i18n="cs-h4-human">La part de l'humain</h4>
-          <p data-i18n="cs-human">L'agent prépare, vérifie et signale ; c'est moi qui décide (go ou no-go, prix, experts) et qui valide chaque version avant le dépôt. Il n'invente rien : ce qui manque est surligné en jaune « à compléter ». Il n'envoie rien sans accord.</p>
+        <div class="mini">
+          <div><div class="n">115 <small>p.</small></div><div class="l" data-i18n="a-m1">offre technique</div></div>
+          <div><div class="n">12 <small>p.</small></div><div class="l" data-i18n="a-m3">offre financière, cohérente avec la technique</div></div>
+          <div><div class="n" data-i18n="a-m2n">4 <small>jours</small></div><div class="l" data-i18n="a-m2">pour les deux, jusqu'à la version imprimable</div></div>
         </div>
-
-        <h4 data-i18n="cs-h4-show">Ce que ça montre</h4>
-        <p data-i18n="cs-show">Je sais transformer un processus métier lourd et risqué en système outillé : une méthode écrite, des données de référence, des scripts de contrôle, des garde-fous et une boucle d'amélioration continue. Cette méthode est réutilisable : d'autres agents sont en préparation pour d'autres besoins du cabinet.</p>
+        <p class="keep" data-i18n="a-keep"><strong>Ce que je garde&nbsp;:</strong> le go ou no-go, le prix, le choix des experts et la validation de chaque version.</p>
+        <div class="stack">
+          <span class="pill">Claude Code</span>
+          <span class="pill" data-i18n="a-p1">7 scripts Python</span>
+          <span class="pill" data-i18n="a-p2">25 règles</span>
+          <span class="pill" data-i18n="a-p3">15 cas de test</span>
+        </div>
       </article>
 
-      <aside class="gallery reveal" aria-label="Captures réelles">
-        <figure class="figure">
-          <div class="fig-head"><span class="k" data-i18n="g1-k">Capture 01 · Contrôle</span><span class="z" data-i18n="zoom">agrandir ⤢</span></div>
-          <button class="zoom" type="button" data-full="assets/captures/controle-automatique-115-pages.png" data-cap="Contrôle automatique de la version finale : 115 pages, aucun défaut de mise en page.">
-            <img src="assets/captures/controle-automatique-115-pages.png" width="1600" height="672" loading="lazy" alt="Sortie du script de contrôle de mise en page : 115 pages, tous les contrôles OK.">
-          </button>
-          <figcaption data-i18n="g1-cap">Sortie réelle du script de contrôle sur la version finale : 115 pages, aucun défaut de mise en page.</figcaption>
-        </figure>
-        <figure class="figure">
-          <div class="fig-head"><span class="k" data-i18n="g2-k">Capture 02 · L'offre</span><span class="z" data-i18n="zoom">agrandir ⤢</span></div>
-          <button class="zoom" type="button" data-full="assets/captures/mosaique-offre-115-pages.jpg" data-cap="Les 115 pages de la proposition technique produite par l'agent, floutées car l'offre est en cours.">
-            <picture>
-              <source type="image/webp" srcset="assets/captures/mosaique-offre-115-pages.webp">
-              <img src="assets/captures/mosaique-offre-115-pages.jpg" width="2484" height="776" loading="lazy" alt="Mosaïque des 115 pages de la proposition technique, floutées.">
-            </picture>
-          </button>
-          <figcaption data-i18n="g2-cap">Les 115 pages de la proposition technique générée par l'agent, floutées car l'offre est en cours : l'ampleur et la mise en page se voient, aucun texte n'est lisible.</figcaption>
-        </figure>
-        <figure class="figure">
-          <div class="fig-head"><span class="k" data-i18n="g3-k">Capture 03 · Kit d'installation</span><span class="z" data-i18n="zoom">agrandir ⤢</span></div>
-          <button class="zoom" type="button" data-full="assets/captures/schema-processus-kit-DG.jpg" data-cap="Procédure livrée avec l'agent : l'installer, monter une offre, finaliser le dépôt.">
-            <picture>
-              <source type="image/webp" srcset="assets/captures/schema-processus-kit-DG.webp">
-              <img src="assets/captures/schema-processus-kit-DG.jpg" width="2000" height="1105" loading="lazy" alt="Procédure en trois colonnes : installation, montage d'une offre, finalisation et dépôt.">
-            </picture>
-          </button>
-          <figcaption data-i18n="g3-cap">Procédure livrée avec l'agent : l'installer (30 min), monter une offre, finaliser le dépôt.</figcaption>
-        </figure>
-        <div class="note" data-i18n="conf-note"><b>Confidentialité.</b> L'offre est en cours d'évaluation : l'autorité contractante, le pays, l'objet du marché, les prix et les experts ne sont pas cités ; les pages sont floutées à dessein.</div>
-      </aside>
-    </div>
-
-    <div class="demo-box reveal">
-      <div class="row">
-        <div>
-          <div class="eyebrow" data-i18n="demo-eyebrow">Démo interactive</div>
-          <h3 data-i18n="demo-h3">Qualifier un appel d'offres comme le fait l'agent</h3>
-          <p data-i18n="demo-p">Simulateur autonome : la vraie grille de qualification de l'agent (exemples fictifs), puis les sorties réelles de chaque étape — veille, analyse, génération, dépôt.</p>
-        </div>
-        <div class="actions">
-          <button class="btn-primary" type="button" id="demo-toggle" data-i18n="demo-open">Lancer la démo ici</button>
-          <a class="btn-ghost" href="assets/demo-interactive.html" target="_blank" rel="noopener" data-i18n="demo-new">Ouvrir en plein écran ↗</a>
-        </div>
-      </div>
-      <div class="demo-frame" id="demo-frame">
-        <iframe data-src="assets/demo-interactive.html" title="Démo : qualifier un appel d'offres comme l'agent" loading="lazy"></iframe>
-      </div>
-    </div>
-
-    <div class="secondary reveal">
-      <div class="cell">
-        <div class="eyebrow" data-i18n="sec1-eyebrow">Autre système en production</div>
-        <h3 data-i18n="sec1-h3">Rapports de mission automatiques</h3>
-        <p data-i18n="sec1-p">Une fiche Excel glissée sur un raccourci produit le rapport de formation (10 pages) et le compte rendu de mission (5 pages) en Word. Les calculs sont vérifiés : dès la première session, plusieurs écarts sont ressortis seuls.</p>
-        <ul>
-          <li data-i18n="sec1-l2">4 jours d'animation annoncés pour 5 facturés</li>
-          <li data-i18n="sec1-l3">Une ligne budgétaire sans intitulé</li>
-          <li data-i18n="sec1-l4">11 réponses pour 10 participants</li>
+      <article class="sys-card b reveal">
+        <span class="tag" data-i18n="b-tag">Système 02 · Communication et marketing digital</span>
+        <h3 data-i18n="b-h3">Une chaîne éditoriale, de l'actualité à la publication</h3>
+        <h4 data-i18n="h-pb">Le problème</h4>
+        <p data-i18n="b-pb">Un cabinet présent dans deux pays doit publier une actualité fiable et régulière sur son site et ses pages, sans que la qualité dépende du temps disponible.</p>
+        <h4 data-i18n="h-built">Ce que j'ai construit</h4>
+        <ul class="built">
+          <li data-i18n="b-b1">Sujets choisis dans l'actualité réelle des métiers, vérifiée aux sources primaires.</li>
+          <li data-i18n="b-b2">Article structuré pour le référencement, mis en ligne sur le site avec sa fiche SEO.</li>
+          <li data-i18n="b-b3">Visuels générés, puis mis à la charte par script&nbsp;: logo, formats LinkedIn et Facebook.</li>
+          <li data-i18n="b-b4">Déclinaison par canal et par pays&nbsp;: LinkedIn, Facebook Burkina Faso et Côte d'Ivoire.</li>
         </ul>
+        <div class="mini">
+          <div><div class="n">2</div><div class="l" data-i18n="b-m1">articles publiés sur les normes ISO 2026</div></div>
+          <div><div class="n">3</div><div class="l" data-i18n="b-m2">pages de diffusion, dans 2 pays</div></div>
+          <div><div class="n">10</div><div class="l" data-i18n="b-m3">sources primaires vérifiées</div></div>
+        </div>
+        <p class="keep" data-i18n="b-keep"><strong>Ce que je garde&nbsp;:</strong> le choix des sujets, la relecture et le clic de publication.</p>
+        <div class="stack">
+          <span class="pill">Claude Code</span>
+          <span class="pill">Joomla</span>
+          <span class="pill">Adobe Firefly</span>
+          <span class="pill" data-i18n="b-p1">5 scripts Python et PowerShell</span>
+          <a class="more" href="https://building-business.net/index.php/fr/actualites/30-iso-9001-2026-ce-qui-change-preparer-la-transition" target="_blank" rel="noopener" data-i18n="b-more">Lire un article ↗</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="also reveal">
+      <div class="cell">
+        <div class="k" data-i18n="also-k">Aussi en production</div>
+        <h3 data-i18n="c1-h3">Rapports de mission automatiques</h3>
+        <p data-i18n="c1-p">Une fiche Excel produit le rapport de formation (10 pages) et le compte rendu de mission (5 pages) en Word, calculs vérifiés. Dès la première session, trois écarts de saisie sont ressortis seuls.</p>
       </div>
       <div class="cell">
-        <div class="eyebrow" data-i18n="sec2-eyebrow">Emailing et prospection</div>
-        <h3 data-i18n="sec2-h3">Chaînes Brevo, Mailchimp et Sales Navigator</h3>
-        <p data-i18n="sec2-p">Depuis 2019, automatisation de bout en bout des campagnes des programmes de formation internationaux : segmentation des bases, envois et relances sans intervention manuelle, suivi des inscriptions fiabilisé.</p>
-        <ul>
-          <li data-i18n="sec2-l1">API Brevo et Mailchimp pilotées via Make.com</li>
-          <li data-i18n="sec2-l2">LinkedIn Sales Navigator déployé et équipe commerciale formée</li>
-          <li data-i18n="sec2-l3">Tableaux de bord de suivi des inscriptions</li>
-        </ul>
+        <div class="k" data-i18n="also-k2">Depuis 2019</div>
+        <h3 data-i18n="c2-h3">Marketing automation et prospection pilotés par API</h3>
+        <p data-i18n="c2-p">Campagnes Mailchimp puis Brevo automatisées via Make.com, relances sans intervention, suivi des inscriptions fiabilisé. LinkedIn Sales Navigator déployé et équipe commerciale formée.</p>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ================= WORK ================= -->
-<section id="realisations">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div>
-        <div class="eyebrow" data-i18n="real-eyebrow">Réalisations sélectionnées</div>
-        <h2 data-i18n="real-h2">Quelques cas concrets</h2>
-      </div>
-    </div>
-    <div class="cases reveal">
-
-      <div class="case">
-        <div class="meta"><span data-i18n="case1-date">Depuis sept. 2026</span><span class="org">Building Business</span></div>
-        <div>
-          <h3 data-i18n="case1-h3">Création et pilotage du Service de Prospection Internationale et d'Innovation</h3>
-          <p data-i18n="case1-p">Lancement du SPII, rattaché à la Direction Générale : structuration du développement commercial hors Burkina, déploiement d'agents IA pour la veille sur les appels d'offres internationaux (bailleurs, agences de coopération, institutions sous-régionales), et conception des automatisations qui alimentent la prospection, la communication et le montage des offres. Appui-conseil au Service de la Communication et des Relations Institutionnelles.</p>
-          <p><a class="more" href="#systemes" data-i18n="case1-more">Voir les preuves de l'agent de montage d'offres ↑</a></p>
-          <div class="pill-row">
-            <span class="pill" data-i18n="case1-pill1">Agents IA</span>
-            <span class="pill" data-i18n="case1-pill2">Prospection internationale</span>
-            <span class="pill">Claude Code · Make.com · n8n</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="case">
-        <div class="meta"><span>2021–2026</span><span class="org">Building Business</span></div>
-        <div>
-          <h3 data-i18n="case2-h3">16 marchés remportés en autonomie complète</h3>
-          <p data-i18n="case2-p">Montage en autonomie des propositions techniques et financières pour Building Business : 16 marchés remportés auprès d'institutions publiques (ANPTIC, ONEA, AMGT, ANSUTEN Guinée), du secteur privé et parapublic (banques, sociétés d'État) et de bailleurs internationaux (Enabel, Haute Autorité du WAQF, projets financés par la Banque mondiale) — au Burkina Faso, au Niger et en Guinée. De la veille à la remise de l'offre, puis coordination de la mise en œuvre.</p>
-          <div class="pill-row">
-            <span class="pill" data-i18n="case2-pill1">Rédaction technique</span>
-            <span class="pill" data-i18n="case2-pill2">Offres financières</span>
-            <span class="pill" data-i18n="case2-pill3">Coordination</span>
-            <span class="pill" data-i18n="case2-pill4">Bailleurs internationaux</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="case">
-        <div class="meta"><span>2021–2025</span><span class="org">Building Business</span></div>
-        <div>
-          <h3 data-i18n="case4-h3">11 formations animées en digital, marketing et IA</h3>
-          <p data-i18n="case4-p">Conception et animation de sessions de 5 jours pour des professionnels en formation continue : Marketing digital et réseaux sociaux (5 sessions, 2022–2025), Intelligence artificielle en marketing (2 sessions, 2023–2024), Contenu web, email marketing et CMS (4 sessions, 2021–2024).</p>
-          <div class="pill-row">
-            <span class="pill" data-i18n="case4-pill1">Andragogie</span>
-            <span class="pill" data-i18n="case4-pill2">IA & marketing</span>
-            <span class="pill" data-i18n="case4-pill3">Réseaux sociaux</span>
-            <span class="pill">Email marketing</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="case">
-        <div class="meta"><span>2019–2026</span><span class="org">Building Business</span></div>
-        <div>
-          <h3 data-i18n="case5-h3">Communication institutionnelle et digitale du cabinet</h3>
-          <p data-i18n="case5-p">Pilotage de la communication institutionnelle et digitale (site web building-business.net, réseaux sociaux, emailing, contenus). Pilote du processus Communication Digitale dans le système de management intégré ISO 9001 / ISO 21001. Conception des catalogues annuels de formation et des plans de communication. Participation au Prix Burkinabè de la Qualité 2022.</p>
-          <div class="pill-row">
-            <span class="pill" data-i18n="case5-pill1">Joomla / WordPress</span>
-            <span class="pill" data-i18n="case5-pill2">Réseaux sociaux</span>
-            <span class="pill" data-i18n="case5-pill3">ISO 9001 / 21001</span>
-            <span class="pill" data-i18n="case5-pill4">Catalogues formation</span>
-          </div>
-        </div>
-      </div>
-
+    <div class="after reveal">
+      <a href="assets/demo-interactive.html" target="_blank" rel="noopener" data-i18n="demo-link">Essayer la grille de qualification de l'agent (démo, 2 min) ↗</a>
+      <span class="conf" data-i18n="conf">Confidentialité&nbsp;: aucune offre en cours n'est montrée. Autorités contractantes, prix et experts restent privés.</span>
     </div>
   </div>
 </section>
@@ -788,55 +674,24 @@ footer{ padding:clamp(52px, 7vw, 80px) 0 40px; border-top:1px solid var(--line);
 <section id="missions">
   <div class="wrap">
     <div class="section-head reveal">
-      <div>
-        <div class="eyebrow" data-i18n="missions-eyebrow">Missions & partenaires</div>
-        <h2 data-i18n="missions-h2">Un échantillon des dossiers remportés</h2>
-      </div>
+      <div class="eyebrow" data-i18n="mis-eyebrow">Missions et partenaires</div>
+      <h2 data-i18n="mis-h2">Un échantillon des marchés remportés</h2>
     </div>
     <div class="table-wrap reveal">
       <table class="mandates">
-        <thead>
-          <tr><th data-i18n="th-mission">Mission</th><th data-i18n="th-beneficiaire">Bénéficiaire</th><th data-i18n="th-annee">Année</th></tr>
-        </thead>
+        <thead><tr><th data-i18n="th1">Mission</th><th data-i18n="th2">Bénéficiaire</th><th data-i18n="th3">Année</th></tr></thead>
         <tbody>
-          <tr>
-            <td data-label="Mission" data-i18n="mission1">Formation aux métiers des TIC de 130 étudiants d'instituts techniques (Labé, Mamou, Conakry)</td>
-            <td data-label="Bénéficiaire" class="org" data-i18n="org1">ANSUTEN, Guinée</td>
-            <td data-label="Année" class="year">2026</td>
-          </tr>
-          <tr>
-            <td data-label="Mission" data-i18n="mission2">Suivi post-formation des cadres centraux en management et communication — projet SARRAOUNIA2</td>
-            <td data-label="Bénéficiaire" class="org" data-i18n="org2">Enabel, Niger</td>
-            <td data-label="Année" class="year">2026</td>
-          </tr>
-          <tr>
-            <td data-label="Mission" data-i18n="mission3">Environnement de développement collaboratif Odoo et formation des informaticiens</td>
-            <td data-label="Bénéficiaire" class="org" data-i18n="org3">ONEA, Burkina Faso</td>
-            <td data-label="Année" class="year">2026</td>
-          </tr>
-          <tr>
-            <td data-label="Mission" data-i18n="mission4">Formation sur les stratégies pour trouver et convaincre des partenaires durables</td>
-            <td data-label="Bénéficiaire" class="org" data-i18n="org4">CIL, Burkina Faso</td>
-            <td data-label="Année" class="year">2025</td>
-          </tr>
-          <tr>
-            <td data-label="Mission" data-i18n="mission5">Étude sur la mise en œuvre de la formation continue diplômante</td>
-            <td data-label="Bénéficiaire" class="org" data-i18n="org5">ISTIC, Burkina Faso</td>
-            <td data-label="Année" class="year">2025</td>
-          </tr>
-          <tr>
-            <td data-label="Mission" data-i18n="mission6">Formation des partenaires du ministère de l'Enseignement supérieur en communication interne et externe — projet SARRAOUNIA2</td>
-            <td data-label="Bénéficiaire" class="org" data-i18n="org6">Enabel, Niger</td>
-            <td data-label="Année" class="year">2024</td>
-          </tr>
-          <tr>
-            <td data-label="Mission" data-i18n="mission7">Renforcement de capacités du personnel informatique en système, réseau et sécurité (e-Burkina)</td>
-            <td data-label="Bénéficiaire" class="org" data-i18n="org7">ANPTIC, Burkina Faso</td>
-            <td data-label="Année" class="year">2022</td>
-          </tr>
+          <tr><td data-i18n="mi1">Formation aux métiers des TIC de 130 étudiants d'instituts techniques (Labé, Mamou, Conakry)</td><td class="org" data-i18n="or1">ANSUTEN, Guinée</td><td class="year">2026</td></tr>
+          <tr><td data-i18n="mi2">Suivi post-formation des cadres centraux en management et communication (projet SARRAOUNIA2)</td><td class="org">Enabel, Niger</td><td class="year">2026</td></tr>
+          <tr><td data-i18n="mi3">Environnement de développement collaboratif Odoo et formation des informaticiens</td><td class="org">ONEA, Burkina Faso</td><td class="year">2026</td></tr>
+          <tr><td data-i18n="mi4">Formation sur les stratégies pour trouver et convaincre des partenaires durables</td><td class="org">CIL, Burkina Faso</td><td class="year">2025</td></tr>
+          <tr><td data-i18n="mi5">Étude sur la mise en œuvre de la formation continue diplômante</td><td class="org">ISTIC, Burkina Faso</td><td class="year">2025</td></tr>
+          <tr><td data-i18n="mi6">Formation des partenaires du ministère de l'Enseignement supérieur en communication interne et externe (projet SARRAOUNIA2)</td><td class="org">Enabel, Niger</td><td class="year">2024</td></tr>
+          <tr><td data-i18n="mi7">Renforcement de capacités du personnel informatique en système, réseau et sécurité (e-Burkina)</td><td class="org">ANPTIC, Burkina Faso</td><td class="year">2022</td></tr>
         </tbody>
       </table>
     </div>
+    <p class="table-note reveal" data-i18n="mis-note">Rôle&nbsp;: montage du dossier ayant conduit à l'attribution du marché, puis coordination de la mise en œuvre. Liste complète sur demande.</p>
   </div>
 </section>
 
@@ -844,80 +699,45 @@ footer{ padding:clamp(52px, 7vw, 80px) 0 40px; border-top:1px solid var(--line);
 <section id="outils">
   <div class="wrap">
     <div class="section-head reveal">
-      <div>
-        <div class="eyebrow" data-i18n="outils-eyebrow">Boîte à outils</div>
-        <h2 data-i18n="outils-h2">Ce que j'utilise au quotidien</h2>
-      </div>
+      <div class="eyebrow" data-i18n="out-eyebrow">Boîte à outils</div>
+      <h2 data-i18n="out-h2">Ce que j'utilise au quotidien</h2>
     </div>
     <div class="tool-groups reveal">
       <div>
-        <h4 data-i18n="tools-h4-1">IA & automatisation</h4>
+        <h4 data-i18n="tg1">IA et automatisation</h4>
         <ul>
           <li>Claude Code · Cowork · Chrome</li>
           <li>ChatGPT · Gemini · Perplexity</li>
           <li>Make.com · n8n · Zapier</li>
-          <li>Python (scripts de contrôle) · uv</li>
-          <li>API Brevo · Mailchimp API</li>
+          <li>Python · PowerShell</li>
+          <li data-i18n="tl1">API Brevo et Mailchimp</li>
         </ul>
       </div>
       <div>
-        <h4 data-i18n="tools-h4-2">Réseaux sociaux & publicité</h4>
+        <h4 data-i18n="tg2">Web et contenu</h4>
         <ul>
-          <li>Meta Business Suite</li>
-          <li>LinkedIn Ads & Sales Navigator</li>
-          <li>TikTok Ads</li>
+          <li>Joomla · WordPress (Divi)</li>
+          <li>Adobe Firefly · Canva</li>
+          <li>Premiere Pro</li>
           <li>Google Analytics 4</li>
         </ul>
       </div>
       <div>
-        <h4 data-i18n="tools-h4-3">Web & création</h4>
+        <h4 data-i18n="tg3">Réseaux et publicité</h4>
         <ul>
-          <li>WordPress (Divi)</li>
-          <li>Joomla</li>
-          <li>Canva · Premiere Pro</li>
-          <li>Microsoft 365 · Google Workspace</li>
+          <li>Meta Business Suite</li>
+          <li>LinkedIn Ads · Sales Navigator</li>
+          <li>TikTok Ads</li>
         </ul>
       </div>
       <div>
-        <h4 data-i18n="tools-h4-4">Qualité & organisation</h4>
+        <h4 data-i18n="tg4">Qualité et organisation</h4>
         <ul>
-          <li data-i18n="tool-q1">Pilote de processus SMI ISO 9001 / 21001</li>
+          <li data-i18n="tl2">Pilote de processus SMI ISO 9001 et 21001</li>
           <li>PECB ISO 9001 Provisional Auditor</li>
+          <li>Microsoft 365 · Google Workspace</li>
           <li>Notion</li>
-          <li data-i18n="tool-q4">TeamBuilder Pro (en cours)</li>
         </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= PRESENCE ================= -->
-<section id="presence">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <div>
-        <div class="eyebrow" data-i18n="presence-eyebrow">Ce que je gère au quotidien</div>
-        <h2 data-i18n="presence-h2">Les canaux que j'administre</h2>
-      </div>
-    </div>
-    <div class="pillars reveal">
-      <div class="pillar">
-        <span class="tag" data-i18n="presence-tag1">Site web</span>
-        <h3>building-business.net</h3>
-        <p data-i18n="presence-p1">Site institutionnel du cabinet, administré sous Joomla (contenus, articles, actualités, mise à jour des offres de formation).</p>
-        <a class="btn-ghost" href="https://building-business.net/index.php/fr/" target="_blank" rel="noopener" data-i18n="presence-link1">Voir le site ↗</a>
-      </div>
-      <div class="pillar">
-        <span class="tag">Facebook</span>
-        <h3>Building Business</h3>
-        <p data-i18n="presence-p2">Page officielle du cabinet : visuels de campagnes, annonces de sessions, contenus de marque.</p>
-        <a class="btn-ghost" href="https://web.facebook.com/buildingbusinessformation/?locale=fr_FR" target="_blank" rel="noopener" data-i18n="presence-link2">Voir la page ↗</a>
-      </div>
-      <div class="pillar">
-        <span class="tag">LinkedIn</span>
-        <h3>Building Business</h3>
-        <p data-i18n="presence-p3">Page entreprise LinkedIn : communication institutionnelle et positionnement du cabinet auprès des partenaires internationaux.</p>
-        <a class="btn-ghost" href="https://www.linkedin.com/company/buildingbusinessformation/" target="_blank" rel="noopener" data-i18n="presence-link3">Voir la page ↗</a>
       </div>
     </div>
   </div>
@@ -927,39 +747,29 @@ footer{ padding:clamp(52px, 7vw, 80px) 0 40px; border-top:1px solid var(--line);
 <section id="faq">
   <div class="wrap">
     <div class="section-head reveal">
-      <div>
-        <div class="eyebrow" data-i18n="faq-eyebrow">Questions fréquentes</div>
-        <h2 data-i18n="faq-h2">Ce qu'on me demande le plus souvent</h2>
-      </div>
+      <div class="eyebrow" data-i18n="faq-eyebrow">Questions fréquentes</div>
+      <h2 data-i18n="faq-h2">Ce qu'on me demande le plus souvent</h2>
     </div>
     <div class="faq-list reveal">
       <details class="faq-item" open>
-        <summary data-i18n="faq-q1">Qui est Abasse Nitiema ?</summary>
-        <div class="faq-a" data-i18n="faq-a1">Abasse Nitiema est Responsable de la Prospection Internationale et de l'Innovation chez Building Business, un cabinet de conseil, formation et études certifié ISO 9001 et ISO 21001, basé à Ouagadougou avec des bureaux à Casablanca et Abidjan. Depuis septembre 2026, il pilote le Service de Prospection Internationale et d'Innovation (SPII), rattaché à la Direction Générale. Il a auparavant assuré la Responsabilité Communication du cabinet de 2019 à août 2026, remportant 16 marchés en autonomie au Burkina Faso, au Niger et en Guinée.</div>
+        <summary data-i18n="q1">Qui est Abasse Nitiema&nbsp;?</summary>
+        <div class="faq-a" data-i18n="a1">Responsable de la Prospection Internationale et de l'Innovation chez Building Business, cabinet de conseil, de formation et d'études certifié ISO&nbsp;9001 et ISO&nbsp;21001, basé à Ouagadougou avec des bureaux à Casablanca et Abidjan. Depuis septembre 2026, il pilote le service rattaché à la Direction Générale qui porte le développement international et l'innovation. De 2019 à août 2026, il a été Responsable Communication du cabinet et a remporté 16 marchés au Burkina Faso, au Niger et en Guinée.</div>
       </details>
       <details class="faq-item">
-        <summary data-i18n="faq-q7">Qu'est-ce que l'agent « montage-offres-bb » ?</summary>
-        <div class="faq-a" data-i18n="faq-a7">C'est un agent construit avec Claude Code qui couvre toute la chaîne de réponse aux appels d'offres : veille hebdomadaire planifiée sur neuf pays et six bailleurs, qualification avec note simulée et recommandation go/no-go, rédaction et génération des propositions technique et financière en Word et PDF à la charte, contrôle automatique page par page, puis préparation du dépôt. Sur son premier dossier réel, il a produit une proposition technique de 115 pages en 4 jours. Je garde toutes les décisions : go/no-go, prix, experts, validation finale avant dépôt.</div>
+        <summary data-i18n="q2">Que fait l'agent de montage des offres&nbsp;?</summary>
+        <div class="faq-a" data-i18n="a2">Il couvre la réponse aux appels d'offres de bout en bout&nbsp;: veille hebdomadaire sur neuf pays et six bailleurs, analyse du dossier avec simulation de note et recommandation go ou no-go, génération des offres technique et financière en Word et PDF, contrôle automatique page par page et préparation du dépôt. Sur son premier dossier réel, il a produit en 4 jours une offre technique de 115 pages et une offre financière de 12 pages, cohérentes entre elles. Les décisions restent humaines&nbsp;: go ou no-go, prix, experts, validation finale.</div>
       </details>
       <details class="faq-item">
-        <summary data-i18n="faq-q2">Qu'est-ce que la prospection internationale par appels d'offres ?</summary>
-        <div class="faq-a" data-i18n="faq-a2">C'est la capacité à identifier les opportunités de marchés émises par des bailleurs, des agences de coopération et des institutions sous-régionales, à qualifier les plus pertinentes, puis à monter des propositions techniques et financières compétitives. Le SPII intègre des agents IA pour automatiser la veille et accélérer la production des offres.</div>
+        <summary data-i18n="q3">Comment fonctionne la chaîne éditoriale&nbsp;?</summary>
+        <div class="faq-a" data-i18n="a3">Elle part de l'actualité réelle des métiers du cabinet (normes, certifications, réformes), vérifiée aux sources primaires. Elle produit l'article pour le site, sa fiche SEO, les visuels à la charte et les textes adaptés à LinkedIn et aux pages Facebook du Burkina Faso et de la Côte d'Ivoire. Chaque publication est relue et validée avant diffusion.</div>
       </details>
       <details class="faq-item">
-        <summary data-i18n="faq-q3">Comment l'IA améliore-t-elle le montage des dossiers d'appels d'offres ?</summary>
-        <div class="faq-a" data-i18n="faq-a3">En combinant des agents IA de veille (qui scannent en continu les plateformes de marchés), des scripts de contrôle qui vérifient chaque page du livrable, des chaînes Make.com et n8n pour automatiser la collecte et la mise en forme, et des workflows Claude pour la rédaction des propositions techniques. L'objectif est de transformer le savoir-faire du cabinet en règles réutilisables et de raccourcir les délais de réponse aux appels d'offres.</div>
+        <summary data-i18n="q4">Quelles sont ses formations et certifications&nbsp;?</summary>
+        <div class="faq-a" data-i18n="a4">Master II en Management des entreprises et des organisations (Building Capacity Institute, 2022, mémoire soutenu en 2025), Licence professionnelle en Communication d'entreprises (Institut Africain de Management, 2017), PECB ISO&nbsp;9001 Provisional Auditor (2019) et certification TeamBuilder Pro en cours (2026).</div>
       </details>
       <details class="faq-item">
-        <summary data-i18n="faq-q4">Quelles certifications et formations clés Abasse Nitiema détient-il ?</summary>
-        <div class="faq-a" data-i18n="faq-a4">Il est titulaire d'un Master II en Management des entreprises et des organisations (Building Capacity Institute, 2022 — mémoire soutenu en 2025), d'une Licence professionnelle en Communication d'entreprises (IAM Ouaga, 2017), de la certification PECB ISO 9001 Provisional Auditor (2019), et suit actuellement la certification TeamBuilder Pro (architecte de dynamiques collectives, 2026). Il a également suivi le programme Certified Digital Transformation Officer (Building Business, avril 2026).</div>
-      </details>
-      <details class="faq-item">
-        <summary data-i18n="faq-q5">Comment monter un dossier d'appel d'offres pour une agence de développement ?</summary>
-        <div class="faq-a" data-i18n="faq-a5">Cela implique de structurer une proposition technique et financière conforme aux exigences du bailleur, de rassembler les pièces justificatives et attestations requises, et de coordonner la mise en œuvre après attribution, y compris le suivi post-formation. Abasse Nitiema a monté 16 dossiers remportés depuis 2021, notamment auprès d'Enabel (Niger, Guinée), de l'ANSUTEN (Guinée), de l'ONEA (Burkina Faso) et de la Haute Autorité du WAQF (Niger).</div>
-      </details>
-      <details class="faq-item">
-        <summary data-i18n="faq-q6">Abasse Nitiema est-il disponible pour de nouvelles opportunités ?</summary>
-        <div class="faq-a" data-i18n="faq-a6">Oui. Il est ouvert à de nouvelles opportunités en développement commercial international, communication institutionnelle, marketing digital ou conseil en automatisation IA, au Burkina Faso comme à l'international.</div>
+        <summary data-i18n="q5">Est-il ouvert à de nouvelles opportunités&nbsp;?</summary>
+        <div class="faq-a" data-i18n="a5">Oui, en développement commercial international, en communication institutionnelle, en marketing digital ou en conseil en automatisation par l'IA, au Burkina Faso comme à l'international.</div>
       </details>
     </div>
   </div>
@@ -970,13 +780,11 @@ footer{ padding:clamp(52px, 7vw, 80px) 0 40px; border-top:1px solid var(--line);
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "Qui est Abasse Nitiema ?", "acceptedAnswer": { "@type": "Answer", "text": "Abasse Nitiema est Responsable de la Prospection Internationale et de l'Innovation chez Building Business, un cabinet de conseil, formation et études certifié ISO 9001 et ISO 21001, basé à Ouagadougou. Depuis septembre 2026, il pilote le Service de Prospection Internationale et d'Innovation (SPII), rattaché à la Direction Générale. Il a remporté 16 marchés en autonomie au Burkina Faso, au Niger et en Guinée." } },
-    { "@type": "Question", "name": "Qu'est-ce que l'agent montage-offres-bb ?", "acceptedAnswer": { "@type": "Answer", "text": "Un agent construit avec Claude Code qui couvre toute la chaîne de réponse aux appels d'offres : veille hebdomadaire planifiée, qualification avec recommandation go/no-go, rédaction et génération des propositions technique et financière, contrôle automatique page par page, préparation du dépôt. Sur son premier dossier réel, il a produit une proposition technique de 115 pages en 4 jours. Toutes les décisions restent humaines : go/no-go, prix, experts, validation finale." } },
-    { "@type": "Question", "name": "Qu'est-ce que la prospection internationale par appels d'offres ?", "acceptedAnswer": { "@type": "Answer", "text": "C'est la capacité à identifier les opportunités de marchés émises par des bailleurs, des agences de coopération et des institutions sous-régionales, à qualifier les plus pertinentes, puis à monter des propositions techniques et financières compétitives. Le SPII intègre des agents IA pour automatiser la veille et accélérer la production des offres." } },
-    { "@type": "Question", "name": "Comment l'IA améliore-t-elle le montage des dossiers d'appels d'offres ?", "acceptedAnswer": { "@type": "Answer", "text": "En combinant des agents IA de veille, des scripts de contrôle page par page, des chaînes Make.com et n8n pour automatiser la collecte et la mise en forme, et des workflows Claude pour la rédaction des propositions techniques. L'objectif est de transformer le savoir-faire du cabinet en règles réutilisables et de raccourcir les délais de réponse." } },
-    { "@type": "Question", "name": "Quelles certifications et formations clés Abasse Nitiema détient-il ?", "acceptedAnswer": { "@type": "Answer", "text": "Master II en Management des entreprises et des organisations (BCI, 2022, mémoire 2025), Licence professionnelle en Communication d'entreprises (IAM Ouaga, 2017), PECB ISO 9001 Provisional Auditor (2019), TeamBuilder Pro en cours (2026)." } },
-    { "@type": "Question", "name": "Comment monter un dossier d'appel d'offres pour une agence de développement ?", "acceptedAnswer": { "@type": "Answer", "text": "Cela implique de structurer une proposition technique et financière conforme aux exigences du bailleur, de rassembler les pièces justificatives et attestations requises, et de coordonner la mise en œuvre après attribution. Abasse Nitiema a monté 16 dossiers remportés depuis 2021, notamment auprès d'Enabel, de l'ANSUTEN et de l'ONEA." } },
-    { "@type": "Question", "name": "Abasse Nitiema est-il disponible pour de nouvelles opportunités ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui. Il est ouvert à de nouvelles opportunités en développement commercial international, communication institutionnelle, marketing digital ou conseil en automatisation IA, au Burkina Faso comme à l'international." } }
+    { "@type": "Question", "name": "Qui est Abasse Nitiema ?", "acceptedAnswer": { "@type": "Answer", "text": "Responsable de la Prospection Internationale et de l'Innovation chez Building Business, cabinet de conseil, de formation et d'études certifié ISO 9001 et ISO 21001, basé à Ouagadougou. Depuis septembre 2026, il pilote le service rattaché à la Direction Générale qui porte le développement international et l'innovation. Il a remporté 16 marchés au Burkina Faso, au Niger et en Guinée." } },
+    { "@type": "Question", "name": "Que fait l'agent de montage des offres ?", "acceptedAnswer": { "@type": "Answer", "text": "Il couvre la réponse aux appels d'offres de bout en bout : veille hebdomadaire, analyse du dossier avec recommandation go ou no-go, génération des offres technique et financière, contrôle automatique page par page et préparation du dépôt. Sur son premier dossier réel, il a produit en 4 jours une offre technique de 115 pages et une offre financière de 12 pages. Les décisions restent humaines." } },
+    { "@type": "Question", "name": "Comment fonctionne la chaîne éditoriale ?", "acceptedAnswer": { "@type": "Answer", "text": "Elle part de l'actualité réelle des métiers du cabinet, vérifiée aux sources primaires, et produit l'article pour le site, sa fiche SEO, les visuels à la charte et les textes adaptés à LinkedIn et aux pages Facebook du Burkina Faso et de la Côte d'Ivoire. Chaque publication est relue et validée avant diffusion." } },
+    { "@type": "Question", "name": "Quelles sont ses formations et certifications ?", "acceptedAnswer": { "@type": "Answer", "text": "Master II en Management des entreprises et des organisations (Building Capacity Institute, 2022, mémoire soutenu en 2025), Licence professionnelle en Communication d'entreprises (Institut Africain de Management, 2017), PECB ISO 9001 Provisional Auditor (2019), TeamBuilder Pro en cours (2026)." } },
+    { "@type": "Question", "name": "Est-il ouvert à de nouvelles opportunités ?", "acceptedAnswer": { "@type": "Answer", "text": "Oui, en développement commercial international, en communication institutionnelle, en marketing digital ou en conseil en automatisation par l'IA, au Burkina Faso comme à l'international." } }
   ]
 }
 </script>
@@ -984,33 +792,24 @@ footer{ padding:clamp(52px, 7vw, 80px) 0 40px; border-top:1px solid var(--line);
 <footer id="contact">
   <div class="wrap">
     <div class="contact-box reveal">
-      <div class="eyebrow" style="justify-content:center;" data-i18n="footer-eyebrow">Discutons</div>
-      <h2 data-i18n="footer-h2">Des marchés remportés, des systèmes qui tournent, une communication qui porte.</h2>
-      <p data-i18n="footer-p">Disponible pour un poste en développement international, communication institutionnelle, marketing digital ou un mandat de conseil en automatisation IA — au Burkina Faso ou ailleurs.</p>
+      <div class="eyebrow" style="justify-content:center;" data-i18n="f-eyebrow">Discutons</div>
+      <h2 data-i18n="f-h2">Des marchés remportés, des systèmes qui tournent, une communication qui porte.</h2>
+      <p data-i18n="f-p">Ouvert à un poste en développement international, en communication institutionnelle ou en transformation par l'IA, et à des missions de conseil en automatisation, au Burkina Faso ou ailleurs.</p>
       <div class="contact-links">
-        <a class="btn-primary" href="mailto:abassenitiema4@gmail.com" target="_blank" rel="noopener">abassenitiema4@gmail.com</a>
+        <a class="btn-primary" href="mailto:abassenitiema4@gmail.com">abassenitiema4@gmail.com</a>
         <a class="btn-ghost" href="https://wa.me/22672919005" target="_blank" rel="noopener">+226 72 91 90 05</a>
         <a class="btn-ghost" href="https://linkedin.com/in/abasse-nitiema" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn-ghost" href="assets/CV_Abasse_NITIEMA.pdf" download data-i18n="f-cv">CV (PDF)</a>
       </div>
     </div>
     <div class="foot-meta">
-      <span>Abasse Nitiema, Ouagadougou, Burkina Faso</span>
-      <span data-i18n="footmeta-updated">Mis à jour · sept. 2026</span>
+      <span>Abasse Nitiema · Ouagadougou, Burkina Faso</span>
+      <span data-i18n="f-upd">Mis à jour · septembre 2026</span>
     </div>
   </div>
 </footer>
 
 </main>
-
-<dialog class="lightbox" id="lightbox" aria-label="Image agrandie">
-  <div class="inner">
-    <img id="lb-img" src="" alt="">
-    <div class="bar">
-      <span id="lb-cap"></span>
-      <button class="close" type="button" id="lb-close" data-i18n="lb-close">Fermer ✕</button>
-    </div>
-  </div>
-</dialog>
 
 <button class="to-top" type="button" id="to-top" aria-label="Retour en haut">↑</button>
 
@@ -1018,207 +817,190 @@ footer{ padding:clamp(52px, 7vw, 80px) 0 40px; border-top:1px solid var(--line);
 /* ---------- i18n ---------- */
 const translations = {
   "skip": {en:"Skip to content"},
-  "nav-tagline": {en:"prospecting · innovation · communication"},
-  "nav-apropos": {en:"About"},
+  "nav-systemes": {en:"Systems"},
+  "nav-parcours": {en:"Background"},
   "nav-competences": {en:"Skills"},
-  "nav-systemes": {en:"AI proof"},
-  "nav-realisations": {en:"Work"},
   "nav-missions": {en:"Mandates"},
   "nav-outils": {en:"Tools"},
-  "nav-presence": {en:"Online"},
   "nav-faq": {en:"FAQ"},
   "nav-contact": {en:"Get in touch"},
-  "hero-h1": {en:"I lead international prospecting <em>and build the AI systems</em> that win contracts."},
-  "hero-lead": {en:"Seven years in an ISO-certified consulting firm, at the crossroads of three disciplines: commercial development through tenders (16 contracts won), digital marketing and communication, and applying AI to real business challenges. My conviction: AI's value lies in orchestration, not the tool itself."},
-  "hero-cta-primary": {en:"See the AI agent at work"},
-  "hero-cta-contact": {en:"Let's talk about working together"},
-  "hero-proof": {en:"Real case, September 2026: a 115-page proposal built by an AI agent in 4 days —"},
-  "hero-proof-link": {en:"proof below"},
-  "chain-cap": {en:"How I work: a chain, not isolated tasks"},
-  "chain-strategie": {en:"Watch"},
-  "chain-strategie-sub": {en:"markets · tenders"},
-  "chain-contenu": {en:"Proposal"},
-  "chain-contenu-sub": {en:"technical · financial"},
-  "chain-automatisation": {en:"Automation"},
-  "chain-mesure": {en:"Follow-up"},
-  "chain-mesure-sub": {en:"delivery · KPIs"},
-  "about-eyebrow": {en:"About"},
-  "about-h2": {en:"One foot in institutional rigor, one in modern tooling."},
-  "about-p1": {en:"Since September 2026, I lead the <strong>International Prospecting and Innovation Service (SPII)</strong> at <strong>Building Business</strong>, a consulting, training and studies firm certified <strong>ISO 9001</strong> and <strong>ISO 21001</strong>, present in Burkina Faso, Morocco and Côte d'Ivoire. This service, reporting to the General Directorate, handles international business development, tenders and AI automation solutions."},
-  "about-p2": {en:"Since 2019, I have built a dual skill set: writing for demanding partners (development agencies, ministries, international donors) and structuring tender proposals that hold up — <strong>16 contracts won</strong> single-handedly across Burkina Faso, Niger and Guinea. Alongside that, I developed my own automation practice: AI agents, Make.com, Brevo and Mailchimp APIs, so the repetitive part of the job frees up time for strategy."},
-  "about-p3": {en:"Holder of a <strong>Master's in Business and Organization Management</strong> (Building Capacity Institute, 2022 — thesis defended in 2025 on the strategic adaptation of digital communication to modern technologies), I keep documenting this dual approach as the throughline of my work."},
-  "stat1-l": {en:"CONTRACTS WON — PUBLIC, PRIVATE, DONORS (2021–2026)"},
-  "stat2-l": {en:"TRAINING SESSIONS SUPERVISED, QUALITY OVERSIGHT (2019–2026)"},
-  "stat3-l": {en:"TRAINING SESSIONS PERSONALLY FACILITATED IN DIGITAL, MARKETING & AI"},
-  "stat4-l": {en:"COUNTRIES OF OPERATION: BURKINA FASO, NIGER, GUINEA"},
+
+  "hero-h1": {en:"I win contracts <em>and equip the work with AI</em>, from prospecting to digital marketing."},
+  "hero-lead": {en:"Head of International Prospecting and Innovation at <strong>Building Business</strong>, an ISO 9001 and ISO 21001 certified firm. Since 2019, I have worked at the crossroads of three disciplines: prospecting and tenders, communication and digital marketing, and AI applied to organisational processes."},
+  "hero-cta1": {en:"Download my CV (PDF)"},
+  "hero-cta2": {en:"See my background"},
+  "br-cap": {en:"At a glance"},
+  "br-l1": {en:"Role"},
+  "br-v1": {en:"Head of International Prospecting and Innovation<span>Building Business, since September 2026</span>"},
+  "br-l2": {en:"Fields"},
+  "br-v2": {en:"Prospecting and tenders<span>Communication and digital marketing · Applied AI</span>"},
+  "br-l3": {en:"Markets"},
+  "br-v3": {en:"Burkina Faso, Niger, Guinea<span>public institutions, companies, international donors</span>"},
+  "br-l4": {en:"Education"},
+  "br-v4": {en:"Master's, Organisation Management<span>PECB ISO 9001 Provisional Auditor</span>"},
+  "br-l5": {en:"Languages"},
+  "br-v5": {en:"French · professional English · Mooré"},
+  "br-status": {en:"Open to opportunities, in Burkina Faso and internationally"},
+  "k2u": {en:"since"},
+  "sys-lead": {en:"The method does not depend on the field: a mapped process, reference data, script-based checks and a decision that stays human. I applied it to two heavy processes at the firm, <strong>and it carries over to any business or governance process</strong>."},
+  "tr-k": {en:"Carries over, for example, to"},
+  "tr1": {en:"Monitoring, evaluation and reporting"},
+  "tr2": {en:"Regulatory watch"},
+  "tr3": {en:"ISO quality documentation"},
+  "tr4": {en:"Expert and CV management"},
+  "tr5": {en:"Management dashboards"},
+  "map-cap": {en:"One method, two systems in production"},
+  "m1": {en:"Process mapped<span>steps, rules, deliverables</span>"},
+  "m2": {en:"Reference data<span>references, brand, catalogue</span>"},
+  "m3": {en:"Script-based checks<span>every page, every visual</span>"},
+  "m4": {en:"Human decision<span>I approve, nothing goes out alone</span>"},
+  "o1-k": {en:"System 01"},
+  "o1-t": {en:"Tenders"},
+  "o1-s": {en:"technical and financial proposals in 4 days"},
+  "o2-k": {en:"System 02"},
+  "o2-t": {en:"Digital marketing"},
+  "o2-n": {en:"3 channels"},
+  "o2-s": {en:"website, LinkedIn, Facebook, 2 countries"},
+  "loop": {en:"<b>↻</b>Every approved correction becomes a rule the system applies on its own."},
+  "k1": {en:"contracts won in Burkina Faso, Niger and Guinea"},
+  "k2": {en:"in an ISO-certified consulting and training firm"},
+  "k3": {en:"training sessions supervised for quality"},
+  "k4": {en:"courses delivered in digital, marketing and AI"},
+
+  "sys-eyebrow": {en:"Applied AI"},
+  "sys-h2": {en:"Two major automation systems, one transferable method"},
+  "h-pb": {en:"The problem"},
+  "h-built": {en:"What I built"},
+  "a-tag": {en:"System 01 · Tenders"},
+  "a-h3": {en:"An agent that builds proposals, from market watch to submission"},
+  "a-pb": {en:"A proposal means over a hundred pages assembled in a few days: mandatory forms, references proven document by document, prices consistent with the technical part. A single inconsistency can get the file rejected."},
+  "a-b1": {en:"Weekly scheduled watch across nine countries and six donors, notices scored out of 100."},
+  "a-b2": {en:"File analysis, simulated score and a go or no-go recommendation."},
+  "a-b3": {en:"Technical and financial proposals generated in Word and PDF, in the firm's branding."},
+  "a-b4": {en:"Automatic check of every page and document: 6 inconsistent references out of 8 caught before submission."},
+  "a-m1": {en:"technical proposal"},
+  "a-m2n": {en:"4 <small>days</small>"},
+  "a-m2": {en:"for both, up to the print-ready version"},
+  "a-m3": {en:"financial proposal, consistent with the technical one"},
+  "a-keep": {en:"<strong>What I keep:</strong> the go or no-go, the price, the choice of experts and sign-off on every version."},
+  "a-p1": {en:"7 Python scripts"},
+  "a-p2": {en:"25 rules"},
+  "a-p3": {en:"15 test cases"},
+  "b-tag": {en:"System 02 · Communication and digital marketing"},
+  "b-h3": {en:"An editorial pipeline, from news to publication"},
+  "b-pb": {en:"A firm operating in two countries must publish reliable, regular news on its website and pages, without quality depending on available time."},
+  "b-b1": {en:"Topics chosen from real industry news, verified against primary sources."},
+  "b-b2": {en:"SEO-structured article, published on the website with its SEO sheet."},
+  "b-b3": {en:"Visuals generated, then brought to brand standards by script: logo, LinkedIn and Facebook formats."},
+  "b-b4": {en:"Adapted per channel and country: LinkedIn, Facebook Burkina Faso and Côte d'Ivoire."},
+  "b-m1": {en:"articles published on the 2026 ISO standards"},
+  "b-m2": {en:"publishing pages, in 2 countries"},
+  "b-m3": {en:"primary sources verified"},
+  "b-keep": {en:"<strong>What I keep:</strong> topic choice, proofreading and the publish click."},
+  "b-p1": {en:"5 Python and PowerShell scripts"},
+  "b-more": {en:"Read an article ↗"},
+  "also-k": {en:"Also in production"},
+  "also-k2": {en:"Since 2019"},
+  "c1-h3": {en:"Automatic mission reports"},
+  "c1-p": {en:"An Excel sheet produces the training report (10 pages) and the mission report (5 pages) in Word, with verified calculations. From the very first session, three data-entry discrepancies surfaced on their own."},
+  "c2-h3": {en:"API-driven marketing automation and prospecting"},
+  "c2-p": {en:"Mailchimp then Brevo campaigns automated via Make.com, follow-ups with no manual step, reliable enrolment tracking. LinkedIn Sales Navigator deployed and the sales team trained."},
+  "demo-link": {en:"Try the agent's qualification grid (demo, 2 min) ↗"},
+  "conf": {en:"Confidentiality: no ongoing proposal is shown. Contracting authorities, prices and experts stay private."},
+
+  "par-eyebrow": {en:"Background"},
+  "par-h2": {en:"One foot in institutional rigor, one in modern tooling."},
+  "par-p1": {en:"Since September 2026, I lead the <strong>International Prospecting and Innovation Service</strong> at Building Business, reporting to the General Directorate: business development outside Burkina Faso, international tenders and AI adoption across the firm's practices."},
+  "par-p2": {en:"From 2019 to 2026, Communication Manager, also in charge of digital marketing: <strong>16 contracts won</strong> single-handedly from public institutions, companies and international donors, running the website, social media, ad campaigns and emailing, and quality oversight of more than 100 training sessions."},
+  "par-p3": {en:"My conviction: AI's value lies not in the tool, but in the ability to orchestrate agents around a real business problem and turn an organisation's know-how into reusable rules."},
+  "t1-d": {en:"Since Sept. 2026"},
+  "t1-t": {en:"Head of International Prospecting and Innovation"},
+  "t1-x": {en:"Building Business · service created in 2026, reporting to the General Directorate"},
+  "t2-d": {en:"2019 to 2026"},
+  "t2-t": {en:"Communication Manager"},
+  "t2-x": {en:"Building Business · 16 contracts won, 11 training sessions delivered, owner of the Digital Communication process in the ISO 9001 and ISO 21001 IMS"},
+  "t3-t": {en:"Master's in Business and Organisation Management"},
+  "t3-x": {en:"Building Capacity Institute · thesis defended in 2025 on adapting digital communication to modern technologies"},
+  "t4-t": {en:"Professional Bachelor's in Business Communication"},
+  "t4-x": {en:"African Institute of Management, Ouagadougou"},
+  "t5-t": {en:"PECB ISO 9001 Provisional Auditor (2019)"},
+  "t5-x": {en:"TeamBuilder Pro, collective dynamics architect (in progress, 2026)"},
+
   "comp-eyebrow": {en:"What I do"},
   "comp-h2": {en:"Three skills that reinforce one another"},
-  "pillar1-tag": {en:"01 · Development"},
-  "pillar1-h3": {en:"Business development & tenders"},
-  "p1-li1": {en:"Market watch — public, private and donor segments"},
-  "p1-li2": {en:"Opportunity qualification and targeting"},
-  "p1-li3": {en:"Full technical and financial proposal drafting"},
-  "p1-li4": {en:"Coordination from launch to final report"},
-  "p1-li5": {en:"AI-assisted prospecting"},
-  "pillar2-tag": {en:"02 · Communication"},
-  "pillar2-h3": {en:"Communication & digital marketing"},
-  "p2-li1": {en:"Digital communication strategy"},
-  "p2-li2": {en:"WordPress and Joomla websites"},
-  "p2-li3": {en:"Meta, LinkedIn Ads and TikTok advertising"},
-  "p2-li4": {en:"LinkedIn Sales Navigator — prospecting and team training"},
-  "p2-li5": {en:"SEO, SEA and GEO (AI-engine visibility)"},
-  "p2-li6": {en:"Dashboards, reporting and analytics"},
-  "pillar3-tag": {en:"03 · Systems"},
-  "pillar3-h3": {en:"Automation & applied AI"},
-  "p3-li1": {en:"End-to-end AI agents with Claude Code (watch, qualification, proposal, follow-up)"},
-  "p3-li2": {en:"Automated workflows (Make.com, n8n, APIs)"},
-  "p3-li3": {en:"Email campaigns via Brevo and Mailchimp APIs"},
-  "p3-li4": {en:"Quality-control scripts for deliverables (Python)"},
-  "p3-li5": {en:"Design and delivery of continuing-education courses"},
-  "p3-li6": {en:"Process management in ISO 9001 / ISO 21001 IMS"},
+  "comp-intro": {en:"I do not treat prospecting, marketing and automation as separate tasks: each step feeds the next, from spotting an opportunity to measuring results."},
+  "chain-cap": {en:"How I work: a chain, not isolated tasks"},
+  "ch1": {en:"Watch"},
+  "ch1s": {en:"markets · trends"},
+  "ch2": {en:"Offer"},
+  "ch2s": {en:"tenders · campaigns"},
+  "ch3": {en:"Automation"},
+  "ch3s": {en:"AI agents · APIs"},
+  "ch4": {en:"Follow-up"},
+  "ch4s": {en:"delivery · KPIs"},
+  "p1-tag": {en:"01 · Development"},
+  "p1-h3": {en:"Business development and tenders"},
+  "p1-1": {en:"Watch on public, private and donor markets"},
+  "p1-2": {en:"Opportunity qualification and score simulation"},
+  "p1-3": {en:"Full technical and financial proposal drafting"},
+  "p1-4": {en:"Mission coordination, from kick-off to final report"},
+  "p2-tag": {en:"02 · Communication"},
+  "p2-h3": {en:"Communication and digital marketing"},
+  "p2-1": {en:"Digital communication strategy"},
+  "p2-2": {en:"Web writing, SEO and multichannel adaptation per country"},
+  "p2-3": {en:"Fact-checking against primary sources"},
+  "p2-4": {en:"Joomla and WordPress websites, on-brand visuals"},
+  "p2-5": {en:"Meta, LinkedIn and TikTok advertising, Sales Navigator"},
+  "p3-tag": {en:"03 · Systems"},
+  "p3-h3": {en:"Automation and applied AI"},
+  "p3-1": {en:"Custom business AI agents with Claude Code"},
+  "p3-2": {en:"Automated workflows with Make.com, n8n and APIs"},
+  "p3-3": {en:"Quality-control scripts in Python and PowerShell"},
+  "p3-4": {en:"Web browsing agents, from website to social media"},
+  "p3-5": {en:"Team adoption and continuing education"},
 
-  "sys-eyebrow": {en:"Proof, not just claims"},
-  "sys-h2": {en:"AI agents that work, not promises"},
-  "sys-intro": {en:"A real, documented and verifiable case: the agent I designed to build tender proposals, from market watch to submission."},
-  "sys-lead": {en:"In four days, I designed with Claude Code an agent that builds a consulting firm's tender proposals, from spotting the notice to the submission file. On its first real case, it produced a <strong>115-page technical proposal</strong>, checked page by page, and each of my corrections became a rule it now applies on its own."},
-  "kpi1-u": {en:"days"},
-  "kpi1-l": {en:"from creating the agent to a print-ready proposal"},
-  "kpi2-l": {en:"generated, then checked automatically"},
-  "kpi3-l": {en:"all regenerated from source, no manual retouching"},
-  "kpi4-l": {en:"references whose documents contradicted each other, flagged before submission"},
-  "kpi5-u": {en:"rules"},
-  "kpi5-l": {en:"from my reviews, built into the agent"},
-  "schema-cap": {en:"Diagram — Four-step chain run by the agent: watch, qualification, proposal, follow-up. Learning loop and human decisions kept. Real figures from the first case (September 2026)."},
-  "cs-h3": {en:"An AI agent to answer tenders, from market watch to submission"},
-  "cs-h4-ctx": {en:"Context"},
-  "cs-ctx": {en:"A training, studies and consulting firm in Ouagadougou answers tenders in nine West and Central African countries, funded by states or donors (World Bank, AFD, Enabel, AfDB, European Union, United Nations). A proposal means over a hundred pages assembled in a few days: mandatory forms, references to prove document by document, CVs, schedules, prices consistent with the technical part, and dozens of presentation rules. A single inconsistency between two documents can get the file rejected."},
-  "cs-h4-build": {en:"What I built"},
-  "cs-build": {en:"A Claude Code agent (the <strong>montage-offres-bb</strong> skill) that covers the whole chain:"},
-  "cs-s1": {en:"<strong>Watch</strong>A scheduled task runs every Friday at 4 pm, searching the official portals of nine countries and donor websites; each notice is scored out of 100 and logged in an opportunity register."},
-  "cs-s2": {en:"<strong>Qualification</strong>The agent reads the file, even scanned, writes an eleven-section analysis report, checks each requirement against actually proven references and the expert pool, simulates the technical score and recommends go or no-go."},
-  "cs-s3": {en:"<strong>Proposal</strong>It drafts the technical and financial proposals following the evaluation grid, generates them in Word and PDF with the firm's branding (Gantt, reference sheets followed by their proofs, certificates), checks every page by script and produces a print-ready version."},
-  "cs-s4": {en:"<strong>Follow-up</strong>Clarification requests, a submission checklist sorted by severity, envelope labels, a calendar up to submission, and a feedback log that turns every correction into a rule."},
-  "cs-under": {en:"Under the hood: <strong>7 Python scripts</strong> (2,234 lines), a knowledge base of <strong>10 files</strong> (procurement regulations, firm profile and references, scoring grids, document templates) and <strong>15 test cases</strong>."},
-  "cs-h4-res": {en:"Results on the first real case (September 2026)"},
-  "cs-r1": {en:"115-page technical proposal and 12-page financial proposal, in 13 versions and 4 days."},
-  "cs-r2": {en:"Automatic check with zero defects on the final version: letterhead on the cover page only, no blank pages, nothing outside the margins, table of contents on one page."},
-  "cs-r3": {en:"Inconsistencies found in the documents of 6 references out of 8 (contract numbers, subjects, dates, signatures), flagged before submission instead of being discovered by the committee."},
-  "cs-r4": {en:"Two traps detected in the file: a contradictory deadline (a “Tuesday 12 October” that falls on a Monday) and a “new version” of the terms of reference that was actually an older blank template."},
-  "cs-r5": {en:"25 presentation rules from my reviews built into the agent, several of them checked automatically."},
-  "cs-r6": {en:"Everything packaged as an installation kit (about 30 minutes), deployable on any workstation in the firm."},
-  "cs-h4-human": {en:"The human's part"},
-  "cs-human": {en:"The agent prepares, checks and flags; I make the decisions (go or no-go, prices, experts) and validate every version before submission. It invents nothing: whatever is missing is highlighted in yellow “to complete”. It sends nothing without approval."},
-  "cs-h4-show": {en:"What this shows"},
-  "cs-show": {en:"I can turn a heavy, risky business process into a tooled system: a written method, reference data, control scripts, guardrails and a continuous improvement loop. The method is reusable: more agents are in preparation for other needs of the firm."},
-  "g1-k": {en:"Capture 01 · Check"},
-  "g2-k": {en:"Capture 02 · The proposal"},
-  "g3-k": {en:"Capture 03 · Installation kit"},
-  "zoom": {en:"enlarge ⤢"},
-  "g1-cap": {en:"Real output of the check script on the final version: 115 pages, no layout defect."},
-  "g2-cap": {en:"The 115 pages of the technical proposal generated by the agent, blurred because the tender is ongoing: the scale and layout are visible, no text is readable."},
-  "g3-cap": {en:"Procedure shipped with the agent: install it (30 min), build a proposal, finalise the submission."},
-  "conf-note": {en:"<b>Confidentiality.</b> The tender is under evaluation: the contracting authority, country, subject, prices and experts are not named; pages are deliberately blurred."},
-  "demo-eyebrow": {en:"Interactive demo"},
-  "demo-h3": {en:"Qualify a tender the way the agent does"},
-  "demo-p": {en:"Standalone simulator: the agent's real qualification grid (fictional examples), then the real outputs of each step — watch, analysis, generation, submission."},
-  "demo-open": {en:"Run the demo here"},
-  "demo-close": {en:"Hide the demo"},
-  "demo-new": {en:"Open full screen ↗"},
-  "sec1-eyebrow": {en:"Another system in production"},
-  "sec1-h3": {en:"Automatic mission reports"},
-  "sec1-p": {en:"An Excel sheet dropped on a shortcut produces the training report (10 pages) and the mission report (5 pages) in Word. Calculations are verified: from the very first session, several discrepancies surfaced on their own."},
-    "sec1-l2": {en:"4 training days announced for 5 invoiced"},
-  "sec1-l3": {en:"A budget line with no label"},
-  "sec1-l4": {en:"11 answers for 10 participants"},
-  "sec2-eyebrow": {en:"Emailing and prospecting"},
-  "sec2-h3": {en:"Brevo, Mailchimp and Sales Navigator chains"},
-  "sec2-p": {en:"Since 2019, end-to-end automation of campaigns for international training programmes: list segmentation, sending and follow-ups without manual intervention, reliable enrolment tracking."},
-  "sec2-l1": {en:"Brevo and Mailchimp APIs driven via Make.com"},
-  "sec2-l2": {en:"LinkedIn Sales Navigator deployed and sales team trained"},
-  "sec2-l3": {en:"Enrolment tracking dashboards"},
+  "mis-eyebrow": {en:"Mandates and partners"},
+  "mis-h2": {en:"A sample of contracts won"},
+  "th1": {en:"Mandate"},
+  "th2": {en:"Beneficiary"},
+  "th3": {en:"Year"},
+  "mi1": {en:"ICT skills training for 130 students at technical institutes (Labé, Mamou, Conakry)"},
+  "or1": {en:"ANSUTEN, Guinea"},
+  "mi2": {en:"Post-training follow-up for senior civil servants in management and communication (SARRAOUNIA2 project)"},
+  "mi3": {en:"Odoo collaborative development environment and IT staff training"},
+  "mi4": {en:"Training on strategies to find and convince lasting partners"},
+  "mi5": {en:"Study on implementing diploma-awarding continuing education"},
+  "mi6": {en:"Training Ministry of Higher Education partners in internal and external communication (SARRAOUNIA2 project)"},
+  "mi7": {en:"IT staff capacity building in systems, networking and security (e-Burkina)"},
+  "mis-note": {en:"Role: built the bid that won the contract, then coordinated delivery. Full list on request."},
 
-  "real-eyebrow": {en:"Selected work"},
-  "real-h2": {en:"A few concrete cases"},
-  "case1-date": {en:"Since Sept. 2026"},
-  "case1-h3": {en:"Creation and management of the International Prospecting and Innovation Service"},
-  "case1-p": {en:"Launch of the SPII, reporting to the General Directorate: structuring international business development, deploying AI agents to watch international tenders (donors, cooperation agencies, sub-regional institutions), and designing automations that feed prospecting, communication and proposal drafting. Advisory support to the Communication and Institutional Relations Service."},
-  "case1-more": {en:"See the proof of the proposal-building agent ↑"},
-  "case1-pill1": {en:"AI Agents"},
-  "case1-pill2": {en:"International prospecting"},
-  "case2-h3": {en:"16 contracts won independently"},
-  "case2-p": {en:"Single-handed proposal drafting for Building Business: 16 contracts won from public institutions (ANPTIC, ONEA, AMGT, ANSUTEN Guinea), the private and parastatal sector (banks, state-owned companies) and international donors (Enabel, WAQF High Authority, World Bank-funded projects) — across Burkina Faso, Niger and Guinea. From market watch to bid submission, then coordination of delivery."},
-  "case2-pill1": {en:"Technical writing"},
-  "case2-pill2": {en:"Financial proposals"},
-  "case2-pill3": {en:"Coordination"},
-  "case2-pill4": {en:"International donors"},
-  "case4-h3": {en:"11 training sessions delivered in digital, marketing and AI"},
-  "case4-p": {en:"Design and delivery of 5-day sessions for continuing-education professionals: Digital marketing and social media (5 sessions, 2022–2025), AI in marketing (2 sessions, 2023–2024), Web content, email marketing and CMS (4 sessions, 2021–2024)."},
-  "case4-pill1": {en:"Andragogy"},
-  "case4-pill2": {en:"AI & marketing"},
-  "case4-pill3": {en:"Social media"},
-  "case5-h3": {en:"Institutional and digital communication for the firm"},
-  "case5-p": {en:"Led institutional and digital communication (building-business.net, social media, email, content). Process owner for Digital Communication in the ISO 9001 / ISO 21001 IMS. Designed annual training catalogues and communication plans. Contributed to the Burkinabè Quality Prize 2022."},
-  "case5-pill1": {en:"Joomla / WordPress"},
-  "case5-pill2": {en:"Social media"},
-  "case5-pill3": {en:"ISO 9001 / 21001"},
-  "case5-pill4": {en:"Training catalogues"},
-  "missions-eyebrow": {en:"Mandates & partners"},
-  "missions-h2": {en:"A sample of contracts won"},
-  "th-mission": {en:"Mandate"},
-  "th-beneficiaire": {en:"Beneficiary"},
-  "th-annee": {en:"Year"},
-  "mission1": {en:"ICT skills training for 130 students at technical institutes (Labé, Mamou, Conakry)"},
-  "org1": {en:"ANSUTEN, Guinea"},
-  "mission2": {en:"Post-training follow-up for senior managers — management and communication — SARRAOUNIA2 project"},
-  "org2": {en:"Enabel, Niger"},
-  "mission3": {en:"Odoo collaborative development environment and IT staff training"},
-  "org3": {en:"ONEA, Burkina Faso"},
-  "mission4": {en:"Training on strategies for finding and convincing lasting partners"},
-  "org4": {en:"CIL, Burkina Faso"},
-  "mission5": {en:"Study on implementing diploma-awarding continuing education"},
-  "org5": {en:"ISTIC, Burkina Faso"},
-  "mission6": {en:"Training Ministry of Higher Education partners in internal and external communication — SARRAOUNIA2 project"},
-  "org6": {en:"Enabel, Niger"},
-  "mission7": {en:"IT capacity building in systems, networking and security (e-Burkina)"},
-  "org7": {en:"ANPTIC, Burkina Faso"},
-  "outils-eyebrow": {en:"Toolkit"},
-  "outils-h2": {en:"What I use day to day"},
-  "tools-h4-1": {en:"AI & automation"},
-  "tools-h4-2": {en:"Social media & advertising"},
-  "tools-h4-3": {en:"Web & creation"},
-  "tools-h4-4": {en:"Quality & organisation"},
-  "tool-q1": {en:"Process owner, ISO 9001 / 21001 IMS"},
-  "tool-q4": {en:"TeamBuilder Pro (in progress)"},
-  "presence-eyebrow": {en:"What I manage day to day"},
-  "presence-h2": {en:"The channels I administer"},
-  "presence-tag1": {en:"Website"},
-  "presence-p1": {en:"The firm's institutional website, administered via Joomla (content, news, training updates)."},
-  "presence-link1": {en:"View the site ↗"},
-  "presence-p2": {en:"The firm's official page: campaign visuals, session announcements, brand content."},
-  "presence-link2": {en:"View the page ↗"},
-  "presence-p3": {en:"LinkedIn company page: institutional communication and positioning for international partners."},
-  "presence-link3": {en:"View the page ↗"},
+  "out-eyebrow": {en:"Toolkit"},
+  "out-h2": {en:"What I use day to day"},
+  "tg1": {en:"AI and automation"},
+  "tg2": {en:"Web and content"},
+  "tg3": {en:"Social media and advertising"},
+  "tg4": {en:"Quality and organisation"},
+  "tl1": {en:"Brevo and Mailchimp APIs"},
+  "tl2": {en:"Process owner, ISO 9001 and 21001 IMS"},
+
   "faq-eyebrow": {en:"Frequently asked"},
   "faq-h2": {en:"What people usually ask"},
-  "faq-q1": {en:"Who is Abasse Nitiema?"},
-  "faq-a1": {en:"Abasse Nitiema is Head of International Prospecting and Innovation at Building Business, a consulting, training and studies firm certified ISO 9001 and ISO 21001, based in Ouagadougou with offices in Casablanca and Abidjan. Since September 2026, he leads the International Prospecting and Innovation Service (SPII), reporting to the General Directorate. He previously served as Communication Manager from 2019 to August 2026, winning 16 contracts independently across Burkina Faso, Niger and Guinea."},
-  "faq-q7": {en:"What is the “montage-offres-bb” agent?"},
-  "faq-a7": {en:"An agent built with Claude Code that covers the whole tender-response chain: scheduled weekly watch across nine countries and six donors, qualification with a simulated score and go/no-go recommendation, drafting and generation of the technical and financial proposals in branded Word and PDF, automatic page-by-page checks, then submission preparation. On its first real case it produced a 115-page technical proposal in 4 days. I keep every decision: go/no-go, prices, experts, final validation before submission."},
-  "faq-q2": {en:"What is international prospecting through tenders?"},
-  "faq-a2": {en:"It is the ability to identify contract opportunities issued by donors, cooperation agencies and sub-regional institutions, qualify the most relevant ones, and build competitive technical and financial proposals. The SPII integrates AI agents to automate market watch and speed up proposal production."},
-  "faq-q3": {en:"How does AI improve tender proposal drafting?"},
-  "faq-a3": {en:"By combining AI watch agents (continuously scanning procurement platforms), check scripts that verify every page of the deliverable, Make.com and n8n chains to automate collection and formatting, and Claude workflows for technical proposal writing. The goal is to turn the firm's know-how into reusable rules and shorten tender response times."},
-  "faq-q4": {en:"What key certifications and training does Abasse Nitiema hold?"},
-  "faq-a4": {en:"Master's in Business and Organization Management (BCI, 2022 — thesis 2025), Professional Bachelor's in Business Communication (IAM Ouaga, 2017), PECB ISO 9001 Provisional Auditor (2019), TeamBuilder Pro in progress (2026). He also completed the Certified Digital Transformation Officer programme (Building Business, April 2026)."},
-  "faq-q5": {en:"How do you build a tender proposal for a development agency?"},
-  "faq-a5": {en:"It involves structuring a technical and financial proposal that meets the donor's requirements, gathering the required supporting documents and attestations, and coordinating delivery, including post-training follow-up. Abasse Nitiema has won 16 contracts since 2021, including with Enabel (Niger, Guinea), ANSUTEN (Guinea), ONEA (Burkina Faso) and the WAQF High Authority (Niger)."},
-  "faq-q6": {en:"Is Abasse Nitiema open to new opportunities?"},
-  "faq-a6": {en:"Yes. He is open to new opportunities in international business development, institutional communication, digital marketing or AI automation consulting, in Burkina Faso and internationally."},
-  "footer-eyebrow": {en:"Let's talk"},
-  "footer-h2": {en:"Contracts won, systems that run, communication that carries."},
-  "footer-p": {en:"Available for a role in international development, institutional communication, digital marketing, or an AI automation consulting mandate — in Burkina Faso or elsewhere."},
-  "footmeta-updated": {en:"Updated · Sept. 2026"},
-  "lb-close": {en:"Close ✕"}
+  "q1": {en:"Who is Abasse Nitiema?"},
+  "a1": {en:"Head of International Prospecting and Innovation at Building Business, a consulting, training and studies firm certified ISO 9001 and ISO 21001, based in Ouagadougou with offices in Casablanca and Abidjan. Since September 2026, he leads the service reporting to the General Directorate that drives international development and innovation. From 2019 to August 2026, he was the firm's Communication Manager and won 16 contracts across Burkina Faso, Niger and Guinea."},
+  "q2": {en:"What does the proposal-building agent do?"},
+  "a2": {en:"It covers the tender response end to end: weekly watch across nine countries and six donors, file analysis with a simulated score and a go or no-go recommendation, generation of the technical and financial proposals in Word and PDF, automatic page-by-page checks and submission preparation. On its first real case, it produced in 4 days a 115-page technical proposal and a 12-page financial proposal, consistent with each other. Decisions stay human: go or no-go, price, experts, final sign-off."},
+  "q3": {en:"How does the editorial pipeline work?"},
+  "a3": {en:"It starts from real news in the firm's fields (standards, certifications, reforms), verified against primary sources. It produces the website article, its SEO sheet, on-brand visuals and texts adapted for LinkedIn and the Facebook pages in Burkina Faso and Côte d'Ivoire. Every publication is proofread and approved before release."},
+  "q4": {en:"What are his degrees and certifications?"},
+  "a4": {en:"Master's in Business and Organisation Management (Building Capacity Institute, 2022, thesis defended in 2025), Professional Bachelor's in Business Communication (African Institute of Management, 2017), PECB ISO 9001 Provisional Auditor (2019) and TeamBuilder Pro certification in progress (2026)."},
+  "q5": {en:"Is he open to new opportunities?"},
+  "a5": {en:"Yes, in international business development, institutional communication, digital marketing or AI automation consulting, in Burkina Faso and internationally."},
+
+  "f-eyebrow": {en:"Let's talk"},
+  "f-h2": {en:"Contracts won, systems that run, communication that carries."},
+  "f-p": {en:"Open to a role in international development, institutional communication or AI-driven transformation, and to automation consulting assignments, in Burkina Faso or elsewhere."},
+  "f-cv": {en:"CV (PDF)"},
+  "f-upd": {en:"Updated · September 2026"}
 };
 
 (function(){
@@ -1228,23 +1010,19 @@ const translations = {
   function setLang(lang){
     current = lang;
     nodes.forEach(n => {
-      const key = n.dataset.i18n;
-      if(lang === 'en' && translations[key] && translations[key].en){ n.innerHTML = translations[key].en; }
-      else { n.innerHTML = n.dataset.fr; }
+      const t = translations[n.dataset.i18n];
+      n.innerHTML = (lang === 'en' && t && t.en) ? t.en : n.dataset.fr;
     });
     document.documentElement.lang = lang;
     document.querySelectorAll('[data-lang-btn]').forEach(b => {
       const on = b.dataset.langBtn === lang;
       b.classList.toggle('active', on); b.setAttribute('aria-pressed', on ? 'true' : 'false');
     });
-    const dt = document.getElementById('demo-toggle');
-    if(dt){ dt.textContent = (document.getElementById('demo-frame').classList.contains('open')) ? (lang==='en' ? translations['demo-close'].en : 'Masquer la démo') : (lang==='en' ? translations['demo-open'].en : 'Lancer la démo ici'); }
     try{ localStorage.setItem('lang', lang); }catch(e){}
   }
   document.querySelectorAll('[data-lang-btn]').forEach(b => b.addEventListener('click', () => setLang(b.dataset.langBtn)));
   let saved = null; try{ saved = localStorage.getItem('lang'); }catch(e){}
   if(saved === 'en') setLang('en');
-  window.__getLang = () => current;
 })();
 
 /* ---------- Mobile menu ---------- */
@@ -1261,7 +1039,7 @@ const translations = {
   });
   menu.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
   document.addEventListener('keydown', e => { if(e.key === 'Escape') close(); });
-  window.addEventListener('resize', () => { if(window.innerWidth > 1100) close(); });
+  window.addEventListener('resize', () => { if(window.innerWidth > 1000) close(); });
 })();
 
 /* ---------- Scroll spy ---------- */
@@ -1271,10 +1049,8 @@ const translations = {
   links.forEach(a => { const s = document.querySelector(a.getAttribute('href')); if(s) map.set(s, a); });
   if(!('IntersectionObserver' in window) || !map.size) return;
   const io = new IntersectionObserver(entries => {
-    entries.forEach(en => {
-      if(en.isIntersecting){ links.forEach(l => l.classList.remove('active')); map.get(en.target).classList.add('active'); }
-    });
-  }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+    entries.forEach(en => { if(en.isIntersecting){ links.forEach(l => l.classList.remove('active')); map.get(en.target).classList.add('active'); } });
+  }, { rootMargin:'-40% 0px -55% 0px', threshold:0 });
   map.forEach((a, s) => io.observe(s));
 })();
 
@@ -1284,43 +1060,8 @@ const translations = {
   if(!('IntersectionObserver' in window)){ els.forEach(e => e.classList.add('in')); return; }
   const io = new IntersectionObserver(entries => {
     entries.forEach(en => { if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
-  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
+  }, { rootMargin:'0px 0px -8% 0px', threshold:0.05 });
   els.forEach(e => io.observe(e));
-})();
-
-/* ---------- Lightbox ---------- */
-(function(){
-  const dlg = document.getElementById('lightbox');
-  const img = document.getElementById('lb-img');
-  const cap = document.getElementById('lb-cap');
-  const closeBtn = document.getElementById('lb-close');
-  if(!dlg) return;
-  document.querySelectorAll('.gallery button.zoom').forEach(b => {
-    b.addEventListener('click', () => {
-      img.src = b.dataset.full; img.alt = b.querySelector('img') ? b.querySelector('img').alt : '';
-      cap.textContent = b.dataset.cap || '';
-      if(typeof dlg.showModal === 'function'){ dlg.showModal(); } else { window.open(b.dataset.full, '_blank'); }
-    });
-  });
-  closeBtn.addEventListener('click', () => dlg.close());
-  dlg.addEventListener('click', e => { if(e.target === dlg) dlg.close(); });
-  dlg.addEventListener('close', () => { img.src = ''; });
-})();
-
-/* ---------- Demo toggle (lazy iframe) ---------- */
-(function(){
-  const btn = document.getElementById('demo-toggle');
-  const frame = document.getElementById('demo-frame');
-  if(!btn || !frame) return;
-  const iframe = frame.querySelector('iframe');
-  btn.addEventListener('click', () => {
-    const open = !frame.classList.contains('open');
-    frame.classList.toggle('open', open);
-    if(open && !iframe.src){ iframe.src = iframe.dataset.src; }
-    const en = window.__getLang && window.__getLang() === 'en';
-    btn.textContent = open ? (en ? translations['demo-close'].en : 'Masquer la démo') : (en ? translations['demo-open'].en : 'Lancer la démo ici');
-    if(open){ setTimeout(() => frame.scrollIntoView({ behavior:'smooth', block:'start' }), 80); }
-  });
 })();
 
 /* ---------- Back to top ---------- */
