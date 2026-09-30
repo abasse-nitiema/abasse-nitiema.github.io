@@ -295,6 +295,10 @@ svg.chain{ width:100%; height:auto; display:block; }
 .pillar li{ font-size:14.5px; color:var(--paper-dim); padding:8px 0 8px 18px; position:relative; border-top:1px solid var(--line); }
 .pillar li:first-child{ border-top:none; }
 .pillar li::before{ content:"→"; position:absolute; left:0; color:var(--sand); font-size:13px; }
+.pillar-links{ margin-top:18px; padding-top:14px; border-top:1px solid var(--line); display:flex; flex-wrap:wrap; gap:10px 16px; align-items:center; }
+.pillar-links .k{ width:100%; font-family:var(--mono); font-size:11px; color:var(--paper-dim); letter-spacing:0.08em; text-transform:uppercase; }
+.pillar-links a{ color:var(--signal); font-family:var(--mono); font-size:12px; text-decoration:none; border-bottom:1px solid rgba(95,184,160,0.4); }
+.pillar-links a:hover{ border-bottom-color:var(--signal); }
 
 /* ---------- MANDATES ---------- */
 .table-wrap{ border:1px solid var(--line); background:var(--panel); }
@@ -436,7 +440,8 @@ footer{ padding:clamp(56px, 7vw, 84px) 0 40px; border-top:1px solid var(--line);
       <div class="eyebrow" data-i18n="par-eyebrow">Parcours</div>
       <h2 data-i18n="par-h2">Un pied dans la rigueur institutionnelle, un pied dans l'outillage moderne.</h2>
       <p data-i18n="par-p1">Depuis septembre 2026, je pilote le <strong>Service de Prospection Internationale et d'Innovation</strong> de Building Business, rattaché à la Direction Générale&nbsp;: développement commercial hors Burkina, appels d'offres internationaux et adoption de l'IA dans les pratiques du cabinet.</p>
-      <p data-i18n="par-p2">De 2019 à 2026, Responsable Communication, en charge aussi du marketing digital&nbsp;: <strong>16 marchés remportés</strong> en autonomie auprès d'institutions publiques, d'entreprises et de bailleurs internationaux, pilotage du site, des réseaux sociaux, des campagnes publicitaires et de l'emailing, et plus de 100 sessions de formation suivies en qualité.</p>
+      <p data-i18n="par-p2">De 2019 à 2026, Responsable Communication, en charge aussi du marketing digital&nbsp;: construire l'image et la notoriété du cabinet, piloter le site, les réseaux sociaux, les campagnes publicitaires et l'emailing, avec une finalité commerciale assumée, <strong>générer des prospects qualifiés et les convertir en clients</strong>.</p>
+      <p data-i18n="par-p2b">Dans ce même poste, j'ai monté en autonomie les dossiers d'appels d'offres du cabinet&nbsp;: <strong>16 marchés remportés</strong> auprès d'institutions publiques, d'entreprises et de bailleurs internationaux. J'ai également suivi la qualité pédagogique et logistique de plus de 100 sessions de formation.</p>
       <p data-i18n="par-p3">Ma conviction&nbsp;: la valeur de l'IA ne tient pas à l'outil, mais à la capacité d'orchestrer des agents autour d'un problème métier réel et de transformer le savoir-faire d'une organisation en règles réutilisables.</p>
     </div>
     <ol class="timeline reveal">
@@ -448,7 +453,7 @@ footer{ padding:clamp(56px, 7vw, 84px) 0 40px; border-top:1px solid var(--line);
       <li>
         <div class="d" data-i18n="t2-d">2019 à 2026</div>
         <div class="t" data-i18n="t2-t">Responsable Communication</div>
-        <div class="x" data-i18n="t2-x">Building Business · 16 marchés remportés, 11 formations animées, pilote du processus Communication digitale du SMI ISO&nbsp;9001 et ISO&nbsp;21001</div>
+        <div class="x" data-i18n="t2-x">Building Business · image du cabinet et génération de prospects, appels d'offres (16 marchés remportés), 11 formations animées, pilote du processus Communication digitale du SMI ISO&nbsp;9001 et ISO&nbsp;21001</div>
       </li>
       <li class="edu">
         <div class="d">2022</div>
@@ -527,7 +532,14 @@ footer{ padding:clamp(56px, 7vw, 84px) 0 40px; border-top:1px solid var(--line);
           <li data-i18n="p2-3">Vérification des faits aux sources primaires</li>
           <li data-i18n="p2-4">Sites Joomla et WordPress, visuels conformes à la charte</li>
           <li data-i18n="p2-5">Publicité Meta, LinkedIn et TikTok, Sales Navigator</li>
+          <li data-i18n="p2-6">Génération de prospects qualifiés et conversion en clients</li>
         </ul>
+        <div class="pillar-links">
+          <span class="k" data-i18n="p2-links-k">Ce que je pilote aujourd'hui</span>
+          <a href="https://building-business.net/index.php/fr/" target="_blank" rel="noopener" data-i18n="p2-l1">Site du cabinet ↗</a>
+          <a href="https://www.facebook.com/BuildingBusinessFormation/" target="_blank" rel="noopener" data-i18n="p2-l2">Page Facebook ↗</a>
+          <a href="https://www.linkedin.com/company/buildingbusinessformation/" target="_blank" rel="noopener" data-i18n="p2-l3">Page LinkedIn ↗</a>
+        </div>
       </div>
       <div class="pillar">
         <span class="tag" data-i18n="p3-tag">03 · Systèmes</span>
@@ -718,7 +730,6 @@ footer{ padding:clamp(56px, 7vw, 84px) 0 40px; border-top:1px solid var(--line);
         <ul>
           <li>Joomla · WordPress (Divi)</li>
           <li>Adobe Firefly · Canva</li>
-          <li>Premiere Pro</li>
           <li>Google Analytics 4</li>
         </ul>
       </div>
@@ -753,7 +764,7 @@ footer{ padding:clamp(56px, 7vw, 84px) 0 40px; border-top:1px solid var(--line);
     <div class="faq-list reveal">
       <details class="faq-item" open>
         <summary data-i18n="q1">Qui est Abasse Nitiema&nbsp;?</summary>
-        <div class="faq-a" data-i18n="a1">Responsable de la Prospection Internationale et de l'Innovation chez Building Business, cabinet de conseil, de formation et d'études certifié ISO&nbsp;9001 et ISO&nbsp;21001, basé à Ouagadougou avec des bureaux à Casablanca et Abidjan. Depuis septembre 2026, il pilote le service rattaché à la Direction Générale qui porte le développement international et l'innovation. De 2019 à août 2026, il a été Responsable Communication du cabinet et a remporté 16 marchés au Burkina Faso, au Niger et en Guinée.</div>
+        <div class="faq-a" data-i18n="a1">Responsable de la Prospection Internationale et de l'Innovation chez Building Business, cabinet de conseil, de formation et d'études certifié ISO&nbsp;9001 et ISO&nbsp;21001, basé à Ouagadougou avec des bureaux à Casablanca et Abidjan. Depuis septembre 2026, il pilote le service rattaché à la Direction Générale qui porte le développement international et l'innovation. De 2019 à août 2026, il a été Responsable Communication du cabinet et a monté en autonomie ses dossiers d'appels d'offres, avec 16 marchés remportés au Burkina Faso, au Niger et en Guinée.</div>
       </details>
       <details class="faq-item">
         <summary data-i18n="q2">Que fait l'agent de montage des offres&nbsp;?</summary>
@@ -909,14 +920,15 @@ const translations = {
   "par-eyebrow": {en:"Background"},
   "par-h2": {en:"One foot in institutional rigor, one in modern tooling."},
   "par-p1": {en:"Since September 2026, I lead the <strong>International Prospecting and Innovation Service</strong> at Building Business, reporting to the General Directorate: business development outside Burkina Faso, international tenders and AI adoption across the firm's practices."},
-  "par-p2": {en:"From 2019 to 2026, Communication Manager, also in charge of digital marketing: <strong>16 contracts won</strong> single-handedly from public institutions, companies and international donors, running the website, social media, ad campaigns and emailing, and quality oversight of more than 100 training sessions."},
+  "par-p2": {en:"From 2019 to 2026, Communication Manager, also in charge of digital marketing: building the firm's image and visibility, running the website, social media, ad campaigns and emailing, with an openly commercial purpose, <strong>generating qualified leads and converting them into clients</strong>."},
+  "par-p2b": {en:"In that same role, I built the firm's tender files single-handedly: <strong>16 contracts won</strong> from public institutions, companies and international donors. I also oversaw the pedagogical and logistical quality of more than 100 training sessions."},
   "par-p3": {en:"My conviction: AI's value lies not in the tool, but in the ability to orchestrate agents around a real business problem and turn an organisation's know-how into reusable rules."},
   "t1-d": {en:"Since Sept. 2026"},
   "t1-t": {en:"Head of International Prospecting and Innovation"},
   "t1-x": {en:"Building Business · service created in 2026, reporting to the General Directorate"},
   "t2-d": {en:"2019 to 2026"},
   "t2-t": {en:"Communication Manager"},
-  "t2-x": {en:"Building Business · 16 contracts won, 11 training sessions delivered, owner of the Digital Communication process in the ISO 9001 and ISO 21001 IMS"},
+  "t2-x": {en:"Building Business · firm's image and lead generation, tenders (16 contracts won), 11 training sessions delivered, owner of the Digital Communication process in the ISO 9001 and ISO 21001 IMS"},
   "t3-t": {en:"Master's in Business and Organisation Management"},
   "t3-x": {en:"Building Capacity Institute · thesis defended in 2025 on adapting digital communication to modern technologies"},
   "t4-t": {en:"Professional Bachelor's in Business Communication"},
@@ -949,6 +961,11 @@ const translations = {
   "p2-3": {en:"Fact-checking against primary sources"},
   "p2-4": {en:"Joomla and WordPress websites, on-brand visuals"},
   "p2-5": {en:"Meta, LinkedIn and TikTok advertising, Sales Navigator"},
+  "p2-6": {en:"Qualified lead generation and conversion into clients"},
+  "p2-links-k": {en:"What I run today"},
+  "p2-l1": {en:"Firm's website ↗"},
+  "p2-l2": {en:"Facebook page ↗"},
+  "p2-l3": {en:"LinkedIn page ↗"},
   "p3-tag": {en:"03 · Systems"},
   "p3-h3": {en:"Automation and applied AI"},
   "p3-1": {en:"Custom business AI agents with Claude Code"},
@@ -984,7 +1001,7 @@ const translations = {
   "faq-eyebrow": {en:"Frequently asked"},
   "faq-h2": {en:"What people usually ask"},
   "q1": {en:"Who is Abasse Nitiema?"},
-  "a1": {en:"Head of International Prospecting and Innovation at Building Business, a consulting, training and studies firm certified ISO 9001 and ISO 21001, based in Ouagadougou with offices in Casablanca and Abidjan. Since September 2026, he leads the service reporting to the General Directorate that drives international development and innovation. From 2019 to August 2026, he was the firm's Communication Manager and won 16 contracts across Burkina Faso, Niger and Guinea."},
+  "a1": {en:"Head of International Prospecting and Innovation at Building Business, a consulting, training and studies firm certified ISO 9001 and ISO 21001, based in Ouagadougou with offices in Casablanca and Abidjan. Since September 2026, he leads the service reporting to the General Directorate that drives international development and innovation. From 2019 to August 2026, he was the firm's Communication Manager and built its tender files single-handedly, winning 16 contracts across Burkina Faso, Niger and Guinea."},
   "q2": {en:"What does the proposal-building agent do?"},
   "a2": {en:"It covers the tender response end to end: weekly watch across nine countries and six donors, file analysis with a simulated score and a go or no-go recommendation, generation of the technical and financial proposals in Word and PDF, automatic page-by-page checks and submission preparation. On its first real case, it produced in 4 days a 115-page technical proposal and a 12-page financial proposal, consistent with each other. Decisions stay human: go or no-go, price, experts, final sign-off."},
   "q3": {en:"How does the editorial pipeline work?"},
